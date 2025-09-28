@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Target_Bar"/>
+	<DisplayName value="TongoMod 3.5" />
+	<Description value="Target Bar for Zeds in TongoMod"/>
+	<Author value="Tekja"/>
+	<Version value="3.5"/>
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Machines_No_Heat_Whitout_Fuel"/>
+	<DisplayName value="TongoMod 3.5"/>
+	<Description value="Remove heat from machines don't use fuel in TongoMod"/>
+	<Author value="Tekja"/>
+	<Version value="3.5"/>
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>
