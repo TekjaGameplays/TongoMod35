@@ -1,0 +1,39 @@
+<configs>
+	
+	<append xpath="/gameevents">
+	
+		<!-- spawn_crate_template -->
+		<action_sequence name="AR_spawn_crate_template">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnContainer">
+				<property name="entity_names" value="TwitchAction_SupplyWeapon1" param1="cratename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="min_distance" value="4" />
+				<property name="max_distance" value="8" />
+				<property name="safe_spawn" value="true" />
+				<property name="spawn_sound" value="open_supply_crate" />
+				<property name="override_name" value="" param1="override_name" />
+				<property name="override_loot_list" value="" param1="override_loot_list" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_good_spawn" />
+				<property name="phase" value="1" />
+			</action>
+			<action class="RemoveBuff">
+				<property name="buff_name" value="buffARGiveHordeNightReward"/>
+			</action>
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="2" />
+			</action>			
+		</action_sequence>		
+		
+		<action_sequence name="BloodmoonHordeReward" template="AR_spawn_crate_template">
+			<variable name="cratename" value="AR_SupplyBloodmoonHorde" />
+		</action_sequence>
+		
+	</append>
+
+</configs>

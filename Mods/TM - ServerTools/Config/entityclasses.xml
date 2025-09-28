@@ -1,0 +1,26 @@
+<configs>
+	
+	<append xpath="/entity_classes">
+		
+		<!-- twitch_crate_template -->
+		<entity_class name="AR_crate_template">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="None"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="2400"/>
+			<property name="Faction" value="none"/>
+			<property name="NavObject" value="twitch_supply,twitch_supply_other"/>
+		</entity_class>
+		
+		<entity_class name="AR_SupplyBloodmoonHorde" extends="AR_crate_template">
+			<property name="UserSpawnType" value="Console"/>
+			<property name="Mesh" value="#@modfolder:Resources/TMServer.unity3d?TMBloodMoonHordePrefab"/>
+			<property name="LootListOnDeath" value="BloodmoonHordeReward"/>
+		</entity_class>
+	
+	</append>
+	
+</configs>
