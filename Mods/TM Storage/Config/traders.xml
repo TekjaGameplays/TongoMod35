@@ -1,0 +1,42 @@
+<configs>
+
+	<insertAfter xpath="/traders/traderstage_templates/traderstage_template[@name='modsTier3']">
+		<traderstage_template name="modsTier4" min="200" max="999999" />
+	</insertAfter>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="modTMHelmetLightSchematic" count="1" prob="0.25"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">		
+		<item name="modTMHelmetLightSchematic"/>
+		<item name="modTMGunMeleeNiCdBatterySchematic"/>
+		<item name="modTMBulletFireSchematic"/>
+		<item name="modTMArrowFireSchematic"/>
+		<item name="modTMArrowShockSchematic"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">		
+		<item name="modTMHelmetLight"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsVehiclesMods']">		
+		<item name="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+		<item name="ModTMTurboSchematic"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">		
+		<item name="modTMBikeSpeedBoost" count="1"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeMods']">	
+		<item name="modTMGunMeleeNiCdBattery"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedMods']">		
+		<item name="modTMBulletFire" count="1"/>
+		<item name="modTMArrowFire" count="1"/>
+		<item name="modTMArrowShock" count="1"/>
+	</append>
+
+</configs>

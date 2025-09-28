@@ -1,0 +1,2116 @@
+<configs>
+	
+	<!-- Recolector mas pequeño -->
+	<append xpath="/blocks/block[@name='cntDewCollector']" >
+		<property name="MultiBlockDim" value="2,3,2"/>
+		<property name="ContainerSize" value="3,3" />
+    </append>
+	
+	<!-- Looteable -->
+	<!--<set xpath="blocks/block[@name='cntBarrelAcidSingle00']/property[@name='LootList']/@value">AcidBarrel</set>-->
+	
+	<append xpath="/blocks/block[@name='decoWineBottle']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="TMWineBottle"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="PolymerBarrel"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntIceMachine']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="iceMachine"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="TMcntToaster"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTile']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletPolymerLarge"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesLoose']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletPolymerMedium"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTopSmall']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletPolymerSmall"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesBase']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletPolymerLarge"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTop']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletPolymerMedium"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletCompressedCardboard']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="palletCardboard"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="mopowerShelves"/>
+	</append>
+	
+	<!-- NEW -->
+	<append xpath="/blocks/block[@name='utilitySink']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='pedestalSink']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='wallMountSinkCommercial']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='counterMountedSinkCommercial']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='counterMountedSinkCommercialOffset']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='sinkKitchen']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="WutilitySink"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='wineBarrel']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="TMwineBarrel"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='parkingMeter']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="TMparkingMeter"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='barbedWireSpindle']">
+		<property name="Damage_received" value="2"/>
+		<property name="DescriptionKey" value="barbedWireSheetDesc"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property name="Damage" value="4"/>
+		<property name="MaxDamage" value="200"/>
+		<property name="Damage_received" value="2"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='barbedWireSpindle1m']">
+		<property name="Damage_received" value="2"/>
+		<property name="DescriptionKey" value="barbedWireSheetDesc"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property name="Damage" value="4"/>
+		<property name="Damage_received" value="2"/>
+		<property name="MaxDamage" value="200"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2Master']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v01']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append> 
+		
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v02']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v03']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append> 
+		
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v04']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append> 
+		
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v05']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append> 
+		
+	<append xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v06']"> 
+		<property name="DowngradeBlock" value="TMcarRespawner3Wide"/>
+	</append> 
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Brown']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Red']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Orange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Yellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Green']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Blue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Purple']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Grey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV01Pink']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='abandonedSUV01DoorsWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerabandonedSUV01DoorsWhite"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Brown']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Red']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Orange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Yellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Green']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Blue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Purple']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Grey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck01Pink']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Brown']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Red']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Orange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Yellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Green']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Blue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Purple']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Grey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Black']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSedan3Wide01Pink']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedSUV3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedSUV3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='abandonedPickupTruck3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAbandonedPickup3wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntFrontCrumpledSedan01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFronCrumpledSedan"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntMinivan01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerMinivan01"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntMinivan3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerMinivan3Wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSUV01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSUV01"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSUV3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSUV013wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntPickupTruck01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerPickup01"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntPickupTruck3Wide01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerPickup013wide"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSemiTruck01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSemi"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSemiTruck01ModularFrontWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSemiModularFront"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSemiTruck01ModularRearEndOnly']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSemiModularRear"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntSemiTruck01ModularRearEndFlatbedStraight']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSemiModularFlatbed"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntPoliceCar01PickedLockBonus']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerPoliceCar01"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerPoliceCar01"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntFireTruck01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFireTruck"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntBusSchool']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSchoolBus"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntBusSchoolShort']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSchoolBusShort"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntBusShuttle']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerShuttleBus"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntBusCity']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerCityBus"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntAmbulanceTruck01']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerAmbulance"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntServiceTruckMoPower']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerMoPower"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntServiceTruckWorkingStiffTools']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerStiff"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntArmyTruckOpen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerArmyOpen"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntArmyTruckClosed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerArmyClosed"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntFarmTruckOpen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFarmOpen"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='cntFarmTruckClosed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFarmClosed"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='tractorWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerTractorWhite"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='tractorRed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerTractorRed"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='tractorGreen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerTractorGreen"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='tractorBlue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerTractorBlue"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaWhite"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorRed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaRed"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorOrange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaOrange"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorYellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaYellow"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorGreen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaGreen"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorBlue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaBlue"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='excavatorGrey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerExcaGrey"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHWhite"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeRed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHRed"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeOrange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHOrange"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeYellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHYellow"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeGreen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHGreen"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeBlue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHBlue"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='backhoeGrey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBHGrey"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftWhite']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLW"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftRed']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLR"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftOrange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLO"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftYellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLY"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftGreen']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLG"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forkliftBlue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLB"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLW2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2Red']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLR2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2Orange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLO2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2Yellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLY2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2Green']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLG2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='forklift2Blue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerFLB2"/>
+	</append>
+		
+	<append xpath="/blocks/block[@name='burntSedan01']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerBurntSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01White']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Brown']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Red']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Orange']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Yellow']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Green']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Blue']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Purple']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Grey']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Black']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSedan01Pink']"> 
+		<property name="DowngradeBlock" value="TMcarRespawnerSedan"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='solarbank']">
+		<property name="Group" value="Building"/>
+		<drop event="Harvest" name="solarbank" count="0,1" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="solarCell" count="0,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	
+	<insertAfter xpath="/blocks/block[@name='carsRandomHelper']">	
+
+        <block name="TMcarRespawnerSedan">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSedan01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawner3Wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cars3WideRandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerAbandonedSUV">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedSUV01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerabandonedSUV01DoorsWhite">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedSUV01DoorsRandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerAbandonedPickup">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedPickupTruck01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSedan3wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSedan3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerAbandonedSUV3wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedSUV3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerAbandonedPickup3wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedPickupTruck3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFronCrumpledSedan">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntFrontCrumpledSedan01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerMinivan01">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntMinivan01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerMinivan3Wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntMinivan3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSUV01">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSUV01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSUV013wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSUV3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerPickup01">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntPickupTruck01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerPickup013wide">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntPickupTruck3Wide01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSemi">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSemiTruck01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSemiModularFront">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSemiTruck01ModularFrontRandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSemiModularRear">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSemiTruck01ModularRearEndOnly"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSemiModularFlatbed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntSemiTruck01ModularRearEndFlatbedStraight"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerPoliceCar01">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntPoliceCar01"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFireTruck">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntFireTruck01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSchoolBus">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntBusSchool"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerSchoolBusShort">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntBusSchoolShort"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerShuttleBus">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntBusShuttle"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerCityBus">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntBusCity"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerAmbulance">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntAmbulanceTruck01"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerMoPower">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntServiceTruckMoPower"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerStiff">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntServiceTruckWorkingStiffTools"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerArmyOpen">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntArmyTruckOpen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerArmyClosed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntArmyTruckClosed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFarmOpen">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntFarmTruckOpen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFarmClosed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="cntFarmTruckClosed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerTractorWhite">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="tractorWhite"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerTractorRed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="tractorRed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerTractorGreen">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="tractorGreen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerTractorBlue">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="tractorBlue"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaWhite">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorWhite"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaRed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorRed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaOrange">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorOrange"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaYellow">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorYellow"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaGreen">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorGreen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaBlue">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorBlue"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerExcaGrey">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="excavatorGrey"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHWhite">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeWhite"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHRed">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeRed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHOrange">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeOrange"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHYellow">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeYellow"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHGreen">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeGreen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHBlue">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeBlue"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBHGrey">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="backhoeGrey"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLW">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftWhite"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLR">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftRed"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLO">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftOrange"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLY">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftYellow"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLG">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftGreen"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLB">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forkliftBlue"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLW2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2White"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLR2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2Red"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLO2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2Orange"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLY2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2Yellow"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLG2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2Green"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerFLB2">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="forklift2Blue"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+		<block name="TMcarRespawnerBurntSedan">
+			<property name="CustomIcon" value="decoCarTireFlat"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true"/>
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="MRespawner"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+				<drop event="Destroy" name="resourceScrapPolymers" count="50,100" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="PlantGrowing.Next" value="abandonedSUV01RandomHelper"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+
+    </insertAfter>
+	
+	
+	<!-- FIN NEW -->
+	
+	
+	
+	
+	<append xpath="/blocks">
+	
+		<block name="TMAbandoneBox">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="TMStorageXL"/>
+			<property name="CustomIcon" value="TMAbandoneBox"/>
+			<property name="DescriptionKey" value="TMAbandonedBoxDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMAbandoneBoxPrefab"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
+			<property name="SortOrder1" value="B967"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="TMDropBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DropBoxContainer, TM"/>
+			<property name="CustomIcon" value="TMDropBox"/>
+			<property name="DescriptionKey" value="TMDropBoxDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMDropBoxPrefab"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="FuelValue" value="300"/>
+			<property name="EconomicValue" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+				<property name="resourcePaint" value="1"/>				
+			</property>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="LootList" value="TMStorageDBXL"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="SortOrder1" value="B967"/>
+			<property name="SortOrder2" value="0000"/>		
+			<property name="UpdateTick" value="200" />
+			<property name="DropBox" value="true" />
+			<property name="TakeDelay" value="2"/>
+		</block>
+		
+		<block name="TMStorageBox">
+			<property name="CreativeMode" value="Player"/>
+			
+			<property name="Class" value="SecureLootTake, TM"/>
+			<property name="LootList" value="TMStorageXL"/>
+			<property name="TakeDelay" value="2"/>
+			
+			<property name="CustomIcon" value="TMStorageBox"/>
+			<property name="DescriptionKey" value="TMStorageBoxDesc"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMStorageBoxPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="FuelValue" value="300"/>
+			<property name="EconomicValue" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+				<property name="resourcePaint" value="1"/>				
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			
+			<property name="Texture" value="572"/>			
+			<property name="Group" value="Building"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="PlaceAltBlockValue" value="TMAmmoBox,TMArmorBox,TMBox,TMCementBox,TMChemistryBox,TMConstructionBox,TMCropBox,TMDrinkBox,TMElectricityBox,TMFoodBox,TMFoodDrinkBox,TMForgeBox,TMMagazineBox,TMMedicalBox,TMModBox,TMOtherBox,TMPartBox,TMResourceBox,TMStorageBox,TMToolBox,TMTrapBox,TMVehicleBox,TMVendorBox,TMWeaponBox"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="TMAmmoBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMAmmoBox"/>
+			<property name="DescriptionKey" value="TMAmmoBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMAmmoBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		
+		<block name="TMArmorBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMArmorBox"/>
+			<property name="DescriptionKey" value="TMArmorBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMArmorBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<block name="TMBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMBox"/>
+			<property name="DescriptionKey" value="TMBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+		
+		<block name="TMCementBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMCementBox"/>
+			<property name="DescriptionKey" value="TMCementBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMCementBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		
+		<block name="TMChemistryBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMChemistryBox"/>
+			<property name="DescriptionKey" value="TMChemistryBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMChemistryBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
+		<block name="TMConstructionBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMConstructionBox"/>
+			<property name="DescriptionKey" value="TMConstructionBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMConstructionBox"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="TMCropBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMCropBox"/>
+			<property name="DescriptionKey" value="TMCropBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMCropBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		
+		<block name="TMDrinkBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMDrinkBox"/>
+			<property name="DescriptionKey" value="TMDrinkBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMDrinkBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		
+		<block name="TMElectricityBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMElectricityBox"/>
+			<property name="DescriptionKey" value="TMElectricityBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMElectricityBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		
+		<block name="TMFoodBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMFoodBox"/>
+			<property name="DescriptionKey" value="TMFoodBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMFoodBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		
+		<block name="TMFoodDrinkBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMFoodDrinkBox"/>
+			<property name="DescriptionKey" value="TMFoodDrinkBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMFoodDrinkBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		
+		<block name="TMForgeBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMForgeBox"/>
+			<property name="DescriptionKey" value="TMForgeBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMForgeBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="TMMagazineBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMMagazineBox"/>
+			<property name="DescriptionKey" value="TMMagazineBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMMagazineBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+		
+		<block name="TMMedicalBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMMedicalBox"/>
+			<property name="DescriptionKey" value="TMMedicalBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMMedicalBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+		
+		<block name="TMModBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMModBox"/>
+			<property name="DescriptionKey" value="TMPartBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMModBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+		
+		<block name="TMOtherBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMOtherBox"/>
+			<property name="DescriptionKey" value="TMOtherBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMOtherBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0014"/>
+		</block>
+		
+		<block name="TMPartBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMPartBox"/>
+			<property name="DescriptionKey" value="TMPartBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMPartBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+		
+		<block name="TMResourceBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMResourceBox"/>
+			<property name="DescriptionKey" value="TMResourceBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMResourceBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0016"/>
+		</block>
+		
+		<block name="TMToolBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMToolBox"/>
+			<property name="DescriptionKey" value="TMToolBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMToolBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0017"/>
+		</block>
+		
+		<block name="TMTrapBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMTrapBox"/>
+			<property name="DescriptionKey" value="TMTrapBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMTrapBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0018"/>
+		</block>
+		
+		<block name="TMVehicleBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMVehicleBox"/>
+			<property name="DescriptionKey" value="TMVehicleBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMVehicleBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0019"/>
+		</block>
+		
+		<block name="TMVendorBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMVendorBox"/>
+			<property name="DescriptionKey" value="TMVendorBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMVendorBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0020"/>
+		</block>
+		
+		<block name="TMWeaponBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMWeaponBox"/>
+			<property name="DescriptionKey" value="TMWeaponBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMWeaponBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0021"/>
+		</block>
+		
+		<block name="TMbarbedWireSpindle1m">
+			<property name="Extends" value="barbedWireSpindle1m"/>
+			<property name="CustomIcon" value="TMBarbedWireC"/>
+			<property name="Damage_received" value="1"/>
+			<property name="DescriptionKey" value="TMbarbedWireSpindleDesc"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="Damage" value="6"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Damage_received" value="2"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DamageBuffs" value="buffInjuryBleeding"/>
+		</block>
+		
+		<block name="TMbarbedWireSpindle">
+			<property name="Extends" value="barbedWireSpindle"/>
+			<property name="CustomIcon" value="TMBarbedWireL"/>
+			<property name="Damage_received" value="1"/>
+			<property name="DescriptionKey" value="TMbarbedWireSpindleDesc"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="Damage" value="6"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Damage_received" value="2"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DamageBuffs" value="buffInjuryBleeding"/>
+		</block>
+		
+	</append>
+
+</configs>

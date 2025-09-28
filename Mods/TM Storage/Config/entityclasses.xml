@@ -1,0 +1,1019 @@
+<configs>
+
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">6000</set>
+	
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie')]/property[@name='LootDropProb']/@value">.04</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name,'zombie') and contains(@name,'Feral')]/property[@name='LootDropProb']/@value">.05</set>
+	
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']">
+		<property name="NavObject" value="navBagAlertYellow" />
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']">
+		<property name="NavObject" value="navBagAlertBlue" />
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']">
+		<property name="NavObject" value="navBagAlertRed" />
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']">
+		<property name="NavObject" value="navBagAlertRed" />
+	</append>
+	
+	<append xpath="/entity_classes">		
+		<!-- NEW ZOMBIES -->
+		
+		<!-- ARLENE -->
+		<entity_class name="zombieArleneIrradiationComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".60"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieArleneElectricComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".60"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyrad"/>-->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieArleneFireComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".60"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+				<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyrad"/>-->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+
+			</effect_group>
+		</entity_class>
+		
+		<!-- HORDER ARLENE -->
+		<entity_class name="zombieMiniArleneIrradiationComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieMiniArleneElectricComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyrad"/>-->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieMiniArleneFireComand" extends="zombieArlene">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Comand"/>
+			
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1"/>
+			<property name="ExperienceGain" value="1500"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			
+			<property name="HandItem" value="meleeHandZombieShortFeralTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyrad"/>-->
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- BURN -->
+		<entity_class name="zombieBurntIrradiationElite" extends="zombieBurnt">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieBurntElectricElite" extends="zombieBurnt">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="8000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".80"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieBurntFireElite" extends="zombieBurnt">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- MUTATED -->
+		<entity_class name="zombieMutatedIrradiationElite" extends="zombieMutated">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieMutatedElectricElite" extends="zombieMutated">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="8000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".80"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieMutatedFireElite" extends="zombieMutated">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+
+			<property name="SizeScale" value="1.3"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- WIGHT -->
+		<entity_class name="zombieWightIrradiationElite" extends="zombieWightFeral">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieWightElectricElite" extends="zombieWightFeral">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="8000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".80"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieWightFireElite" extends="zombieWightFeral">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- LUMBERJACK -->
+		<entity_class name="zombieLumberjackIrradiationElite" extends="zombieLumberjack">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieLumberjackElectricElite" extends="zombieLumberjack">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="8000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".80"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieLumberjackFireElite" extends="zombieLumberjack">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			<property name="ParticleOnSpawn" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab" param1="SetShapeToMesh0"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- VULTURE -->
+		<entity_class name="animalZombieVultureElite" extends="animalZombieVultureRadiated">
+			<property name="Tags" value="entity,animal,zombie,hostile,vulture,Elite"/>
+			<property name="HandItem" value="meleeAnimalZombieVultureElite"/>
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>			
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4"/> <!-- Feral damage -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+	
+			
+		<!-- DIRE WOLF -->		
+		<entity_class name="animalDireWolfIrradiationElite" extends="animalDireWolf">
+			<property name="SizeScale" value="2.2"/>
+
+			<property name="MoveSpeedAggro" value="1.2, 2.2"/>
+			<property name="JumpMaxDistance" value="8, 9"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+
+			<property name="ExperienceGain" value="5000"/><!-- XP strong -->
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".50"/> <!-- Dire Wolf -->
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="35"/> <!-- animalDireWolf -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper" />
+		</entity_class>
+		
+		<entity_class name="animalDireWolfElectricElite" extends="animalDireWolf">
+			<property name="SizeScale" value="2.2"/>
+
+			<property name="MoveSpeedAggro" value="1.2, 2.2"/>
+			<property name="JumpMaxDistance" value="8, 9"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+
+			<property name="ExperienceGain" value="5000"/><!-- XP strong -->
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".50"/> <!-- Dire Wolf -->
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="35"/> <!-- animalDireWolf -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper" />
+		</entity_class>
+		
+		<entity_class name="animalDireWolfFireElite" extends="animalDireWolf">
+			<property name="SizeScale" value="2.2"/>
+
+			<property name="MoveSpeedAggro" value="1.2, 2.2"/>
+			<property name="JumpMaxDistance" value="8, 9"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+
+			<property name="ExperienceGain" value="5000"/><!-- XP strong -->
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".50"/> <!-- Dire Wolf -->
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="35"/> <!-- animalDireWolf -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper" />
+		</entity_class>
+		
+		
+		<!-- DEMOLEDOR -->
+		<entity_class name="zombieDemolitionIrradiationGeneral" extends="zombieDemolition">
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			
+			<property name="Explosion.RadiusBlocks" value="14"/>
+			<property name="Explosion.RadiusEntities" value="16"/>
+			<property name="Explosion.BlockDamage" value="8300"/>
+			
+			<property name="SizeScale" value="0.9"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<property name="HandItem" value="meleeHandZombieDemolitionTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieDemolitionElectricGeneral" extends="zombieDemolition">
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			
+			<property name="Explosion.RadiusBlocks" value="14"/>
+			<property name="Explosion.RadiusEntities" value="16"/>
+			<property name="Explosion.BlockDamage" value="8300"/>
+			
+			<property name="SizeScale" value="0.9"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<property name="HandItem" value="meleeHandZombieDemolitionTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieDemolitionFireGeneral" extends="zombieDemolition">
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			
+			<property name="Explosion.RadiusBlocks" value="14"/>
+			<property name="Explosion.RadiusEntities" value="16"/>
+			<property name="Explosion.BlockDamage" value="8300"/>
+			
+			<property name="SizeScale" value="0.9"/>
+			<property name="ExperienceGain" value="2000"/>
+			<property name="LootDropProb" value="0"/>
+			
+			<property name="MoveSpeedAggro" value="0.7, 1.5"/> <!-- slim, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+			<property name="AIFeralSense" value=".10"/>
+			
+			<property name="HandItem" value="meleeHandZombieDemolitionTM"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- SWARM -->
+		<entity_class name="animalInsectSwarmIrradiation" extends="animalInsectSwarm">
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="75" tags="ranged" invert_tag_check="true"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="99" tags="ranged"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalInsectSwarmElectric" extends="animalInsectSwarm">
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="75" tags="ranged" invert_tag_check="true"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="99" tags="ranged"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalInsectSwarmFire" extends="animalInsectSwarm">
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="75" tags="ranged" invert_tag_check="true"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="99" tags="ranged"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- PLAGUE -->
+		<entity_class name="zombiePlagueSpitterIrradiation" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterIrradiation"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombiePlagueSpitterElectric" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterElectric"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombiePlagueSpitterFire" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterFire"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- PLAGUE ORDER-->
+		<entity_class name="zombiePlagueSpitterIrradiationO" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterIrradiation"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombiePlagueSpitterElectricO" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterElectric"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombiePlagueSpitterFireO" extends="zombiePlagueSpitter">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombiePlagueSpitterFire"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- CLAW -->
+		<entity_class name="zombieFrostclawIrradiation" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaIrradiation"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieFrostclawElectric" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaElectric"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieFrostclawFire" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".60"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaFire"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+		<!-- CLAW ORDER -->
+		<entity_class name="zombieFrostclawIrradiationO" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="radiated"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaIrradiation"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyradTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieFrostclawElectricO" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="charged"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaElectric"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyshockTM"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieFrostclawFireO" extends="zombieFrostclaw">
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,Elite"/>
+			
+			<property name="JumpMaxDistance" value="8.8, 10"/>
+			<property name="TimeStayAfterDeath" value="6"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="MatColor" value="infernal"/>
+			
+			<property name="SizeScale" value="1.4"/>
+			<property name="ExperienceGain" value="5000"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0"/>
+			<property name="MoveSpeedAggro" value=".8, 1.8"/>
+			
+			<property name="HandItem" value="meleeHandZombieFrostclaFire"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="twitch_enemyburnTM"/>
+			</effect_group>
+		</entity_class>
+		
+		
+	
+	</append>
+	
+</configs>

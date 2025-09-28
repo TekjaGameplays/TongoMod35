@@ -1,0 +1,63 @@
+<configs>
+	
+	<append xpath="/gameevents">
+		
+		<!-- SPWAN ARLENES -->
+		<action_sequence name="spawn_TM_Arlene" template="spawn_single">
+			<variable name="zombiename" value="zombieArleneIrradiationComand,zombieArleneElectricComand,zombieArleneFireComand" />
+			<variable name="alertsound" value="zombiefemalealert" />
+		</action_sequence>
+		
+		<!-- SPWAN BURN -->
+		<action_sequence name="spawn_TM_Burn" template="spawn_single">
+			<variable name="zombiename" value="zombieBurntIrradiationElite,zombieBurntElectricElite,zombieBurntFireElite" />
+			<variable name="alertsound" value="zombieburntalert" />
+		</action_sequence>
+		
+		<!-- SPWAN LUMBERJACK -->
+		<action_sequence name="spawn_TM_Lumberjack" template="spawn_single">
+			<variable name="zombiename" value="zombieLumberjackIrradiationElite,zombieLumberjackElectricElite,zombieLumberjackFireElite" />
+			<variable name="alertsound" value="zombielumberjack_alert" />
+		</action_sequence>
+		
+		<!-- SPWAN GENERAL -->
+		<action_sequence name="spawn_TM_General" template="spawn_single">
+			<variable name="zombiename" value="zombieDemolitionIrradiationGeneral,zombieDemolitionElectricGeneral,zombieDemolitionFireGeneral" />
+			<variable name="alertsound" value="demolitionzalert" />
+		</action_sequence>
+		
+		<!-- SPWAN MUTATED -->
+		<action_sequence name="spawn_TM_Mutated" template="spawn_single">
+			<variable name="zombiename" value="zombieMutatedIrradiationElite,zombieMutatedElectricElite,zombieMutatedFireElite" />
+			<variable name="alertsound" value="zombie_mutated_alert" />
+		</action_sequence>
+		
+		<!-- SPWAN WIGHT -->
+		<action_sequence name="spawn_TM_Wight" template="spawn_single">
+			<variable name="zombiename" value="zombieWightIrradiationElite,zombieWightElectricElite,zombieWightFireElite" />
+			<variable name="alertsound" value="zombieferalalert" />
+		</action_sequence>
+		
+		<!-- SPWAN INSECT -->
+		<action_sequence name="spawn_TM_Swarm" template="spawn_single">
+			<variable name="zombiename" value="animalInsectSwarmIrradiation,animalInsectSwarmElectric,animalInsectSwarmFire" />
+			<variable name="alertsound" value="swarmalert" />
+			<variable name="airspawn" value="true" />
+			<variable name="spawncount" value="3" />
+		</action_sequence>
+		
+		<!-- SPWAN PLAGUE -->
+		<action_sequence name="spawn_TM_Plague" template="spawn_single">
+			<variable name="zombiename" value="zombiePlagueSpitterIrradiation,zombiePlagueSpitterElectric,zombiePlagueSpitterFire" />
+			<variable name="alertsound" value="plaguealert" />
+		</action_sequence>
+		
+		<!-- SPWAN FROST -->
+		<action_sequence name="spawn_TM_Frost" template="spawn_single">
+			<variable name="zombiename" value="zombieFrostclawIrradiation,zombieFrostclawElectric,zombieFrostclawFire" />
+			<variable name="alertsound" value="frostclawalert" />
+		</action_sequence>
+		
+	</append>
+
+</configs>
