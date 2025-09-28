@@ -1,0 +1,12 @@
+<raiz>
+
+
+	<!-- SPEED FARMING (30 MIN X TIER) -->
+
+	<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">30.0</set>
+
+	<!-- only for test -->
+	<!--<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">2</set>-->
+
+	
+</raiz>
