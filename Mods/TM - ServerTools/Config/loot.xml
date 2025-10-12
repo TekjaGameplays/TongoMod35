@@ -1,0 +1,144 @@
+<configs>
+
+	<append xpath="/lootcontainers">
+	
+		<lootgroup name="groupManiqMilT0BM" loot_quality_template="QLTemplateT0">
+			<item name="armorLumberjackHelmet"/>
+			<item name="armorLumberjackOutfit"/>
+			<item name="armorLumberjackGloves"/>
+			<item name="armorLumberjackBoots"/>
+			
+			<item name="armorPreacherHelmet"/>
+			<item name="armorPreacherOutfit"/>
+			<item name="armorPreacherGloves"/>
+			<item name="armorPreacherBoots"/>
+			
+			<item name="armorRogueHelmet"/>
+			<item name="armorRogueOutfit"/>
+			<item name="armorRogueGloves"/>
+			<item name="armorRogueBoots"/>
+			
+			<item name="armorAthleticHelmet"/>
+			<item name="armorAthleticOutfit"/>
+			<item name="armorAthleticGloves"/>
+			<item name="armorAthleticBoots"/>
+			
+			<item name="armorEnforcerHelmet"/>
+			<item name="armorEnforcerOutfit"/>
+			<item name="armorEnforcerGloves"/>
+			<item name="armorEnforcerBoots"/>
+		</lootgroup>
+
+		<lootgroup name="groupManiqMilT1BM" loot_quality_template="QLTemplateT1">
+		    <item name="armorFarmerHelmet"/>
+			<item name="armorFarmerOutfit"/>
+			<item name="armorFarmerGloves"/>
+			<item name="armorFarmerBoots"/>
+			
+			<item name="armorBikerHelmet"/>
+			<item name="armorBikerOutfit"/>
+			<item name="armorBikerGloves"/>
+			<item name="armorBikerBoots"/>
+			
+			<item name="armorScavengerHelmet"/>
+			<item name="armorScavengerOutfit"/>
+			<item name="armorScavengerGloves"/>
+			<item name="armorScavengerBoots"/>
+			
+			<item name="armorRangerHelmet"/>
+			<item name="armorRangerOutfit"/>
+			<item name="armorRangerGloves"/>
+			<item name="armorRangerBoots"/>
+			
+			<item name="armorCommandoHelmet"/>
+			<item name="armorCommandoOutfit"/>
+			<item name="armorCommandoGloves"/>
+			<item name="armorCommandoBoots"/>
+			
+			<item name="armorAssassinHelmet"/>
+			<item name="armorAssassinOutfit"/>
+			<item name="armorAssassinGloves"/>
+			<item name="armorAssassinBoots"/>
+		</lootgroup>
+
+		<lootgroup name="groupManiqMilT2BM" loot_quality_template="QLTemplateT2">
+			<item name="armorMinerHelmet"/>
+			<item name="armorMinerOutfit"/>
+			<item name="armorMinerGloves"/>
+			<item name="armorMinerBoots"/>
+			
+			<item name="armorNomadHelmet"/>
+			<item name="armorNomadOutfit"/>
+			<item name="armorNomadGloves"/>
+			<item name="armorNomadBoots"/>
+			
+			<item name="armorNerdHelmet"/>
+			<item name="armorNerdOutfit"/>
+			<item name="armorNerdGloves"/>
+			<item name="armorNerdBoots"/>
+			
+			<item name="armorRaiderHelmet"/>
+			<item name="armorRaiderOutfit"/>
+			<item name="armorRaiderGloves"/>
+			<item name="armorRaiderBoots"/>
+		</lootgroup>
+		
+		<lootgroup name="groupManiqMilScaledBM">
+			<item group="groupManiqMilT0BM" loot_prob_template="ProbT0"/>
+			<item group="groupManiqMilT1BM" loot_prob_template="ProbT2"/>
+			<item group="groupManiqMilT2BM" loot_prob_template="ProbT2Cap"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRangedT3BM" loot_quality_template="QLTemplateT3">
+			<item name="gunRifleT3SniperRifle"/>
+			<item name="gunShotgunT3AutoShotgun"/>
+			<item name="gunMGT3M60"/>
+			<item name="gunHandgunT3DesertVulture"/>
+			<item name="gunHandgunT3SMG5"/>
+			<item name="gunExplosivesT3RocketLauncher"/>
+			<item name="gunBowT3CompoundCrossbow"/>
+			<item name="gunBowT3CompoundBow"/>
+			<item name="gunBotT3JunkDrone"/>
+		</lootgroup>
+
+		<lootgroup name="specialammoBM" loot_quality_template="QLTemplateT3" count="4">
+			<item name="ammo9mmBulletHP" count="100,300"/>
+			<item name="ammo9mmBulletAP" count="100,300"/>
+			<item name="ammo44MagnumBulletHP" count="100,300"/>
+			<item name="ammo44MagnumBulletAP" count="100,300"/>
+			<item name="ammo762mmBulletHP" count="100,300"/>
+			<item name="ammo762mmBulletAP" count="100,300"/>
+			<item name="ammoShotgunSlug" count="100,300"/>
+			<item name="ammoShotgunBreachingSlug" count="100,300"/>
+			<item name="ammoRocketHE" count="1,5"/>
+			<item name="ammoCrossbowBoltFlaming" count="50,100"/>
+			<item name="ammoCrossbowBoltExploding" count="10,30"/>
+			<item name="ammoArrowExploding" count="10,30"/>
+			<item name="ammoArrowFlaming" count="50,100"/>
+		</lootgroup>
+		
+		<lootgroup name="quickSolar" count="1">
+			<item name="questRewardBatteryBankBundle"/>
+			<item name="questRewardSolarBankBundle"/>
+		</lootgroup>
+		
+		<lootgroup name="BloodmoonHordeRewardGroup" count="5">
+			<item name="casinoCoin" count="3000,5000"/>
+			<item name="resourceCloth" count="500,900"/>
+			<item name="resourceLeather" count="200,400"/>
+			<item group="groupTreasureMaps" count="1"/>
+			<item name="questRewardT5BookBundle" count="1"/>
+			<item name="resourceLegendaryParts" count="3,6"/>
+			<item group="specialammoBM" count="1" />
+			<item group="groupManiqMilScaledBM" count="1"/>
+			<item group="groupRangedT3BM" count="1"/>
+			<item group="quickSolar" count="1" loot_prob_template="veryLow"/>
+		</lootgroup>
+		
+		<lootcontainer name="BloodmoonHordeReward" size="6,6" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="0.25" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true" unmodified_lootstage="false">
+			<item group="BloodmoonHordeRewardGroup"/>
+		</lootcontainer>
+		
+	</append>
+
+</configs>

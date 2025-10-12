@@ -1,0 +1,42 @@
+{
+  "ChatColor": "[FFCC00]",
+  "ServerName": "[TM - ST]",
+  "Debug": false,
+  "AutoBackup": {
+	"ChatColor": "[00FF00]",
+    "Enabled": true,
+    "Delay": 30,
+    "BackupsLimit": 10,
+	"ShowMessage": false,
+  },
+  "AutoSaveWorld": {
+	"ChatColor": "[00FF00]",
+    "Enabled": true,
+    "Delay": 60,
+	"ShowMessage": false,
+  },
+  "BloodMoon": {
+	"ChatColor": "[FF0000]",
+    "Enabled": true,
+    "Delay": 60
+  },
+  "BloodMoonReward": {
+	"ChatColorRW": "[00FF00]",
+	"ChatColorDead": "[FF0000]",
+    "Enabled": true,
+  },
+  "ScoutHorde": {
+	"ChatColor": "[FFC300]",
+    "Enabled": true,
+	"Delay": 60,
+	"MinZombie": 10,
+	"MaxZombie": 20,
+	"ShowMessage": true,
+	"PlaySound": true,
+	"Sound": "horde_spawn_warning"
+  },
+  "SoundMachiene": {
+    "Enabled": false,
+	"Delay": 20,
+  },
+}
