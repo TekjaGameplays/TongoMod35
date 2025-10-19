@@ -1,5 +1,5 @@
 Hello survivors
-We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.3
+We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.4
 New features, some fixes and little changes, all features for TongoMod 3.5.4
 
 *** News ***
