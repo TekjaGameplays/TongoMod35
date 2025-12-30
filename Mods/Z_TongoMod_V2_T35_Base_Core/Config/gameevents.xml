@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- NOT USED THIS TIME -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']"/>
+
+	<!-- *** GAME_FIRST_SPAWN -->
+	<!-- Trigger events when the player spawns in-game for the very first time -->
+	
+
+	<!--<append xpath="/gameevents">
+
+		<action_sequence name="game_first_spawn">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="Delay">
+			<property name="phase" value="1" />
+			<property name="time" value="5" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffTongoStart" />
+		</action>
+	</action_sequence>
+
+
+	</append>-->
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<append xpath="/gameevents">
+
+		<!--*** ACTION_GIVE_YELLOW_BAG-->
+		<action_sequence name="action_give_yellow_bag">
+			<action class="AddItems">
+				<property name="added_items" value="yellowBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<!--*** ACTION_GIVE_BLUE_BAG-->
+		<action_sequence name="action_give_blue_bag">
+			<action class="AddItems">
+				<property name="added_items" value="blueBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<!--*** ACTION_GIVE_RED_BAG-->
+		<action_sequence name="action_give_red_bag">
+			<action class="AddItems">
+				<property name="added_items" value="redBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+	</append>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+
+	
+</raiz>
