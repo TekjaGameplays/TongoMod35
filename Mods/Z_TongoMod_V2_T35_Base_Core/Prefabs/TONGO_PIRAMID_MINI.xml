@@ -20,21 +20,25 @@
       <property name="0" value="6, 2, 1" />
       <property name="1" value="6, 2, 2" />
     </property>
+    <property class="challenge_steel">
+      <property name="0" value="6, 8, 4" />
+    </property>
     <property class="challenge_sinks">
       <property name="0" value="9, 2, 6" />
       <property name="1" value="9, 2, 9" />
     </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="95023" />
-    <property name="TotalTriangles" value="39419" />
+    <property name="LightsVolume" value="4289.321" />
+    <property name="TotalVertices" value="112343" />
+    <property name="TotalTriangles" value="44706" />
     <property class="BlockEntities">
-      <property name="Vertices" value="89075" />
-      <property name="Triangles" value="35867" />
+      <property name="Vertices" value="105291" />
+      <property name="Triangles" value="40314" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="5342" />
-      <property name="Triangles" value="2596" />
+      <property name="Vertices" value="6446" />
+      <property name="Triangles" value="3436" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
