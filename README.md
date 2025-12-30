@@ -1,8 +1,12 @@
 Hello survivors
-We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.4
-New features, some fixes and little changes, all features for TongoMod 3.5.4
+We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.5
+New features, some fixes and little changes, all features for TongoMod 3.5.5
 
 *** News ***
+– New smell includes gather in backpack any food with meat (no cans)
+– New apiary machine and tools integrated in Tongo class and recipes
+– New vanilla honey food and drink unlocked with recipe
+– New special zombies in wasteland (be carefull)
 – New skins for weapons………..tools………..and workstations
 – New weapons
 – New zombies variants
@@ -14,11 +18,13 @@ New features, some fixes and little changes, all features for TongoMod 3.5.4
 – Vending machines from class
 
 *** Fixed ***
-– Checked the horde box (again)
+– Horde box come into your backpack, place and open to get reward
+– Classic spike trap is back
 
 *** Changed ***
-– Classic spike trap temporarily removed
 – Removed vanilla master perks temporaly
+– Adjust ammo in general loot to get only standar ammo
+– Shotgun Slugs block damage normalized
 
 *** Features Already Available ***
 – Crafting queue increases to 12 slots
