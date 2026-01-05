@@ -1,0 +1,352 @@
+<configs>
+
+	<!-- SCOUT HORDE -->
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHorde')]/text()" delim="\n" op="add">
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHorde') and contains(text(), 'zombieScreamer')]/text()" delim="\n" op="add">
+		zombieScreamerIrradiation
+		zombieScreamerElectric
+		zombieScreamerFire
+	</csv>
+	
+	<!-- FERAL -->
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStage')]/text()" delim="\n" op="add">
+		zombieMiniArleneIrradiationComand
+		zombieMiniArleneElectricComand
+		zombieMiniArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains(text(), 'zombieDemolition')]/text()" delim="\n" op="add">
+		zombieDemolitionIrradiationGeneral, .02
+		zombieDemolitionElectricGeneral, .02
+		zombieDemolitionFireGeneral, .02
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains(text(), 'zombieRancher')]/text()" delim="\n" op="add">
+		zombieRancherIrradiationO, .02
+		zombieRancherElectricO, .02
+		zombieRancherFireO, .02
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains(text(), 'zombieChuck')]/text()" delim="\n" op="add">
+		zombieChuckIrradiationO, .05
+		zombieChuckElectricO, .05
+		zombieChuckFireO, .05
+	</csv>
+	
+	<!-- WANDERIN -->
+	<!--
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'wanderingHordeStageGS')]/text()" delim="\n" op="add">
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'FwanderingHordeStageGS')]/text()" delim="\n" op="add">
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	-->
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieDemolitionIrradiationGeneral
+		zombieDemolitionElectricGeneral
+		zombieDemolitionFireGeneral
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+	</csv>
+	
+
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand, 80
+		zombieArleneElectricComand, 80
+		zombieArleneFireComand, 80
+		zombieMutatedIrradiationElite, 80
+		zombieMutatedElectricElite, 80
+		zombieMutatedFireElite, 80
+		zombieWightIrradiationElite, 80
+		zombieWightElectricElite, 80
+		zombieWightFireElite, 80
+		zombieDemolitionIrradiationGeneral, 20
+		zombieDemolitionElectricGeneral, 20
+		zombieDemolitionFireGeneral, 20
+		zombieSuperCopIrradiation, 20
+		zombieSuperCopElectric, 20
+		zombieSuperCopFire, 20
+		zombieSuperBikerIrradiation, 20
+		zombieSuperBikerElectric, 20
+		zombieSuperBikerFire, 20
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand, 80
+		zombieArleneElectricComand, 80
+		zombieArleneFireComand, 80
+		zombieMutatedIrradiationElite, 80
+		zombieMutatedElectricElite, 80
+		zombieMutatedFireElite, 80
+		zombieWightIrradiationElite, 80
+		zombieWightElectricElite, 80
+		zombieWightFireElite, 80
+		zombieDemolitionIrradiationGeneral, 20
+		zombieDemolitionElectricGeneral, 20
+		zombieDemolitionFireGeneral, 20
+		zombieSuperCopIrradiation, 20
+		zombieSuperCopElectric, 20
+		zombieSuperCopFire, 20
+		zombieSuperBikerIrradiation, 20
+		zombieSuperBikerElectric, 20
+		zombieSuperBikerFire, 20
+	</csv>
+	
+	<!-- REVISAR -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand, 80
+		zombieArleneElectricComand, 80
+		zombieArleneFireComand, 80
+		zombieMutatedIrradiationElite, 80
+		zombieMutatedElectricElite, 80
+		zombieMutatedFireElite, 80
+		zombieWightIrradiationElite, 80
+		zombieWightElectricElite, 80
+		zombieWightFireElite, 80
+		zombieDemolitionIrradiationGeneral, 20
+		zombieDemolitionElectricGeneral, 20
+		zombieSuperCopFire, 20
+		zombieSuperCopIrradiation, 20
+		zombieSuperCopElectric, 20
+		zombieSuperCopFire, 20
+		zombieSuperBikerIrradiation, 20
+		zombieSuperBikerElectric, 20
+		zombieSuperBikerFire, 20
+	</csv>
+	
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']/text()" delim="\n" op="add" >
+		zombieArleneIrradiationComand, 80
+		zombieArleneElectricComand, 80
+		zombieArleneFireComand, 80
+		zombieMutatedIrradiationElite, 80
+		zombieMutatedElectricElite, 80
+		zombieMutatedFireElite, 80
+		zombieWightIrradiationElite, 80
+		zombieWightElectricElite, 80
+		zombieWightFireElite, 80
+		zombieDemolitionIrradiationGeneral, 20
+		zombieDemolitionElectricGeneral, 20
+		zombieDemolitionFireGeneral, 20
+		zombieSuperCopIrradiation, 20
+		zombieSuperCopElectric, 20
+		zombieSuperCopFire, 20
+		zombieSuperBikerIrradiation, 20
+		zombieSuperBikerElectric, 20
+		zombieSuperBikerFire, 20
+	</csv>
+	<!-- FIN REVISAR -->
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnow']/text()" delim="\n" op="add" > 
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieLumberjackIrradiationElite
+		zombieLumberjackElectricElite
+		zombieLumberjackFireElite
+		zombieChuckIrradiation
+		zombieChuckElectric
+		zombieChuckFire
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']/text()" delim="\n" op="add" > 
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieLumberjackIrradiationElite
+		zombieLumberjackElectricElite
+		zombieLumberjackFireElite
+		zombieChuckIrradiation
+		zombieChuckElectric
+		zombieChuckFire
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']/text()" delim="\n" op="add" > 
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieBurntIrradiationElite
+		zombieBurntElectricElite
+		zombieBurntFireElite
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesBurntForestNight']/text()" delim="\n" op="add" > 
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieBurntIrradiationElite
+		zombieBurntElectricElite
+		zombieBurntFireElite
+		zombieSuperBikerIrradiation
+		zombieSuperBikerElectric
+		zombieSuperBikerFire
+	</csv>
+	
+	
+	<!-- MUTATED -->	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']/text()" delim="\n" op="add" > 
+		zombieMutatedIrradiationElite
+		zombieMutatedElectricElite
+		zombieMutatedFireElite
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/text()" delim="\n" op="add" > 
+		zombieMutatedIrradiationElite
+		zombieMutatedElectricElite
+		zombieMutatedFireElite
+	</csv>
+	
+	
+	<!-- WIGHT -->	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']/text()" delim="\n" op="add" > 
+		zombieWightIrradiationElite
+		zombieWightElectricElite
+		zombieWightFireElite
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/text()" delim="\n" op="add" > 
+		zombieWightIrradiationElite
+		zombieWightElectricElite
+		zombieWightFireElite
+	</csv>
+	
+	
+	<!-- LUMBERJACK -->	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']/text()" delim="\n" op="add" > 
+		zombieLumberjackIrradiationElite
+		zombieLumberjackElectricElite
+		zombieLumberjackFireElite
+	</csv>
+
+
+	<!-- VULTURE, DIRE & CHICKEN-->
+
+	
+	<!-- PLAGUE -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesert']/text()" delim="\n" op="add" > 
+		zombieRancherIrradiation
+		zombieRancherElectric
+		zombieRancherFire
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']/text()" delim="\n" op="add" > 
+		zombieRancherIrradiation
+		zombieRancherElectric
+		zombieRancherFire
+	</csv>
+	
+	
+	<!-- Police Car Hordes -->
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'policeCarHordeStageGS')]/text()" delim="\n" op="add">
+		zombieArleneIrradiationComand
+		zombieArleneElectricComand
+		zombieArleneFireComand
+		zombieDemolitionIrradiationGeneral
+		zombieDemolitionElectricGeneral
+		zombieDemolitionFireGeneral
+	</csv>
+	
+	<append xpath="/entitygroups">
+	
+		<entitygroup name="zombieArleneIrradiationComand">zombieArleneIrradiationComand</entitygroup>
+		<entitygroup name="zombieArleneElectricComand">zombieArleneElectricComand</entitygroup>
+		<entitygroup name="zombieArleneFireComand">zombieArleneFireComand</entitygroup>
+		
+		<entitygroup name="zombieMiniArleneIrradiationComand">zombieMiniArleneIrradiationComand</entitygroup>
+		<entitygroup name="zombieMiniArleneElectricComand">zombieMiniArleneElectricComand</entitygroup>
+		<entitygroup name="zombieMiniArleneFireComand">zombieMiniArleneFireComand</entitygroup>
+		
+		<entitygroup name="zombieBurntIrradiationElite">zombieBurntIrradiationElite</entitygroup>
+		<entitygroup name="zombieBurntElectricElite">zombieBurntElectricElite</entitygroup>
+		<entitygroup name="zombieBurntFireElite">zombieBurntFireElite</entitygroup>
+		
+		<entitygroup name="zombieMutatedIrradiationElite">zombieMutatedIrradiationElite</entitygroup>
+		<entitygroup name="zombieMutatedElectricElite">zombieMutatedElectricElite</entitygroup>
+		<entitygroup name="zombieMutatedFireElite">zombieMutatedFireElite</entitygroup>
+		
+		<entitygroup name="zombieWightIrradiationElite">zombieWightIrradiationElite</entitygroup>
+		<entitygroup name="zombieWightElectricElite">zombieWightElectricElite</entitygroup>
+		<entitygroup name="zombieWightFireElite">zombieWightFireElite</entitygroup>
+		
+		<entitygroup name="zombieLumberjackIrradiationElite">zombieLumberjackIrradiationElite</entitygroup>
+		<entitygroup name="zombieLumberjackElectricElite">zombieLumberjackElectricElite</entitygroup>
+		<entitygroup name="zombieLumberjackFireElite">zombieLumberjackFireElite</entitygroup>
+		
+		<entitygroup name="animalZombieVultureElite">animalZombieVultureElite</entitygroup>	
+		
+		<entitygroup name="animalDireWolfIrradiationElite">animalDireWolfIrradiationElite</entitygroup>
+		<entitygroup name="animalDireWolfElectricElite">animalDireWolfElectricElite</entitygroup>
+		<entitygroup name="animalDireWolfFireElite">animalDireWolfFireElite</entitygroup>
+		
+		<entitygroup name="zombieDemolitionIrradiationGeneral">zombieDemolitionIrradiationGeneral</entitygroup>
+		<entitygroup name="zombieDemolitionElectricGeneral">zombieDemolitionElectricGeneral</entitygroup>
+		<entitygroup name="zombieDemolitionFireGeneral">zombieDemolitionFireGeneral</entitygroup>
+		
+		<entitygroup name="zombieRancherIrradiation">zombieRancherIrradiation</entitygroup>
+		<entitygroup name="zombieRancherElectric">zombieRancherElectric</entitygroup>
+		<entitygroup name="zombieRancherFire">zombieRancherFire</entitygroup>
+		
+		<entitygroup name="zombieRancherIrradiationO">zombieRancherIrradiationO</entitygroup>
+		<entitygroup name="zombieRancherElectricO">zombieRancherElectricO</entitygroup>
+		<entitygroup name="zombieRancherFireO">zombieRancherFireO</entitygroup>
+		
+		<entitygroup name="zombieChuckIrradiation">zombieChuckIrradiation</entitygroup>
+		<entitygroup name="zombieChuckElectric">zombieChuckElectric</entitygroup>
+		<entitygroup name="zombieChuckFire">zombieChuckFire</entitygroup>
+		
+		<entitygroup name="zombieChuckIrradiationO">zombieChuckIrradiationO</entitygroup>
+		<entitygroup name="zombieChuckElectricO">zombieChuckElectricO</entitygroup>
+		<entitygroup name="zombieChuckFireO">zombieChuckFireO</entitygroup>
+		
+		<entitygroup name="zombieSuperCopIrradiation">zombieSuperCopIrradiation</entitygroup>
+		<entitygroup name="zombieSuperCopElectric">zombieSuperCopElectric</entitygroup>
+		<entitygroup name="zombieSuperCopFire">zombieSuperCopFire</entitygroup>
+		
+		<entitygroup name="zombieSuperBikerIrradiation">zombieSuperBikerIrradiation</entitygroup>
+		<entitygroup name="zombieSuperBikerElectric">zombieSuperBikerElectric</entitygroup>
+		<entitygroup name="zombieSuperBikerFire">zombieSuperBikerFire</entitygroup>
+		
+		<entitygroup name="zombieScreamerIrradiation">zombieScreamerIrradiation</entitygroup>
+		<entitygroup name="zombieScreamerElectric">zombieScreamerElectric</entitygroup>
+		<entitygroup name="zombieScreamerFire">zombieScreamerFire</entitygroup>
+	
+	</append>
+	
+</configs>

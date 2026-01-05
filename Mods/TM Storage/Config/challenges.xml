@@ -1,0 +1,9 @@
+<configs>
+	
+	<!--
+	<set xpath="/challenges/challenge[@name='desertSurvivalWearArmor']/@icon">ui_game_symbol_fire</set>
+	<set xpath="/challenges/challenge[@name='snowSurvivalWearArmor']/@icon">ui_game_symbol_sun</set>
+	<set xpath="/challenges/challenge[@name='wastelandSurvivalWearArmor']/@icon">ui_game_symbol_cold</set>
+	-->
+	
+</configs>
