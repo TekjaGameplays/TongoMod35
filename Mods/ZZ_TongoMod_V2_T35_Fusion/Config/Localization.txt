@@ -1,0 +1,18 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,spanish,Context
+zombieRancherIrradiation,,,,,"Rancher [8FCE00]Irradiation [000000]Elite","Rancher [8FCE00]Irradiado [000000]Elite",,
+zombieRancherElectric,,,,,"Rancher [16537E]Electric [000000]Elite","Rancher [16537E]Electrico [000000]Elite",,
+zombieRancherFire,,,,,"Rancher [FF0000]Fire [000000]Elite","Rancher [FF0000]Fuego [000000]Elite",,
+zombieChuckIrradiation,,,,,"Chuck [8FCE00]Irradiation [000000]Elite","Chuck [8FCE00]Irradiado [000000]Elite",,
+zombieChuckElectric,,,,,"Chuck [16537E]Electric [000000]Elite","Chuck [16537E]Electrico [000000]Elite",,
+zombieChuckFire,,,,,"Chuck [FF0000]Fire [000000]Elite","Chuck [FF0000]Fuego [000000]Elite",,
+
+
+
+
+
+
+
+
+
+
+
