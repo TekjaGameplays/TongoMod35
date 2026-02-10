@@ -51,8 +51,6 @@
 			<display_value name="dTargetPenetration" value="2"/>
 		</effect_group>
 	</append>
-
-
 	
 	
 	
@@ -4467,7 +4465,6 @@
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="EconomicValue" value="15000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
-			<!-- *** activar cuando este disponible la progresion -->
 			<property name="UnlockedBy" value="craftingHarvestingToolsTongoT1TM"/>
 			<property name="ShowQuality" value="true"/>
 
@@ -4554,7 +4551,6 @@
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="EconomicValue" value="15000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
-			<!-- *** activar cuando este disponible la progresion -->
 			<property name="UnlockedBy" value="craftingHarvestingToolsTongoT1TM"/>
 			<property name="ShowQuality" value="true"/>
 
@@ -4644,7 +4640,6 @@
 			<property name="Group" value="Tools/Traps,Herramientas"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="ShowQuality" value="true"/>
-			<!-- *** activar cuando este disponible la progresion -->
 			<property name="UnlockedBy" value="craftingHarvestingToolsTongoT1TM"/>
 			<property name="CrosshairUpAfterShot" value="true"/>
 			<property name="Stacknumber" value="1"/>
@@ -4724,8 +4719,6 @@
 			<property name="Weight" value="0"/>
 			<property name="TintColor" value="0,0,0"/>
 			<property name="UMA.Overlay0Tint" value="0,0,0"/>
-			<!-- *** activar cuando este disponible la progresion -->
-			<!-- *** !!! revisar estadisticas, parece que hace el daño normal de vanilla !!! -->
 			<property name="UnlockedBy" value="craftingHarvestingToolsTongoT1TM"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="Stacknumber" value="1"/>
@@ -5058,14 +5051,11 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInfectionMain"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInfectionCatch"/>
 
-				<!-- cantidad de salud para regeneracion -->
-				<!-- !!! revisar esto que no funciona !!! -->
-				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="200"/>-->
-				<!--<display_value name="foodHealthAmount" value="200"/>-->
-
+				<!-- cantidad de salud para cura instantanea -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="200">
 				</triggered_effect>
-
+				
+				<!-- cantidad de salud para regeneracion -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="200"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
 				<display_value name="foodHealthAmount" value="200"/>
@@ -5899,6 +5889,7 @@
 			<property name="HandMeshfile" value="#@modfolder:Resources/TestKnuckles01.unity3d?KnucklesKnifePrefab" />
 
 			<property name="HoldType" value="79"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="ScrapTimeOverride" value="10.0"/>
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -10858,6 +10849,19 @@
 			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modDefenseWastelandTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- * graphene extender magazine mod schematic -->
+		<item name="modGunGrapheneMagazineExtenderTMSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modGunGrapheneMagazineExtenderTM"/>
+			<property name="Unlocks" value="modGunGrapheneMagazineExtenderTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunGrapheneMagazineExtenderTM" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>

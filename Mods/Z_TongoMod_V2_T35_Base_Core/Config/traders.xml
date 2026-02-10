@@ -87,6 +87,7 @@
 		<item name="modPowerDesertTMSchematic" count="1"/>
 		<item name="modPowerSnowTMSchematic" count="1"/>
 		<item name="modPowerWastelandTMSchematic" count="1"/>
+		<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1"/>
 		
 		<item name="modDefenseBurnForestTMSchematic" count="1"/>
 		<item name="modDefenseDesertTMSchematic" count="1"/>
@@ -373,6 +374,7 @@
 			<item name="modMilitaryBackpackTM"/>
 			<item name="modSonicShoesTM"/>
 			<item name="modArmorPlatingGrapheneTM"/>
+			<item name="modGunGrapheneMagazineExtenderTM"/>
 		</trader_item_group>
 
 		<trader_item_group name="groupFarmerSeeds">
@@ -523,7 +525,19 @@
 			<item name="resourceAnimalFat"/>
 		</trader_item_group>
 
+		<trader_item_group name="groupFarmerTongo">
+			<item name="resourceTallowTM"/>
+			<item name="resourceAnimalFat"/>
+		</trader_item_group>
 
+		<!--<trader_item_group name="groupSeedTongo">
+			<item name="resourceTallowTM"/>
+			<item name="resourceAnimalFat"/>
+		</trader_item_group>-->
+
+
+
+		
 
 		
 
@@ -544,13 +558,45 @@
 		<!-- farmer -->
 		<trader_info id="31" reset_interval="1" override_buy_markup="3" allow_sell="false" >
 			<trader_items>
-				<item group="seeds" unique_only="true" count="4,8" />
+				<item group="seeds" unique_only="true" count="20,100" />
 				<item group="groupFarmerSeeds" unique_only="true" count="8,10" />
 				<item group="groupFarmerCrops" unique_only="true" count="8,10" />
-				<item group="foodSupplies" unique_only="true" count="8,10" />
+
+				<item name="plantedAloe1" count="30,90" />
+				<item name="plantedBlueberry1" count="30,90" />
+				<item name="plantedChrysanthemum1" count="30,90" />
+				<item name="plantedCoffee1" count="30,90" />
+				<item name="plantedCorn1" count="30,90" />
+				<item name="plantedCotton1" count="30,90" />
+				<item name="plantedGoldenrod1" count="30,90" />
+				<item name="plantedHop1" count="30,90" />
+				<item name="plantedMushroom1" count="30,90" />
+				<item name="plantedPotato1" count="30,90" />
+				<item name="plantedYucca1" count="30,90" />
+				<item name="plantedPumpkin1" count="30,90" />
+				<item name="plantedGraceCorn1" count="30,90" />
+				
+				<item name="foodCropMushrooms" count="10,50" />
+				<item name="foodCropYuccaFruit" count="10,50" />
+				<item name="resourceCropCottonPlant" count="10,50" />
+				<item name="resourceCropCoffeeBeans" count="10,50" />
+				<item name="resourceCropGoldenrodPlant" count="10,50" />
+				<item name="resourceCropAloeLeaf" count="10,50" />
+				<item name="foodCropBlueberries" count="10,50" />
+				<item name="foodCropPotato" count="10,50" />
+				<item name="resourceCropChrysanthemumPlant" count="10,50" />
+				<item name="foodCropCorn" count="10,50" />
+				<item name="foodCropGraceCorn" count="10,50" />
+				<item name="resourceCropHopsFlower" count="10,50" />
+				<item name="foodCropPumpkin" count="10,50" />
+
+				<item group="foodSupplies" count="8,10" />
 				<item name="resourceWood" count="500,2000"/>
 				<item name="resourceNail" count="100,300"/>
 				<item name="foodHoney" count="1,3"/>
+				<item name="resourceBluePaper" count="20,50"/>
+				<item group="groupFarmerTongo" unique_only="true" count="15,25" />
+				<item group="groupConsumTongo" count="2,4" />
 			</trader_items>
 		</trader_info>
 
@@ -566,6 +612,7 @@
 				<item group="groupFoodAll" unique_only="true" count="1,2" />
 				<item group="cannedfood" unique_only="true" count="1,2" />
 				<item group="groupConsumTongo" unique_only="true" count="1,2" />
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 
@@ -576,6 +623,7 @@
 				<item group="rareMedicine" count="8,10"/>
 				<item group="medicine" count="8,10"/>
 				<item group="groupMedicTongo" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 
@@ -588,6 +636,7 @@
 				<item group="groupHunterBooks" count="8,10"/>
 				<item group="schematicsModsCommon" count="8,10"/>
 				<item group="groupConsumTongo" count="2,4" />
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 
@@ -599,6 +648,7 @@
 				<item group="rareTools" count="8,10"/>
 				<item group="tools" count="8,10"/>
 				<item group="decorativeBlocks" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 
@@ -609,6 +659,7 @@
 				<item group="generalResources" count="8,10"/>
 				<item group="groupVehicles" count="8,10"/>
 				<item group="traderElectrical" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 
@@ -619,6 +670,7 @@
 				<item group="groupMeleeAll" count="8,10"/>
 				<item group="groupAllAmmo" count="8,10"/>
 				<item group="groupMeleeBattleMods" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
 			</trader_items>
 		</trader_info>
 

@@ -15,13 +15,15 @@
 	<!-- incluir en el uso de la comida para que genere olor -->
 	<property name="SmellUse" value="25"/>
 	
-	<!-- y esto al final del effectgropup para quie se visualice -->
+	<!-- y esto al final del effectgroup para que se visualice -->
 	<display_value name="dSmellUse" value="25"/>
 
 	drinkJarEmpty
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-		
+
 
 	
+
+
 </raiz>

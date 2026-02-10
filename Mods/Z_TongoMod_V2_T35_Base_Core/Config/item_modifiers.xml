@@ -92,7 +92,7 @@
 	<append xpath="/item_modifiers">
 
 	<!-- RAGNAR BRACELET (INCREASE STAMINA 20% AND UNLOCK 2 INVENTORY SLOTS) -->
-	<item_modifier name="modRagnarBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+	<item_modifier name="modRagnarBraceletTM" installable_tags="armorHands" modifier_tags="hand01" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modRagnarBraceletTMSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
@@ -111,7 +111,7 @@
 	</item_modifier>
 		
 	<!-- SNIPER WOLF BRACELET MOD (INCREASE WEAPON HANDLING BY 15%) -->
-	<item_modifier name="modSniperwolfBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+	<item_modifier name="modSniperwolfBraceletTM" installable_tags="armorHands" modifier_tags="hand02" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modSniperwolfBraceletTMSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
@@ -133,7 +133,7 @@
 	</item_modifier>
 		
 	<!-- UCHIHA BRACELET (REDUCE CRAFTING TIME 15%) -->
-	<item_modifier name="modUchihaBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+	<item_modifier name="modUchihaBraceletTM" installable_tags="armorHands" modifier_tags="hand03" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modUchihaBraceletTMSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
@@ -151,7 +151,7 @@
 	</item_modifier>
 	
 	<!-- CHOPPER BRACELET (INCREASE PHYSICAL DAMAGE AND MAX HEALTH BY 10) -->
-	<item_modifier name="modChopperBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+	<item_modifier name="modChopperBraceletTM" installable_tags="armorHands" modifier_tags="hand04" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modChopperBraceletTMSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
@@ -170,7 +170,7 @@
 	</item_modifier>
 	
 	<!-- JORDAN BRACELET (RECOVER STAMINA WITH RUNNING OR WALKING) -->
-	<item_modifier name="modJordanBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+	<item_modifier name="modJordanBraceletTM" installable_tags="armorHands" modifier_tags="hand05" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 		<property name="UnlockedBy" value="modJordanBraceletTMSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier1"/>
@@ -378,7 +378,7 @@
 		</item_modifier>
 
 		<!-- test new mod 1x1 -->
-		<item_modifier name="modGunTriggerGroupOneTM" installable_tags="gun" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modGunTriggerGroupOneTM" installable_tags="gun" modifier_tags="rangedOne" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modGunTriggerGroupOneTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -412,7 +412,7 @@
 		</item_modifier>
 
 		<!-- mod power general -->
-		<item_modifier name="modGunAttachmentRadTM" installable_tags="ranged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modGunAttachmentRadTM" installable_tags="ranged" modifier_tags="booster" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modGunAttachmentRadTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -439,7 +439,7 @@
 		</item_modifier>
 
 		<!-- mod power burn forest -->
-		<item_modifier name="modPowerBurnForestTM" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modPowerBurnForestTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modPowerBurnForestTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -460,7 +460,7 @@
 		</item_modifier>
 
 		<!-- mod power desert -->
-		<item_modifier name="modPowerDesertTM" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modPowerDesertTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modPowerDesertTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -481,7 +481,7 @@
 		</item_modifier>
 
 		<!-- mod power snow -->
-		<item_modifier name="modPowerSnowTM" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modPowerSnowTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modPowerSnowTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -502,7 +502,7 @@
 		</item_modifier>
 
 		<!-- mod power wasteland -->
-		<item_modifier name="modPowerWastelandTM" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modPowerWastelandTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="modGunTriggerGroupOneTMSchematic"/>
 			<property name="TraderStageTemplate" value="modsTier1"/>
@@ -523,7 +523,7 @@
 		</item_modifier>
 
 		<!-- mod defense burn forest (increase armor +3) -->
-		<item_modifier name="modDefenseBurnForestTM" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modDefenseBurnForestTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="CustomIcon" value="modDefenseBurnForestTM"/>
 			<property name="UnlockedBy" value="modDefenseBurnForestTMSchematic"/>
@@ -546,7 +546,7 @@
 		</item_modifier>
 		
 		<!-- mod defense desert (increase armor +3) -->
-		<item_modifier name="modDefenseDesertTM" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modDefenseDesertTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="CustomIcon" value="modDefenseDesertTM"/>
 			<property name="UnlockedBy" value="modDefenseDesertTMSchematic"/>
@@ -569,7 +569,7 @@
 		</item_modifier>
 
 		<!-- mod defense snow (increase armor +3) -->
-		<item_modifier name="modDefenseSnowTM" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modDefenseSnowTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="CustomIcon" value="modDefenseSnowTM"/>
 			<property name="UnlockedBy" value="modDefenseSnowTMSchematic"/>
@@ -592,7 +592,7 @@
 		</item_modifier>
 
 		<!-- mod defense wasteland (increase armor +3) -->
-		<item_modifier name="modDefenseWastelandTM" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modDefenseWastelandTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="CustomIcon" value="modDefenseWastelandTM"/>
 			<property name="UnlockedBy" value="modDefenseWastelandTMSchematic"/>
@@ -614,8 +614,31 @@
 			</effect_group>
 		</item_modifier>
 
-		
-		
+
+	
+
+
+
+		<!-- graphene magazine extended -->
+		<item_modifier name="modGunGrapheneMagazineExtenderTM" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunGrapheneMagazineExtenderTM"/>
+			<property name="UnlockedBy" value="modGunGrapheneMagazineExtenderTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modGunGrapheneMagazineExtenderTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- increase magazine extender -->
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="7"/>
+				<!--<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>-->
+			</effect_group>
+		</item_modifier>
 		
 
 		

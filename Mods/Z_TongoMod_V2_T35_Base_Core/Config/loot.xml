@@ -325,9 +325,9 @@
 	</append>
 
 	<!-- INCLUDE GRAPHITE AND GRAPHENE IN LOOT -->
-	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingCommon']"> <item name="resourceGraphite" count ="10,50"/> </append>
-	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingUncommon']"> <item name="resourceGraphite" count ="10,50"/> </append>
-	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingRare']"> <item name="resourceGrapheneTM" count ="1,5"/> </append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingCommon']"> <item name="resourceGraphite" count ="20,100"/> </append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingUncommon']"> <item name="resourceGraphite" count ="200,100"/> </append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingRare']"> <item name="resourceGrapheneTM" count ="5,20"/> </append>
 
 
 	<!-- INCLUDE RECIPE IN DESTROYED MACHINE (VANILLA MACHINES) -->
@@ -488,6 +488,7 @@
 		<item name="modPowerDesertTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerSnowTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerWastelandTMSchematic" count="1" loot_prob_template="med"/>
+		<!--<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1" loot_prob_template="med"/>-->
 		
 		<item name="modDefenseBurnForestTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modDefenseDesertTMSchematic" count="1" loot_prob_template="med"/>
@@ -537,6 +538,7 @@
 		<item name="modPowerDesertTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerSnowTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerWastelandTMSchematic" count="1" loot_prob_template="med"/>
+		<!--<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1" loot_prob_template="med"/>-->
 
 		<item name="modDefenseBurnForestTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modDefenseDesertTMSchematic" count="1" loot_prob_template="med"/>
@@ -593,6 +595,7 @@
 		<item name="modPowerDesertTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerSnowTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerWastelandTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1" loot_prob_template="med"/>
 
 		<item name="modDefenseBurnForestTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modDefenseDesertTMSchematic" count="1" loot_prob_template="med"/>
@@ -631,6 +634,7 @@
 		<item name="modPowerDesertTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerSnowTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modPowerWastelandTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1" loot_prob_template="med"/>
 
 		<item name="modDefenseBurnForestTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="modDefenseDesertTMSchematic" count="1" loot_prob_template="med"/>
