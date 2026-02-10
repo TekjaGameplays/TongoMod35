@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+
+
+	<!--animalInsectSwarmIrradiation
+	animalInsectSwarmElectric
+	animalInsectSwarmFire-->
+
+	<!--<passive_effect name="PhysicalDamageResist" operation="base_set" value="99" tags="ranged"/>-->
+
+	<!--<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmIrradiation']/property[@name='PhysicalDamageResist']/@value">25</set>
+	<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmElectric']/property[@name='PhysicalDamageResist']/@value">25</set>
+	<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmFire']/property[@name='PhysicalDamageResist']/@value">25</set>-->
+
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+</raiz>
