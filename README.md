@@ -1,8 +1,31 @@
 Hello survivors
-We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.5
-New features, some fixes and little changes, all features for TongoMod 3.5.5
+We’re excited to offer a new TongoMod version. This time compatible with 7 Days To Die 2.6
+New features, some fixes and little changes, all features for TongoMod 3.5.7
 
 *** News ***
+- New progression system for tools and weapons (they improve with use)
+- Skill points for tools and weapons are unlocked through progression
+- Consumables to temporarily accelerate progression
+- New ice coffee buff, drink a few to run like in the old days
+- New scratch buff, watch out for zombie attacks, they can leave you badly wounded and infected
+- Harvest beeswax directly from trees and bushes
+- Many items are now also lootable
+- New advanced quests to eliminate special zombies
+- New ticket to instantly gain 1 skill point, can be obtained from daily quests at trader
+- Ammo stacks at 5K
+- New extended magazine
+- TM hordes increase progressively
+
+*** Fixed ***
+- Tool, weapon, and armor slots have been adjusted.
+- Zombie loot has been adjusted.
+- Animal spawning in the forest has been adjusted.
+
+*** Changed ***
+- Beer also gives you some water.
+- More large stones have been added around the world.
+
+*** Features Already Available ***
 – New smell includes gather in backpack any food with meat (no cans)
 – New apiary machine and tools integrated in Tongo class and recipes
 – New vanilla honey food and drink unlocked with recipe
@@ -16,17 +39,10 @@ New features, some fixes and little changes, all features for TongoMod 3.5.5
 – Hud updated
 – Fuel stopped form workstations
 – Vending machines from class
-
-*** Fixed ***
 – Horde box come into your backpack, place and open to get reward
 – Classic spike trap is back
-
-*** Changed ***
-– Removed vanilla master perks temporaly
 – Adjust ammo in general loot to get only standar ammo
 – Shotgun Slugs block damage normalized
-
-*** Features Already Available ***
 – Crafting queue increases to 12 slots
 – Includes old clothes to scrap and get more cloth
 – Desert Vulture
@@ -39,7 +55,7 @@ New features, some fixes and little changes, all features for TongoMod 3.5.5
 – include quest documentation and basic manual in docs folder
 – Craft any book or schematic
 – Dismantle any ammo to get all components
-– Farm as alpha 19
+– Farm as alpha 19 (no need to replace seed)
 – Backpack with up to 84 slots
 – HUD changes
 – Modification in the biomes
