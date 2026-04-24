@@ -1,7 +1,12 @@
 <configs>
 
 	<insertAfter xpath="/traders/traderstage_templates/traderstage_template[@name='modsTier3']">
-		<traderstage_template name="modsTier4" min="200" max="999999" />
+		<traderstage_template name="modsTier4">
+			<entry min="200" max="999999" quality="0"/>
+		</traderstage_template>
+		<traderstage_template name="modsTier5">
+			<entry min="500" max="999999" quality="0"/>
+		</traderstage_template>
 	</insertAfter>
 	
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
@@ -10,10 +15,12 @@
 
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">		
 		<item name="modTMHelmetLightSchematic"/>
+		<!--
 		<item name="modTMGunMeleeNiCdBatterySchematic" loot_prob_template="veryLow"/>
 		<item name="modTMBulletFireSchematic" loot_prob_template="veryLow"/>
 		<item name="modTMArrowFireSchematic" loot_prob_template="veryLow"/>
 		<item name="modTMArrowShockSchematic" loot_prob_template="veryLow"/>
+		-->
 	</append>
 	
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">		
@@ -29,6 +36,7 @@
 		<item name="modTMBikeSpeedBoost" count="1"/>
 	</append>
 	
+	<!--
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeMods']">	
 		<item name="modTMGunMeleeNiCdBattery" loot_prob_template="veryLow"/>
 	</append>
@@ -38,5 +46,6 @@
 		<item name="modTMArrowFire" count="1" loot_prob_template="veryLow"/>
 		<item name="modTMArrowShock" count="1" loot_prob_template="veryLow"/>
 	</append>
+	-->
 
 </configs>

@@ -20,7 +20,7 @@
 		<item_modifier name="modTMVehicleOffRoadHeadlightsHD" installable_tags="vlight" modifier_tags="light" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="UnlockedBy" value="modTMVehicleOffRoadHeadlightsHDSchematic"/>
-			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
 			<property name="CustomIcon" value="modTMVehicleOffRoadHeadlightsHD"/>
 			<property name="DescriptionKey" value="modTMVehicleOffRoadHeadlightsHDDesc"/>
 			<property name="Stacknumber" value="1"/>
@@ -62,7 +62,7 @@
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="modTMGunMeleeNiCdBattery"/>
 			<property name="UnlockedBy" value="modTMGunMeleeNiCdBatterySchematic"/>
-			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
 			<property name="Group" value="Mods,Moddet"/>
 			<property name="DescriptionKey" value="modTMGunMeleeNiCdBatteryDesc"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -81,7 +81,7 @@
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="modTMBulletFire"/>
 			<property name="UnlockedBy" value="modTMBulletFireSchematic"/>
-			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
 			<property name="Group" value="Mods,Moddet"/>
 			<property name="DescriptionKey" value="modTMBulletFireDesc"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -100,7 +100,7 @@
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="modTMArrowFire"/>
 			<property name="UnlockedBy" value="modTMArrowFireSchematic"/>
-			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
 			<property name="Group" value="Mods,Moddet"/>
 			<property name="DescriptionKey" value="modTMArrowFireDesc"/>
 			<property name="DropMeshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_flamingPrefab.prefab"/>
@@ -119,7 +119,7 @@
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="modTMArrowShock"/>
 			<property name="UnlockedBy" value="modTMArrowShockSchematic"/>
-			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
 			<property name="Group" value="Mods,Moddet"/>
 			<property name="DescriptionKey" value="modTMArrowShockDesc"/>
 			<property name="DropMeshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_flamingPrefab.prefab"/>

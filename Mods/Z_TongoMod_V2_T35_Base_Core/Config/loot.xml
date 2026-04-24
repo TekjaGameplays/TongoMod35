@@ -203,6 +203,10 @@
 	
 	<!-- REMOVE CORN FROM TOILET -->
 	<remove xpath="/lootcontainers/lootgroup[@name='groupToilet02']/item[@name='plantedCorn1']"/>
+	
+	<!-- INCLUDE ICE COFFE IN LOOT -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']"> <item name="drinkJarIceCoffeTM"/> </append>
+	<append xpath="/lootcontainers/lootgroup[@name='airdropdrink']"> <item name="drinkJarIceCoffeTM"/> </append>
 
 	<!-- INCLUDE YUCCA JUICE CLASSIC IN LOOT -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']"> <item name="drinkJarYuccaClassicTM"/> </append>
@@ -425,9 +429,24 @@
 		<item name="foodPastaPumpkinTM" count="1" loot_prob_template="medLow"/>
 		<item name="foodSteakPotatoTM" count="1" loot_prob_template="medLow"/>
 		<item name="drinkJarYuccaClassicTM" count="1,2" loot_prob_template="med"/>
+		<item name="drinkJarIceCoffeTM" count="2,4" loot_prob_template="med"/>
 		<item name="foodCandy7DaysTM" count="1,3" loot_prob_template="med"/>
 		<item name="foodOmeletTM" count="1" loot_prob_template="medLow"/>
 		<item name="foodOmeletPotatoTM" count="1" loot_prob_template="medLow"/>
+		
+		<item name="foodCandyMinerBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyDisassembleBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyClubBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandySledgehammerBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyKnifeBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandySpearBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyPunchBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyStunBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyArcheryBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyPistolBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyShotgunBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyGatlingBoostTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodCandyRifleBoostTM" count="1" loot_prob_template="medLow"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsCommon']">
@@ -680,6 +699,20 @@
 		<item name="foodCandy7DaysTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="foodOmeletTMSchematic" count="1" loot_prob_template="med"/>
 		<item name="foodOmeletPotatoTMSchematic" count="1" loot_prob_template="low"/>
+
+		<item name="foodCandyMinerBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyDisassembleBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyClubBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandySledgehammerBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyKnifeBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandySpearBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyPunchBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyStunBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyArcheryBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyPistolBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyShotgunBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyGatlingBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyRifleBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
 		<!--<item name="questWaterBarrelTMBundleSchematic" count="1" loot_prob_template="veryLow"/>-->
 	</append>
 
@@ -1165,6 +1198,20 @@
 		<item name="foodOmeletTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
 		<item name="foodOmeletPotatoTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
 		<item name="foodSteakPotatoTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+
+		<item name="foodCandyMinerBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyDisassembleBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyClubBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandySledgehammerBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyKnifeBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandySpearBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyPunchBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyStunBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyArcheryBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyPistolBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyShotgunBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyGatlingBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
+		<item name="foodCandyRifleBoostTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
 		
 		<item name="drinkRomulanBeerTMSchematic" count="1" loot_prob_template="veryLowDelayed"/>
 		<item name="drinkCanMegaCrushSchematic" count="1" loot_prob_template="veryLowDelayed"/>
@@ -1229,7 +1276,7 @@
 
 	<append xpath="/lootcontainers">
 		<!-- STARTER PACK -->
-		<lootgroup name="groupQuestStarterPackTM01" count="18" >
+		<lootgroup name="groupQuestStarterPackTM01" count="19" >
 			<item name="resourceRockSmall" count="50"/>
 			<item name="resourceYuccaFibers" count="50"/>
 			<item name="resourceWood" count="50"/>
@@ -1249,6 +1296,7 @@
 			<item name="bookArmorClothScrapT1TM" count="1"/>
 			<!--<item name="workingLibrosSchematic" count="1"/>-->
 			<item name="workingLibros" count="1"/>
+			<item name="drinkJarIceCoffeTM" count="4"/>
 		</lootgroup>
 
 		<lootgroup name="groupQuestStarterPackTM" count="all">
@@ -1286,6 +1334,8 @@
 		</lootgroup>
 
 	</append>
+
+	
 	
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
@@ -1299,6 +1349,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY FARMER CLASS--> 
@@ -1339,6 +1390,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY CHEF CLASS--> 
@@ -1370,6 +1422,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY MEDIC & SCIENCE CLASS--> 
@@ -1402,6 +1455,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY HUNTER CLASS--> 
@@ -1435,6 +1489,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY BUILDER CLASS--> 
@@ -1470,6 +1525,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY MECHANIC CLASS--> 
@@ -1506,6 +1562,7 @@
 			<item name="drinkJarYuccaClassicTM" count="1,2"/>
 			<item name="resourceBluePaper" count="15,35"/>
 			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 			<item name="foodHoney" count="1"/>
 
 			 <!--ONLY SOLDIER CLASS--> 
@@ -1698,6 +1755,7 @@
 			<item name="foodCandy7DaysTM" count="2,5"/>
 			<item name="drinkJarYuccaClassicTM" count="2,5"/>
 			<item name="drinkRomulanBeerTM" count="1,2"/>
+			<item name="drinkJarIceCoffeTM" count="2,4"/>
 		</lootgroup>
 
 		<lootgroup name="groupResourceBoxWorldTM">
@@ -2239,6 +2297,266 @@
 
 		
 
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+		<!-- new looteable blocks -->
+		<lootgroup name="groupPalletTarpBaseWhite" count="3">
+			<item name="resourceWood" count="50,100"/>
+			<item name="resourceWood" count="50,100"/>
+			<item name="resourceRockSmall" count="50,100"/>
+			<item name="resourceRockSmall" count="50,100"/>
+			<item name="resourceCrushedSand" count="30,70"/>
+			<item name="resourceCrushedSand" count="30,70"/>
+			<item name="resourceClayLump" count="30,70"/>
+			<item name="resourceClayLump" count="30,70"/>
+			<item name="resourceCobblestones" count="20,60"/>
+			<item name="resourceCobblestones" count="20,60"/>
+			<item name="resourceCobblestones" count="20,60"/>
+			<item name="resourceCobblestones" count="20,60"/>
+			<item name="resourceConcreteMix" count="10,40"/>
+		</lootgroup>
+
+		<lootcontainer name="palletTarpBaseWhite" count="1" size="3,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletTarpBaseWhite"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBagCowFeedBaseFull" count="3">
+			<item name="plantedAloe1" count="2,5"/>
+			<item name="plantedAloe1" count="2,5"/>
+			<item name="plantedBlueberry1" count="2,5"/>
+			<item name="plantedBlueberry1" count="2,5"/>
+			<item name="plantedChrysanthemum1" count="2,5"/>
+			<item name="plantedChrysanthemum1" count="2,5"/>
+			<item name="plantedCoffee1" count="2,5"/>
+			<item name="plantedCoffee1" count="2,5"/>
+			<item name="plantedCorn1" count="2,5"/>
+			<item name="plantedCorn1" count="2,5"/>
+			<item name="plantedCotton1" count="2,5"/>
+			<item name="plantedCotton1" count="2,5"/>
+			<item name="plantedGoldenrod1" count="2,5"/>
+			<item name="plantedGoldenrod1" count="2,5"/>
+			<item name="plantedHop1" count="2,5"/>
+			<item name="plantedHop1" count="2,5"/>
+			<item name="plantedMushroom1" count="2,5"/>
+			<item name="plantedMushroom1" count="2,5"/>
+			<item name="plantedPotato1" count="2,5"/>
+			<item name="plantedPotato1" count="2,5"/>
+			<item name="plantedPumpkin1" count="2,5"/>
+			<item name="plantedPumpkin1" count="2,5"/>
+			<item name="plantedYucca1" count="2,5"/>
+			<item name="plantedYucca1" count="2,5"/>
+			<item name="treePlantedMountainPine1m" count="2,5"/>
+			<item name="treePlantedOak1m" count="2,5"/>
+			<item name="plantedGraceCorn1" count="1,2"/>
+			<item name="resourceCompost" count="1,5"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBagCowFeedBaseFull" count="1" size="3,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBagCowFeedBaseFull"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBricksBase" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBricksBase" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBricksBase"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletCans" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceScrapIron" count="50,150"/>
+			<item name="resourceForgedIron" count="2,8"/>
+			<item name="resourceScrapBrass" count="20,100"/>
+		</lootgroup>
+
+		<lootcontainer name="palletCans" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletCans"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletEmpty" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceNail" count="5,15"/>
+			<item name="resourceNail" count="5,15"/>
+		</lootgroup>
+
+		<lootcontainer name="palletEmpty" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletEmpty"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletEmptyStack" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceNail" count="5,15"/>
+			<item name="resourceNail" count="5,15"/>
+		</lootgroup>
+
+		<lootcontainer name="palletEmptyStack" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletEmptyStack"/>
+		</lootcontainer>
+
+		<lootgroup name="groupOSBWoodStack" count="2">
+			<item name="resourceWood" count="10,40"/>
+			<item name="resourceWood" count="10,40"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="50,200"/>
+			<item name="resourceWood" count="50,300"/>
+		</lootgroup>
+
+		<lootcontainer name="OSBWoodStack" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupOSBWoodStack"/>
+		</lootcontainer>
+
+		<lootgroup name="groupMetalPipeStack" count="2">
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="1,5"/>
+			<item name="resourceMetalPipe" count="5,10"/>
+			<item name="resourceMetalPipe" count="5,10"/>
+			<item name="resourceMetalPipe" count="10,30"/>
+		</lootgroup>
+
+		<lootcontainer name="metalPipeStack" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupMetalPipeStack"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBagFlourBaseFull" count="1">
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornMeal" count="1,10"/>
+			<item name="foodCornOnTheCob" count="1,2"/>
+			<item name="foodCropCorn" count="1,5"/>
+			<item name="foodCropGraceCorn" count="1,2"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBagFlourBaseFull" count="1" size="1,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBagFlourBaseFull"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBagSandBaseFull" count="1">
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceCrushedSand" count="20,150"/>
+			<item name="resourceBrokenGlass" count="1,15"/>
+			<item name="resourceBrokenGlass" count="1,15"/>
+			<item name="resourceBrokenGlass" count="1,15"/>
+			<item name="resourceRawDiamond" count="1,2"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBagSandBaseFull" count="1" size="1,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBagSandBaseFull"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBagConcreteBaseFull" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="50,150"/>
+			<item name="resourceRockSmall" count="100,200"/>
+			<item name="resourceRockSmall" count="100,200"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="10,30"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="20,80"/>
+			<item name="resourceCement" count="50,150"/>
+			<item name="resourceCement" count="50,150"/>
+			<item name="resourceCement" count="100,200"/>
+			<item name="resourceConcreteMix" count="30,100"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBagConcreteBaseFull" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBagConcreteBaseFull"/>
+		</lootcontainer>
+
+		<lootgroup name="groupPalletBagFertilizerBaseFull" count="2">
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourceWood" count="20,50"/>
+			<item name="resourcePotassiumNitratePowder" count="50,100"/>
+			<item name="resourcePotassiumNitratePowder" count="100,200"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="5,10"/>
+			<item name="foodRottingFlesh" count="10,20"/>
+			<item name="foodRottingFlesh" count="20,30"/>
+			<item name="foodRottingFlesh" count="30,50"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="1,4"/>
+			<item name="resourceTurd" count="5,10"/>
+			<item name="resourceCompost" count="1,5"/>
+		</lootgroup>
+
+		<lootcontainer name="palletBagFertilizerBaseFull" count="1" size="2,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualPlus1Template" destroy_on_close="false">
+			<item group="groupPalletBagFertilizerBaseFull"/>
+		</lootcontainer>
+
+			
+		
 		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		
 		

@@ -126,6 +126,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="modTMGunMeleeNiCdBattery"/>
 			<property name="Unlocks" value="modTMGunMeleeNiCdBattery"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMGunMeleeNiCdBattery" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -137,6 +138,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="modTMBulletFire"/>
 			<property name="Unlocks" value="modTMBulletFire"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMBulletFire" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -148,6 +150,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="ammoArrowFlaming"/>
 			<property name="Unlocks" value="modTMArrowFire"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMArrowFire" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -159,6 +162,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="modTMArrowShock"/>
 			<property name="Unlocks" value="modTMArrowShock"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMArrowShock" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -579,6 +583,14 @@
 				<property name="QuestGiven" value="quest_suicide_tom_6k"/>
 			</property>
 		</item>
+		
+		<item name="questsuicidegeneral">
+			<property name="Extends" value="questSuicide"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_suicide_general"/>
+				<property name="DescriptionKey" value="quest_radial1Desc" />
+			</property>
+		</item>	
 		
 	</append>
 	

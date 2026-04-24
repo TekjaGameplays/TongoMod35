@@ -20,10 +20,273 @@
 
 	drinkJarEmpty
 
+
+
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+
+	<requirement name="ProgressionLevel" progression_name="perkStrengthMastery" operation="GTE" value="1"/>
 	
+	<requirement name="CVarCompare" cvar="$minerCheck" operation="LTE" value="0"/>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	set = fijar valor
+	LTE = menor o igual (Lower That Equal)
+	GTE = mayor o igual (Great That Equal)
+	GT  = mayor que (Great That)
+	LT  = menor que (Lower That)
+	Equals = igual
+	NotEquals = diferente
+	Add = sumar
+	subtract = restar
+	multiply = multiplicar
+	divide = dividir
+	perc_add = añadir por cada nivel de perk (precisa un requisito "ejemplo progresions miner tools")
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Axes_XP" operation="add" value="10"/>
+	</effect_group>
+
+
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="PR_Stone_XP" operation="add" value="10"/>
+	</effect_group>
+
+
+	<effect_group name="Action Skills">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_Stone_XP" operation="add" value="1"/>
+	</effect_group>
+
+	<passive_effect name="BlockDamage" operation="perc_add" value="0.01" cvar="PR_Stone_XP"/>
+
+	<requirement name="CVarCompare" cvar="PR_Stone_XP" operation="GTE" value="10"/>
+	
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<configs>
+		<append xpath="/windows/window[@name='windowSkillCraftingInfo']">
+			<rect name="MasteryProgressContainer" pos="10, -320" width="626" height="42" depth="100" controller="CharacterStatsWindow">
+
+				<sprite depth="101" name="bg" color="0,0,0,255" type="sliced" />
+
+				<sprite depth="105" name="barFill" color="0,128,255,255" type="sliced"
+						width="{cvar(PR_StoneTools_UI_Fill)}"
+						height="38" pos="2,-2" pivot="left" />
+
+				<label depth="110" name="levelText" pos="313,-21"
+					   text="PROGRESO: {cvar(PR_MinerTools_XP):0} / {cvar(PR_MinerTools_LvlNextTotal):0}"
+					   font_size="22" color="[white]" pivot="center" justify="center" shadow="true" />
+			</rect>
+		</append>
+	</configs>
+	
+	
+	    <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="1" desc_key="reqTongoLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="3" desc_key="reqTongoLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="5" desc_key="reqTongoLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="7" desc_key="reqTongoLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="9" desc_key="reqTongoLevel09"/></level_requirements>
+
+
+	<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_XP_Mult" operation="set" value="1.015"/>
+
+	<effect_group name="PR Initialization">
+		<requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="Equals" value="0"/>
+
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_XP_Mult" operation="set" value="1.02"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_Lvl" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextAdd" operation="set" value="100"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="set" value="100"/>
+	</effect_group>
+
+	<!-- que no explote !!! -->
+	<attribute name="attActionSkills" name_key="attActionSkillsName" desc_key="attActionSkillsDesc" min_level="0" max_level="0" base_skill_point_cost="0" icon="ui_game_symbol_actionSkills">
+		<effect_group name="PR Initialization">
+			<requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="Equals" value="0"/>
+
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_XP_Mult" operation="set" value="1.02"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_Lvl" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextAdd" operation="set" value="100"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="set" value="100"/>
+		</effect_group>
+	</attribute>
+
+
+	Estoy pensando en añadir alguno valores extra para controlar el progreso como :
+
+	- PR_XP_Mult (para definir un multiplicador base al cambiar de nivel)
+	- PR_StoneTools_Lvl (nivel actual de la perk)
+	- PR_StoneTools_LvlNextTotal (limite para subir el nivel de la perk)
+	- PR_StoneTools_LvlNextAdd (para calcular el numero del siguiente nivel)
+	
+	Y en PROGRESSION dentro de la perk quedaria mas o menos asi:
+	
+	<effect_group name="PR StoneTools Lvl Increase">
+		<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="PR_StoneTools_XP" operation="GTE" value="@PR_StoneTools_LvlNextTotal"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_LvlNextTotal" operation="add" value="@PR_StoneTools_LvlNextAdd"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_Lvl" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Stone Tools level increased"/>
+	</effect_group>
+
+	¿que te parece?
+
+	<effect_group name="PR StoneTools Lvl Increase">
+		<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="PR_StoneTools_XP" operation="GTE" value="@PR_StoneTools_LvlNextTotal"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_Lvl" operation="add" value="1"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_XP" operation="set" value="0"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_LvlNextTotal" operation="set" value="@PR_StoneTools_LvlNextAdd"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Stone Tools level increased!"/>
+	</effect_group>
+	
+	
+	<requirement name="CVarCompare" cvar="PR_StoneTools_XP" operation="LT" value="@PR_StoneTools_LvlNextTotal + 1"/>
+
+	<effect_group name="PR StoneTools Lvl Increase">
+
+		<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="PR_StoneTools_XP" operation="GTE" value="@PR_StoneTools_LvlNextTotal"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_XP" operation="subtract" value="@PR_StoneTools_LvlNextTotal"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_LvlNextTotal" operation="multiply" value="@PR_XP_Mult"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StoneTools_Lvl" operation="add" value="1"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="Stone Tools level increased"/>
+
+	</effect_group>
+	
+	
+
+	cvar="PR_StoneTool_LvlNextAdd"
+
+	<effect_group name="PR StoneTools Lvl Increase">
+		<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="PR_StoneTools_XP" operation="GTE" value="@PR_StoneTools_LvlNextTotal"/>
+		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="PR_StoneTools_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="PR_StoneTools_LvlNextTotal" operation="add" value="@PR_StoneTools_LvlNextAdd"/>
+		<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="PR_StoneTools_Lvl" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfHarvestBlock" action="AddProgressionLevel" progression_name="perkStoneTools" level="1"/>
+		<triggered_effect trigger="onSelfHarvestBlock" action="ShowToolbeltMessage" message="Stone Tools level increased"/>
+	</effect_group>
+
+	<!-- PROGRESSION -->
+
+	<!-- Progression Start -->
+	<insertBefore xpath="/progression/attributes/attribute[@name='attBooks']">
+
+		<!-- Tab #7 Action Skills -->
+		<attribute name="attActionSkills" name_key="attActionSkillsName" desc_key="attActionSkillsDesc" min_level="0" max_level="0" base_skill_point_cost="0" icon="ui_game_symbol_actionSkills">
+			<effect_group name="Action Skills Lvl 0 Set">
+				<requirement name="CVarCompare" cvar="AS_Axes_XP" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_XP_Mult" operation="set" value="1.015"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Axes_LvlNextAdd" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="AS_Axes_LvlNextTotal" operation="set" value="50"/>
+			</effect_group>
+		</attribute>
+	</insertBefore>
+	
+
+	<perk name="perkASAxes" parent="attActionSkills" max_level="100" base_skill_point_cost="0" name_key="perkASAxesName" desc_key="perkASAxesDesc" icon="ui_game_symbol_actionAxes">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="asAxe"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".01,.5" level="1,100"/>
+			<passive_effect name="HarvestCount" operation="perc_add" value=".01,.5" level="1,100" tags="oreWoodHarvest"/>
+			<passive_effect name="StaminaLoss" operation="perc_subtract" value=".01,.25" level="1,100"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".01,.15" level="1,100"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".01,.1" level="1,100"/>
+		</effect_group>
+		<effect_group name="AS Axes Lvl Increase">
+			<requirement name="CVarCompare" cvar="AS_Axes_Lvl" operation="LT" value="100"/>
+			<requirement name="CVarCompare" cvar="AS_Axes_XP" operation="GTE" value="@AS_Axes_LvlNextTotal"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Axes_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Axes_LvlNextTotal" operation="add" value="@AS_Axes_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar="AS_Axes_Lvl" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="AddProgressionLevel" progression_name="perkASAxes" level="1"/>
+			<triggered_effect trigger="onSelfHarvestBlock" action="ShowToolbeltMessage" message="Axes level increased"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Axes_XP" operation="add" value="@AS_Axes_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Axes_LvlNextAdd" operation="multiply" value="@AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Axes_LvlNextTotal" operation="add" value="@AS_Axes_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="AS_Axes_Lvl_Perm" operation="add" value="1"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ShowToolbeltMessage" message="Axes level increased"/>
+		</effect_group>
+		<!--<effect_group>
+			<effect_description level="1" desc_key="perkASAxesRank1Desc"/>
+			<effect_description level="5" desc_key="perkASAxesRank5Desc"/>
+			<effect_description level="10" desc_key="perkASAxesRank10Desc"/>
+			<effect_description level="15" desc_key="perkASAxesRank15Desc"/>
+			<effect_description level="20" desc_key="perkASAxesRank20Desc"/>
+			<effect_description level="25" desc_key="perkASAxesRank25Desc"/>
+			<effect_description level="30" desc_key="perkASAxesRank30Desc"/>
+			<effect_description level="35" desc_key="perkASAxesRank35Desc"/>
+			<effect_description level="40" desc_key="perkASAxesRank40Desc"/>
+			<effect_description level="45" desc_key="perkASAxesRank45Desc"/>
+			<effect_description level="50" desc_key="perkASAxesRank50Desc"/>
+			<effect_description level="55" desc_key="perkASAxesRank55Desc"/>
+			<effect_description level="60" desc_key="perkASAxesRank60Desc"/>
+			<effect_description level="65" desc_key="perkASAxesRank65Desc"/>
+			<effect_description level="70" desc_key="perkASAxesRank70Desc"/>
+			<effect_description level="75" desc_key="perkASAxesRank75Desc"/>
+			<effect_description level="80" desc_key="perkASAxesRank80Desc"/>
+			<effect_description level="85" desc_key="perkASAxesRank85Desc"/>
+			<effect_description level="90" desc_key="perkASAxesRank90Desc"/>
+			<effect_description level="95" desc_key="perkASAxesRank95Desc"/>
+			<effect_description level="100" desc_key="perkASAxesRank100Desc"/>
+		</effect_group>-->
+	</perk>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<effect_group>
+
+		<!-- Aplica/refresca buff base -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrinkBase"/>
+
+		<!-- Suma contador -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrinkCounter"/>
+
+		<!-- Si llega a 3 -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrinkBase">
+			<requirement name="HasBuff" buff="buffDrinkCounter,3"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrinkCounter">
+			<requirement name="HasBuff" buff="buffDrinkCounter,3"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDrinkReward">
+			<requirement name="HasBuff" buff="buffDrinkCounter,3"/>
+		</triggered_effect>
+
+	</effect_group>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<recipe name="drinkCanMegaCrush" craft_time="120" craft_area="MKOven" tags="learnable,oven" craft_tool="toolBeaker">
+		<ingredient name="drinkJarPureMineralWater" count="1"/>
+		<ingredient name="drinkJarCoffee" count="3"/>
+		<ingredient name="ammoGasCan" count="10"/>
+		<ingredient name="resourceGunPowder" count="15"/>
+		<ingredient name="foodCropMushrooms" count="1"/>
+	</recipe>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
 
 
 </raiz>

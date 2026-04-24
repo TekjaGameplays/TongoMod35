@@ -32,6 +32,11 @@
 	<!-- REMOVE VANILLA YUCCA JUICE FROM TRADERS -->
 	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']/item[@name='drinkJarYuccaJuice']"/>
 
+	<!-- INCLUDE ICE COFFEE IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
+		<item name="drinkJarIceCoffeTM"/>
+	</append>
+
 	<!-- INCLUDE YUCCA JUICE CLASSIC IN TRADERS -->
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
 		<item name="drinkJarYuccaClassicTM"/>
@@ -50,13 +55,41 @@
 		<item name="drinkRomulanBeerTMSchematic"/>
 	</append>
 
-	<!-- INCLUDE 7 DAYS CANDY IN TRADERS -->
+	<!-- INCLUDE 7 DAYS CANDY IN TRADERS (and new candy) -->
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodCandy']">
 		<item name="foodCandy7DaysTM"/>
+		
+		<item name="foodCandyMinerBoostTM"/>
+		<item name="foodCandyDisassembleBoostTM"/>
+		<item name="foodCandyClubBoostTM"/>
+		<item name="foodCandySledgehammerBoostTM"/>
+		<item name="foodCandyKnifeBoostTM"/>
+		<item name="foodCandySpearBoostTM"/>
+		<item name="foodCandyPunchBoostTM"/>
+		<item name="foodCandyStunBoostTM"/>
+		<item name="foodCandyArcheryBoostTM"/>
+		<item name="foodCandyPistolBoostTM"/>
+		<item name="foodCandyShotgunBoostTM"/>
+		<item name="foodCandyGatlingBoostTM"/>
+		<item name="foodCandyRifleBoostTM"/>
 	</append>
 
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
 		<item name="foodCandy7DaysTMSchematic"/>
+
+		<item name="foodCandyMinerBoostTMSchematic"/>
+		<item name="foodCandyDisassembleBoostTMSchematic"/>
+		<item name="foodCandyClubBoostTMSchematic"/>
+		<item name="foodCandySledgehammerBoostTMSchematic"/>
+		<item name="foodCandyKnifeBoostTMSchematic"/>
+		<item name="foodCandySpearBoostTMSchematic"/>
+		<item name="foodCandyPunchBoostTMSchematic"/>
+		<item name="foodCandyStunBoostTMSchematic"/>
+		<item name="foodCandyArcheryBoostTMSchematic"/>
+		<item name="foodCandyPistolBoostTMSchematic"/>
+		<item name="foodCandyShotgunBoostTMSchematic"/>
+		<item name="foodCandyGatlingBoostTMSchematic"/>
+		<item name="foodCandyRifleBoostTMSchematic"/>
 	</append>
 
 	<!-- INCLUDE OMELET IN TRADERS -->
@@ -168,11 +201,7 @@
 		<item name="foodCookingOilTM" count="1,4"/>
 		<item name="foodPastaBaseTM" count="1,4"/>
 		<item name="drinkJarYuccaClassicTM" count="1,2"/>
-	</append>
-
-	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareMedicine']">
-		<item name="medicalFirstAidBandageTM" count="1,4" prob="0.75"/>
-		<item name="medicalFirstAidKitTM" count="1,2" prob="0.25"/>
+		<item name="drinkJarIceCoffeTM" count="2,4"/>
 	</append>
 
 	<!-- WEAPONS T2 -->
@@ -195,12 +224,12 @@
 
 
 	<!-- FOOD SUPLIES -->
-	<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+	<!--<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
 		<item name="foodSugarTM" count="1,4"/>
 		<item name="foodCookingOilTM" count="1,4"/>
 		<item name="foodPastaBaseTM" count="1,4"/>
 		<item name="drinkJarYuccaClassicTM" count="1,2"/>
-	</append>
+	</append>-->
 
 	<!-- PREPARED FOOD -->
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
@@ -221,6 +250,21 @@
 		<item name="foodPastaPumpkinTM" count="1,2"/>
 		<item name="foodSteakPotatoTM" count="1,2"/>
 		<item name="drinkJarYuccaClassicTM" count="1,2"/>
+		<item name="drinkJarIceCoffeTM" count="2,4"/>
+
+		<item name="foodCandyMinerBoostTM" count="1"/>
+		<item name="foodCandyDisassembleBoostTM" count="1"/>
+		<item name="foodCandyClubBoostTM" count="1"/>
+		<item name="foodCandySledgehammerBoostTM" count="1"/>
+		<item name="foodCandyKnifeBoostTM" count="1"/>
+		<item name="foodCandySpearBoostTM" count="1"/>
+		<item name="foodCandyPunchBoostTM" count="1"/>
+		<item name="foodCandyStunBoostTM" count="1"/>
+		<item name="foodCandyArcheryBoostTM" count="1"/>
+		<item name="foodCandyPistolBoostTM" count="1"/>
+		<item name="foodCandyShotgunBoostTM" count="1"/>
+		<item name="foodCandyGatlingBoostTM" count="1"/>
+		<item name="foodCandyRifleBoostTM" count="1"/>
 	</append>
 
 
@@ -467,6 +511,7 @@
 			<item name="foodHoneyGlazedSham"/>
 			<item name="foodHoneyBrisket"/>
 			<item name="drinkJarHoneyTea"/>
+			
 		</trader_item_group>
 
 		<trader_item_group name="groupChefTongoFoods">
@@ -497,6 +542,21 @@
 			<item name="foodCandy7DaysTM"/>
 			<item name="drinkJarYuccaClassicTM"/>
 			<item name="drinkRomulanBeerTM"/>
+			<item name="drinkJarIceCoffeTM"/>
+
+			<item name="foodCandyMinerBoostTM"/>
+			<item name="foodCandyDisassembleBoostTM"/>
+			<item name="foodCandyClubBoostTM"/>
+			<item name="foodCandySledgehammerBoostTM"/>
+			<item name="foodCandyKnifeBoostTM"/>
+			<item name="foodCandySpearBoostTM"/>
+			<item name="foodCandyPunchBoostTM"/>
+			<item name="foodCandyStunBoostTM"/>
+			<item name="foodCandyArcheryBoostTM"/>
+			<item name="foodCandyPistolBoostTM"/>
+			<item name="foodCandyShotgunBoostTM"/>
+			<item name="foodCandyGatlingBoostTM"/>
+			<item name="foodCandyRifleBoostTM"/>
 		</trader_item_group>
 
 		<trader_item_group name="groupMedicTongo">
@@ -506,6 +566,20 @@
 			<item name="resourceBioFuelTM"/>
 			<item name="medicalFirstAidBandageTM"/>
 			<item name="medicalFirstAidKitTM"/>
+
+			<item name="foodCandyMinerBoostTM"/>
+			<item name="foodCandyDisassembleBoostTM"/>
+			<item name="foodCandyClubBoostTM"/>
+			<item name="foodCandySledgehammerBoostTM"/>
+			<item name="foodCandyKnifeBoostTM"/>
+			<item name="foodCandySpearBoostTM"/>
+			<item name="foodCandyPunchBoostTM"/>
+			<item name="foodCandyStunBoostTM"/>
+			<item name="foodCandyArcheryBoostTM"/>
+			<item name="foodCandyPistolBoostTM"/>
+			<item name="foodCandyShotgunBoostTM"/>
+			<item name="foodCandyGatlingBoostTM"/>
+			<item name="foodCandyRifleBoostTM"/>
 		</trader_item_group>
 
 		<trader_item_group name="groupHunterBooks">

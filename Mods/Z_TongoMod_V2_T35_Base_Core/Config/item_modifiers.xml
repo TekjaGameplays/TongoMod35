@@ -639,6 +639,30 @@
 				<!--<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>-->
 			</effect_group>
 		</item_modifier>
+
+
+
+
+
+
+		<!-- test -->
+		<!--<item_modifier name="modMinerTrainingGlovesTM" installable_tags="armorHands" modifier_tags="hand05" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modMinerTrainingGlovesTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+
+			<property name="DescriptionKey" value="modMinerTrainingGlovesTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CVarLogValue" operation="base_set" value="4" cvar="PR_MinerXP_Bonus"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".25"/>
+			</effect_group>
+		</item_modifier>-->
 		
 
 		

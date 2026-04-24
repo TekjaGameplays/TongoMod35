@@ -80,7 +80,7 @@
 			
 			<action class="SpawnEntity">
 				<property name="entity_group" value="TMHorde" param1="group"/>
-				<property name="spawn_count" value="3" param1="count"/>
+				<property name="spawn_count" value="4" param1="count"/>
 				<property name="air_spawn" value="false"/>
 				<property name="add_to_group" value="zombies"/>
 				<property name="safe_spawn" value="true"/>

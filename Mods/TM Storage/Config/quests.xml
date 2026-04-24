@@ -23,7 +23,6 @@
 			<reward type="Item" id="casinoCoin" value="1600"/>
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT2BookBundle" value="1"/>
-			<reward type="Item" id="resourceBluePaper" value="50"/>
 			<reward type="SkillPoints" value="1"/>
 		</quest>
 		
@@ -50,7 +49,6 @@
 			<reward type="Item" id="casinoCoin" value="3200"/>
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
-			<reward type="Item" id="resourceBluePaper" value="100"/>
 			<reward type="SkillPoints" value="3"/>
 		</quest>
 		
@@ -71,13 +69,12 @@
 				<property name="biome_filter" value="desert"/>
 			</objective>
 			
-			<requirement type="Quests.Requirements.Holding" id="meleeWpnBladeT3Machete" phase="1"/>
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
 			
 			<reward type="Exp" value="1600"/>
 			<reward type="Item" id="casinoCoin" value="3200"/>
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
-			<reward type="Item" id="resourceBluePaper" value="100"/>
 			<reward type="SkillPoints" value="3"/>
 		</quest>
 		
@@ -98,13 +95,12 @@
 				<property name="biome_filter" value="snow"/>
 			</objective>
 			
-			<requirement type="Quests.Requirements.Holding" id="meleeWpnBatonT2StunBaton" phase="1"/>
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
 			
 			<reward type="Exp" value="1600"/>
 			<reward type="Item" id="casinoCoin" value="3200"/>
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
-			<reward type="Item" id="resourceBluePaper" value="100"/>
 			<reward type="SkillPoints" value="3"/>
 		</quest>
 		
@@ -125,13 +121,12 @@
 				<property name="biome_filter" value="wasteland"/>
 			</objective>
 			
-			<requirement type="Quests.Requirements.Holding" id="meleeWpnSledgeT3SteelSledgehammer" phase="1"/>
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
 			
 			<reward type="Exp" value="1600"/>
 			<reward type="Item" id="casinoCoin" value="3200"/>
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
-			<reward type="Item" id="resourceBluePaper" value="100"/>
 			<reward type="SkillPoints" value="3"/>
 		</quest>
 		
@@ -186,6 +181,32 @@
 			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
 			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
 			<reward type="Item" id="resourceBluePaper" value="100"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_general">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_general_elite"/>
+			<property name="description_key" value="quest_suicide_general_desc"/>
+			<property name="offer_key" value="quest_suicide_general_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieDemolitionIrradiationGeneral,zombieDemolitionElectricGeneral,zombieDemolitionFireGeneral" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="wasteland"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="gunExplosivesT3RocketLauncher" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
 			<reward type="SkillPoints" value="3"/>
 		</quest>
 	

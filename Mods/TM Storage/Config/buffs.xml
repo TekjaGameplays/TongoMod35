@@ -36,7 +36,7 @@
 		<buff name="buffTwitchRadiationTM" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
 			<damage_type value="radiation"/>
 			<stack_type value="replace"/>
-			<duration value="15"/>
+			<duration value="10"/>
 			<update_rate value="1"/>
 
 			<effect_group>
@@ -262,7 +262,7 @@
 		<buff name="buffTwitchRadiationTM6k" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
 			<damage_type value="radiation"/>
 			<stack_type value="replace"/>
-			<duration value="15"/>
+			<duration value="10"/>
 			<update_rate value="1"/>
 
 			<effect_group>

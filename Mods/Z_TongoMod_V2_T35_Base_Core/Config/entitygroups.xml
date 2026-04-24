@@ -7,12 +7,26 @@
 
 		<!-- *** WILD_GAME_FOREST -->
 		<entitygroup name="WildGameForest">
-			animalRabbit, 30
+			<!--animalRabbit, 30
 			animalChicken, 30
 			animalDoe, 15
 			animalStag, 15
 			animalBoar, 5
-			animalCoyote, 5
+			animalCoyote, 5-->
+			<!--animalRabbit, 8
+			animalChicken,8
+			animalDoe, 4
+			animalStag,4
+			animalBoar, 2
+			animalCoyote, 2
+			none, 72-->
+			animalRabbit, 15
+			animalChicken,15
+			animalDoe, 7
+			animalStag,7
+			animalBoar, 3
+			animalCoyote, 3
+			none, 50
 
 			<!-- TM ANIMALS -->
 			<!--animalChickenHostileIrradiationElite, 4
@@ -22,13 +36,27 @@
 
 		<!-- *** WILD_GAME_FOREST_NIGHT -->
 		<entitygroup name="WildGameForestNight">
-			animalRabbit, 30
+			<!--animalRabbit, 30
 			animalChicken, 30
 			animalDoe, 15
 			animalStag, 15
 			animalBoar, 5
-			animalCoyote, 5
-			
+			animalCoyote, 5-->
+			<!--animalRabbit, 8
+			animalChicken,8
+			animalDoe, 4
+			animalStag,4
+			animalBoar, 2
+			animalCoyote, 2
+			none, 72-->
+			animalRabbit, 15
+			animalChicken,15
+			animalDoe, 7
+			animalStag,7
+			animalBoar, 3
+			animalCoyote, 3
+			none, 50
+
 			<!-- TM ANIMALS -->
 			<!--animalChickenHostileIrradiationElite, 4
 			animalChickenHostileElectricElite, 4
@@ -199,7 +227,21 @@
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-	
+	<!-- no sirve, independientemente del zombi que haga spawn, seguira teniendo las propiedades de invocacion -->
+	<!-- tampoco sirve vaciarlo o eliminarlo, cascada roja en la consola cuando llama a scout y no encuentra -->
+	<!--<append xpath="/entitygroups">
+
+		<entitygroup name="ZombieScouts">
+			zombieArlene
+		</entitygroup>
+		<entitygroup name="ZombieScoutsFeral">
+			zombieArleneFeral
+		</entitygroup>
+		<entitygroup name="ZombieScoutsRadiated">
+			zombieArleneRadiated
+		</entitygroup>
+		
+	</append>-->
 	
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 

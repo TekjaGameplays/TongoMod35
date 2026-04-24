@@ -4,14 +4,14 @@
   "Debug": false,
   "AutoBackup": {
 	"ChatColor": "[00FF00]",
-    "Enabled": true,
+    "Enabled": false,
     "Delay": 30,
     "BackupsLimit": 10,
 	"ShowMessage": false,
   },
   "AutoSaveWorld": {
 	"ChatColor": "[00FF00]",
-    "Enabled": true,
+    "Enabled": false,
     "Delay": 60,
 	"ShowMessage": false,
   },

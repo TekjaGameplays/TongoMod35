@@ -368,8 +368,8 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" 		prob=".00025"/>
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".001" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".001" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="plantedCotton3Harvest" 			prob=".001" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" 						prob=".001"/>
 				<decoration type="block" blockname="rock02" 						prob=".001"/>
@@ -414,8 +414,8 @@
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="treeStump" 						prob=".0004" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".001" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".001" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" 						prob=".001"/>
 				<decoration type="block" blockname="rock02" 						prob=".001"/>
 				<!--<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>-->
@@ -456,8 +456,8 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" 		prob=".00025"/>
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".001" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".001" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="plantedCotton3Harvest" 			prob=".001" rotatemax="7"/>
 				<decoration type="block" blockname="rock01" 						prob=".001"/>
 				<decoration type="block" blockname="rock02" 						prob=".001"/>
@@ -500,8 +500,8 @@
 				<decoration type="block" blockname="rock02" 						prob=".001"/>
 				<!--<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>-->
 				<decoration type="block" blockname="cntBirdnest" 					prob=".002"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".001" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".001" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<!--<decoration type="block" blockname="treeOakLrg01" 					prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="treeMountainPine48m" 			prob=".007" rotatemax="7"/>
 				<decoration type="block" blockname="treeFirLrg01" 					prob=".007" rotatemax="7"/>
@@ -566,8 +566,8 @@
 				<decoration type="block" blockname="rock02" 						prob=".001"/>
 				<!--<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>-->
 				<decoration type="block" blockname="cntBirdnest" 					prob=".002"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".001" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".001" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<!--<decoration type="block" blockname="treeAzalea" 					prob=".01" rotatemax="3"/>
 				<decoration type="block" blockname="plantShrub" 					prob=".01" rotatemax="7"/>-->
 				<decoration type="block" blockname="treeAzalea" 					prob=".005" rotatemax="3"/>
@@ -610,8 +610,8 @@
 			<decoration type="block" blockname="cntForestRandomLootHelper" 			prob=".00025"/>
 			<decoration type="block" blockname="resourceRock01" 					prob=".00033" rotatemax="3"/>
 			<decoration type="block" blockname="resourceRock02" 					prob=".00033" rotatemax="3"/>
-			<decoration type="prefab" name="rock_form02" 							prob=".001" rotatemax="7"/>
-			<decoration type="prefab" name="rock_form01" 							prob=".001" rotatemax="7"/>
+			<decoration type="prefab" name="rock_form02" 							prob=".004" rotatemax="7"/>
+			<decoration type="prefab" name="rock_form01" 							prob=".004" rotatemax="7"/>
 			<decoration type="block" blockname="plantedCotton3Harvest" 				prob=".001" rotatemax="7"/>
 			<decoration type="block" blockname="rock01" 							prob=".001"/>
 			<decoration type="block" blockname="rock02" 							prob=".001"/>
@@ -1472,8 +1472,8 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" 		prob=".00025"/>
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".0005" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".0005" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>
 				<!--<decoration type="block" blockname="plantShrubSnow" 				prob=".001" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterEverGreen" 			prob=".003" rotatemax="7"/>
@@ -1523,8 +1523,8 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" 		prob=".00025"/>
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".0005" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".0005" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>
 				<!--<decoration type="block" blockname="plantShrubSnow" 				prob=".001" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterEverGreen" 			prob=".003" rotatemax="7"/>
@@ -1600,8 +1600,8 @@
 				<decoration type="block" blockname="cntForestRandomLootHelper" 		prob=".00025"/>
 				<decoration type="block" blockname="resourceRock01" 				prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="resourceRock02" 				prob=".00033" rotatemax="3"/>
-				<decoration type="prefab" name="rock_form02" 						prob=".0005" rotatemax="7"/>
-				<decoration type="prefab" name="rock_form01" 						prob=".0005" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form02" 						prob=".004" rotatemax="7"/>
+				<decoration type="prefab" name="rock_form01" 						prob=".004" rotatemax="7"/>
 				<decoration type="block" blockname="cntBirdnest" 					prob=".001"/>
 				<!--<decoration type="block" blockname="plantShrubSnow" 				prob=".001" rotatemax="7"/>
 				<decoration type="block" blockname="treeWinterEverGreen" 			prob=".003" rotatemax="7"/>
@@ -1639,8 +1639,8 @@
 			<decoration type="block" blockname="cntForestRandomLootHelper" 			prob=".00025"/>
 			<decoration type="block" blockname="resourceRock01" 					prob=".00033" rotatemax="3"/>
 			<decoration type="block" blockname="resourceRock02" 					prob=".00033" rotatemax="3"/>
-			<decoration type="prefab" name="rock_form02" 							prob=".0005" rotatemax="7"/>
-			<decoration type="prefab" name="rock_form01" 							prob=".0005" rotatemax="7"/>
+			<decoration type="prefab" name="rock_form02" 							prob=".004" rotatemax="7"/>
+			<decoration type="prefab" name="rock_form01" 							prob=".004" rotatemax="7"/>
 			<decoration type="block" blockname="cntBirdnest" 						prob=".001"/>
 			<decoration type="block" blockname="treeWinterEverGreen" 				prob=".003" rotatemax="7"/>
 			<decoration type="block" blockname="treeWinterEverGreenLarge" 			prob=".003" rotatemax="7"/>

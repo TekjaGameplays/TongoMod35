@@ -1,20 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raiz>
 
-	
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>-->
 
 
-	<!--animalInsectSwarmIrradiation
-	animalInsectSwarmElectric
-	animalInsectSwarmFire-->
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
 
-	<!--<passive_effect name="PhysicalDamageResist" operation="base_set" value="99" tags="ranged"/>-->
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
 
-	<!--<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmIrradiation']/property[@name='PhysicalDamageResist']/@value">25</set>
-	<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmElectric']/property[@name='PhysicalDamageResist']/@value">25</set>
-	<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmFire']/property[@name='PhysicalDamageResist']/@value">25</set>-->
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFireElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFire']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectric']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFireO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFireO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFire']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectric']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFireO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFireO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFire']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']/property[@name='LootDropProb']/@value">.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']/property[@name='LootDropProb']/@value">.3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
 
 
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+
+		<!-- remove TM buff  -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchRadiationTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchShockedTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchBurnTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchRadiationTM6k">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchShockedTM6K">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchBurnTM6K">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+	</append>
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 

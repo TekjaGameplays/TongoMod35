@@ -2,6 +2,774 @@
 <raiz>
 	
 	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- remove condition for use bandage continuous -->
+	<remove xpath="/items/item[@name='medicalBandage']/property[@class='Action0']/requirement[@cvar='lacerationBleedingStatus']"/>
+
+	<!-- include remove "buffScratchTM" and gain minimun hp -->
+	<append xpath="/items/item[@name='medicalBandage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffScratchTM"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value=".1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed"/>
+		<display_value name="foodHealthAmount" value=".1"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+	</append>
+
+	<!-- include remove "buffScratchTM" -->
+	<append xpath="/items/item[@name='medicalFirstAidBandage']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffScratchTM"/>
+	</append>
+	
+	<append xpath="/items/item[@name='medicalFirstAidKit']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffScratchTM"/>
+	</append>
+
+	
+
+
+	<!-- rewriting tags for weapons and tools -->
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='Tags']/@value">axe,melee,light,tool,longShaft,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval,perkPRMinerTools</set>
+	<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>
+	
+	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Tags']/@value">axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval,perkPRMinerTools</set>
+	<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>
+	<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>
+
+	<!--<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Tags']/@value">axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval,perkPRMinerTools</set>-->
+	<!--<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>-->
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>
+	
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='Tags']/@value">melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,chainsaw,canHaveCosmetic,harvestingSkill,corpseRemoval,perkPRMinerTools</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='Tags']/@value">melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic,harvestingSkill,perkPRMinerTools</set>
+
+	<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,perkPRDisassembleTools</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,perkPRDisassembleTools</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,perkPRDisassembleTools</set>
+	
+	<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,perkPRClubMelee</set>
+	<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,perkPRClubMelee</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,perkPRClubMelee</set>
+
+	<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,perkPRSledgehammerMelee</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,perkPRSledgehammerMelee</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,perkPRSledgehammerMelee</set>
+
+	<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,perkPRKnifeMelee</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,perkPRKnifeMelee</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Tags']/@value">machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,perkPRKnifeMelee</set>
+	
+	<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,perkPRSpearMelee</set>
+	<!--<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,perkPRSpearMelee</set>-->
+	<!--<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,perkPRSpearMelee</set>-->
+	
+	<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill,perkPRSpunchMelee</set>
+	<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill,perkPRSpunchMelee</set>
+	<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,canHaveCosmetic,knuckleSkill,corpseRemoval,perkPRSpunchMelee</set>
+	
+	<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,noStunEffect,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,meleeIntellect,batonJunkie,perkPRStunMelee</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,meleeIntellect,batonJunkie,perkPRStunMelee</set>
+	
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,perkPRArcheryRanged</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,perkPRArcheryRanged</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,perkPRArcheryRanged</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,canHaveCosmetic,bowSkill,perkPRArcheryRanged</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,canHaveCosmetic,bowSkill,perkPRArcheryRanged</set>
+	
+	<set xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,rangerDamage,perkPRPistolRanged</set>	
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,perkPRPistolRanged</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,44enforcer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,rangerDamage,enforcerReload,perkPRPistolRanged</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">weapon,ranged,revolver,44enforcer,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,enforcerReload,perkPRPistolRanged</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,perkPRPistolRanged</set>
+	
+	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,smallTopAttachments,noScopes,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,perkPRShotgunRanged</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,dBarrel,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,canHaveCosmetic,attachmentsIncluded,shotgunSkill,perkPRShotgunRanged</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill,perkPRShotgunRanged</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,perkPRShotgunRanged</set>
+	
+	<set xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,perkPRGatlingRanged</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,perkPRGatlingRanged</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,attachmentsIncluded,machinegunSkill,perkPRGatlingRanged</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,bottomAttachments,mediumTopAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,perkPRGatlingRanged</set>
+	
+	<set xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,attachmentsIncluded,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic,rifleSkill,perkPRRifleRanged</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,perkPRRifleRanged</set>
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,rangerDamage,perkPRRifleRanged</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,perkPRRifleRanged</set>
+	
+	
+	
+	<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="1"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolShovelT0StoneShovel']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="1"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolPickT1IronPickaxe']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolShovelT1IronShovel']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolShovelT2SteelShovel']">
+		<!-- gain PR_MinerTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolSalvageT1Wrench']">
+		<!-- gain PR_DisassembleTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']">
+		<!-- gain PR_DisassembleTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']">
+		<!-- gain PR_DisassembleTools_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffDisassembleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']">
+		<!-- gain PR_ClubMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']">
+		<!-- gain PR_ClubMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClub']">
+		<!-- gain PR_ClubMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffClubBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']">
+		<!-- gain PR_SledgehammerMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']">
+		<!-- gain PR_SledgehammerMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']">
+		<!-- gain PR_SledgehammerMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="6"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="6"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']">
+		<!-- gain PR_KnifeMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']">
+		<!-- gain PR_KnifeMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnBladeT3Machete']">
+		<!-- gain PR_KnifeMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']">
+		<!-- gain PR_SpearMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']">
+		<!-- gain PR_SpearMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
+		<!-- gain PR_SpearMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']">
+		<!-- gain PR_PunchMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']">
+		<!-- gain PR_PunchMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']">
+		<!-- gain PR_PunchMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']">
+		<!-- gain PR_StunMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffStunBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffStunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']">
+		<!-- gain PR_StunMelee_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffStunBoostTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffStunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']">
+		<!-- gain PR_ArcheryRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']">
+		<!-- gain PR_ArcheryRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']">
+		<!-- gain PR_ArcheryRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="6"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="20">
+				<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']">
+		<!-- gain PR_ArcheryRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']">
+		<!-- gain PR_ArcheryRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="6"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="20">
+				<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/items/item[@name='gunHandgunT0PipePistol']">
+		<!-- gain PR_PistolRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="1"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffPistolBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']">
+		<!-- gain PR_PistolRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="1"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffPistolBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']">
+		<!-- gain PR_PistolRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffPistolBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']">
+		<!-- gain PR_PistolRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffPistolBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']">
+		<!-- gain PR_PistolRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffPistolBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunShotgunT0PipeShotgun']">
+		<!-- gain PR_ShotgunRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffShotgunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']">
+		<!-- gain PR_ShotgunRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffShotgunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']">
+		<!-- gain PR_ShotgunRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffShotgunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgun']">
+		<!-- gain PR_ShotgunRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffShotgunBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']">
+		<!-- gain PR_GatlingRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="2"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffGatlingBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunMGT1AK47']">
+		<!-- gain PR_GatlingRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffGatlingBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']">
+		<!-- gain PR_GatlingRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffGatlingBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunMGT3M60']">
+		<!-- gain PR_GatlingRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="6"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="20">
+				<requirement name="HasBuff" buff="buffGatlingBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunRifleT0PipeRifle']">
+		<!-- gain PR_RifleRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="3"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="5">
+				<requirement name="HasBuff" buff="buffRifleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']">
+		<!-- gain PR_RifleRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="7">
+				<requirement name="HasBuff" buff="buffRifleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']">
+		<!-- gain PR_RifleRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="4"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="10">
+				<requirement name="HasBuff" buff="buffRifleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']">
+		<!-- gain PR_RifleRanged_XP xp for use -->
+		<effect_group name="Action Skills">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="6"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="add" value="20">
+				<requirement name="HasBuff" buff="buffRifleBoostTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+
+	
+	
+	
+	
+	
 	<!-- smell in all vanilla food with meat (no cans) -->
 	<append xpath="/items/item[@name='foodCharredMeat']"> <property name="Smell" value="25"/> </append>
 	<append xpath="/items/item[@name='foodBoiledMeat']"> <property name="Smell" value="25"/> </append>
@@ -284,6 +1052,48 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 				<display_value name="$waterAmountAdd" value="-5"/>
 			</effect_group>
+		</item>
+
+		<!-- includes water amount -->
+		<item name="drinkJarBeer">
+			<property name="Tags" value="drinks,foodSkill,fitness"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="@:Other/Items/Food/masonJarBeerPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/><!-- <property name="Weight" value="10"/> -->
+			<!--<property name="Stacknumber" value="10"/>--><!-- STK drink -->
+			<property name="EconomicValue" value="100"/>
+			<property name="UnlockedBy" value="craftingFood"/><!-- perkMasterChef,drinkJarBeerSchematic, -->
+			<property name="DisplayType" value="waterBeer"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+			<property name="SoundPickup" value="jars_grab"/>
+			<property name="SoundPlace" value="jars_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="4"/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+				<property name="Use_jar_refund" value="true"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 3">
+				<requirement name="!HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
+				<display_value name="dStaminaRegen" value=".4"/>
+				<display_value name="dEntityDamageBrawling" value="3"/>
+				<display_value name="dStunResist" value="1"/>
+				<display_value name="dDuration" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="63"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="183">
+					<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="183"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffBeer"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+
 		</item>
 
 	</append>
@@ -1917,6 +2727,56 @@
 
 
 		<!-- * FOOD DRINK -->
+		<item name="drinkJarIceCoffeTM">
+			<!--<property name="UnlockedBy" value="drinkJarIceCoffeTMSchematic"/>-->
+			<property name="Tags" value="drinks,foodSkill,iceCoffe"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterCoffee"/>
+			<!--<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>-->
+			<property name="Meshfile" value="@:Other/Items/Food/masonJarCoffeePrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="EconomicValue" value="48"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_drinking"/>
+				<!-- <property name="Create_item" value="drinkJarEmpty"/> -->
+				<property name="Create_item" value="drinkJarEmpty"/>
+				<property name="Use_jar_refund" value="true"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false" name="Drink Tier 1">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
+				<display_value name="dStaminaRegen" value=".17"/>
+				<display_value name="dDuration" value="60"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeTrackerTMDuration" operation="add" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeTrackerTMDuration" operation="set" value="180">
+					<requirement name="CVarCompare" cvar="$buffCoffeeTrackerTMDuration" operation="GT" value="60"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeRushTMDuration" operation="add" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeRushTMDuration" operation="set" value="180">
+					<requirement name="CVarCompare" cvar="$buffCoffeeRushTMDuration" operation="GT" value="60"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffeeTrackerTM"/>
+
+			</effect_group>
+
+			
+		
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		
+		
+		
 		<item name="drinkJarYuccaClassicTM">
 			<property name="UnlockedBy" value="drinkJarYuccaClassicTMSchematic"/>
 			<property name="Tags" value="drinks,foodSkill"/>
@@ -1973,6 +2833,7 @@
 			</property>
 			<effect_group tiered="false" name="Drink Tier 3">
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
 				<display_value name="dStaminaRegen" value=".99"/>
 				<display_value name="dStunResist" value="1"/>
 				<display_value name="dDuration" value="180"/>
@@ -4377,7 +5238,7 @@
 		<!-- * TOOL MEGA BREAKER -->
 		<item name="meleeToolMegaBreakerTM">
 			<property name="DescriptionKey" value="meleeToolMegaBreakerTMDesc"/>
-			<property name="Tags" value="axe,melee,light,tool,longShaft,repairTool,miningTool,attTongo,perkMasterTool,perkFlurryGlobal,canHaveCosmetic,noMods"/>
+			<property name="Tags" value="axe,melee,light,tool,longShaft,repairTool,miningTool,attTongo,perkMasterTool,perkFlurryGlobal,canHaveCosmetic,noMods,perkPRMinerTools"/>
 			<property name="DisplayType" value="meleeRepairTool"/>
 			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
@@ -4444,6 +5305,16 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="39.9" tags="secondary"/>
 			</effect_group>
+
+			<!-- gain PR_MinerTools_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="1"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="add" value="5">
+					<requirement name="HasBuff" buff="buffMinerBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 			<property name="Group" value="Tools/Traps,Herramientas"/>
 		</item>
 
@@ -4781,7 +5652,7 @@
 		<!-- * TOOL MEGA CUTTER -->
 		<item name="meleeWpnMegaCutterTM">
 			<property name="DescriptionKey" value="meleeWpnMegaCutterTMDesc"/>
-			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,perkPRKnifeMelee"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="HoldType" value="47"/>
 			<property name="Stacknumber" value="1"/>
@@ -4879,6 +5750,20 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="10.8" tags="secondary"/>
 			</effect_group>
+
+			<!-- gain PR_KnifeMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 
@@ -4893,6 +5778,11 @@
 			<property name="UnlockedBy" value="medicalFirstAidBandageTMSchematic"/>
 
 			<effect_group tiered="false">
+
+				<!-- new buff scratch -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffScratchTM"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffScratchTM"/>
+
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="4"/>
 
@@ -4998,6 +5888,7 @@
 			<property name="Group" value="Science,Medical,OchemiMedic"/>
 			<property name="EconomicValue" value="300"/>
 			<property name="UnlockedBy" value="medicalFirstAidKitTMSchematic"/>
+			<property name="Tags" value="medical,medicalSkill,stopsBleeding,aidKitTM"/>
 
 			<property class="Action0">
 				<property name="Sound_start" value="player_firstAidKit"/>
@@ -5007,6 +5898,10 @@
 			</property>
 
 			<effect_group tiered="false">
+
+				<!-- new buff scratch -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffScratchTM"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffScratchTM"/>
 
 
 				<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
@@ -5222,7 +6117,7 @@
 
 		<!-- * SPIKED CLUB (LUCERO DEL ALBA) -->
 		<item name="meleeWpnSpikedClub">
-			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,spikeClubBonus"/>
+			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,weapon,meleeWeapon,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,spikeClubBonus,perkPRClubMelee"/>
 			<property name="DisplayType" value="meleeLightTM"/>
 			<property name="Group" value="Ammo/Weapons,Melee Weapons,Armas"/>
 
@@ -5330,11 +6225,25 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="18.3" tags="secondary"/>
 			</effect_group>
+
+			<!-- gain PR_ClubMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="4"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffClubBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffClubBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 		<!-- * GRAPHENE SLEDGEHAMMER (MAZO DE GRAFENO) -->
 		<item name="meleeWpnGrapheneSledgehammerTM">
-			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,sledgeSkill,grapheneSledgehammerBonus"/>
+			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,sledgeSkill,grapheneSledgehammerBonus,perkPRSledgehammerMelee"/>
 			<property name="DisplayType" value="meleeHeavyTM"/>
 			<property name="HoldType" value="33"/>
 
@@ -5429,12 +6338,26 @@
 				<passive_effect name="StaminaLoss" operation="base_set" value="95.4" tags="secondary"/>
 				<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
 			</effect_group>
+
+			<!-- gain PR_SledgehammerMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="6"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="6"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffSledgehammerBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 
 		<!-- * REPEAT CROSSBOW -->
 		<item name="gunBowRepeatCrossbowTM">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkRangedWeapons,attachmentsIncluded,canHaveCosmetic,handgunSkill,crossbow"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkRangedWeapons,attachmentsIncluded,canHaveCosmetic,handgunSkill,crossbow,perkPRArcheryRanged"/>
 			<property name="DisplayType" value="rangedRepeatCrossbowTM"/>
 			<property name="HoldType" value="26"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/IronCrossBow/ironCrossBowPrefab.prefab"/>
@@ -5533,12 +6456,22 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="500,700" tier="1,6" tags="perkRangedWeapons"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkRangedWeapons"/>
 			</effect_group>
+
+			<!-- gain PR_ArcheryRanged_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="6"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="add" value="20">
+					<requirement name="HasBuff" buff="buffArcheryBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 
 		<!-- * MILLIONAIRE MACHINEGUN -->
 		<item name="gunHandgunMillionaireTM">
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkRangedWeapons,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkRangedWeapons,attachmentsIncluded,canHaveCosmetic,handgunSkill,perkPRGatlingRanged"/>
 			<property name="DisplayType" value="rangedHandgunMillionaireTM"/>
 
 			<property name="HoldType" value="6"/>
@@ -5633,13 +6566,23 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6" tags="perkRangedWeapons"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkRangedWeapons"/>
 			</effect_group>
+
+			<!-- gain PR_GatlingRanged_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="6"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="add" value="20">
+					<requirement name="HasBuff" buff="buffGatlingBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 		
 		<!-- * GRAPHENE SPEAR (LANZA DE GRAFENO) -->
 		<item name="meleeWpnGrapheneSpearTM">
 			<!--<property name="Extends" value="meleeWpnSpearT1IronSpear"/>-->
-			<property name="Tags" value="melee,grunting,medium,weapon,meleeWeapon,longShaft,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,spearSkill"/>
+			<property name="Tags" value="melee,grunting,medium,weapon,meleeWeapon,longShaft,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,spearSkill,perkPRSpearMelee"/>
 
 			<!--<property name="DisplayType" value="meleeSpear"/>-->
 			<property name="DisplayType" value="meleeLightTM"/>
@@ -5750,12 +6693,26 @@
 
 				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="10000" tags="meleeWpnGrapheneSpearTM"/>
 			</effect_group>
+
+			<!-- gain PR_SpearMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="4"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffSpearBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 
 
 		<!--  graphene machete (machete de grafeno) -->
 		<item name="meleeWpnGrapheneMacheteTM">
-			<property name="Tags" value="machete,melee,grunting,light,longShaft,weapon,meleeWeapon,attTongo,perkTiolavara,perkFlurryGlobal,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,weapon,meleeWeapon,attTongo,perkTiolavara,perkFlurryGlobal,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,perkPRKnifeMelee"/>
 			<!--<property name="DisplayType" value="meleeKnife"/>-->
 			<property name="DisplayType" value="meleeLightTM"/>
 
@@ -5866,6 +6823,20 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkTiolavara"/>
 				<display_value name="dEntityDamageSneak" value="4"/>
 			</effect_group>
+
+			<!-- gain PR_KnifeMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="4"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffKnifeBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 		
 		
@@ -5876,7 +6847,7 @@
 			<!--<property name="Tags" value="blunt,melee,grunting,light,weapon,attTongo,perkTiolavara,perkFlurryGlobal,noBlades,canHaveCosmetic,knuckleSkill,corpseRemoval"/>-->
 			<!--<property name="Tags" value="blunt,melee,grunting,light,weapon,meleeWeapon,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,knuckleSkill,corpseRemoval"/>-->
 
-			<property name="Tags" value="blunt,melee,grunting,light,weapon,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,knuckleSkill,corpseRemoval"/>
+			<property name="Tags" value="blunt,melee,grunting,light,weapon,attTongo,perkTiolavara,perkFlurryGlobal,canHaveCosmetic,knuckleSkill,corpseRemoval,perkPRSpunchMelee"/>
 
 
 			<property name="Material" value="MmeleeWpnKnucklesParts"/>
@@ -5988,6 +6959,20 @@
 				<!-- <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/> -->
 				<passive_effect name="StaminaLoss" operation="base_set" value="12.1" tags="secondary"/>
 			</effect_group>
+
+			<!-- gain PR_PunchMelee_XP xp for use -->
+			<effect_group name="Action Skills">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="4"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="add" value="10">
+					<requirement name="HasBuff" buff="buffPunchBoostTM"/>
+				</triggered_effect>
+			</effect_group>
+			
 		</item>
 		<!--  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		
@@ -10638,7 +11623,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -10653,7 +11638,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -10667,7 +11652,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -10681,7 +11666,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -10695,7 +11680,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -10709,7 +11694,7 @@
 			<property name="Stacknumber" value="100"/>
 			<property name="Material" value="Mcloth"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="25"/>
+			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="40"/>
 			<property name="TraderStageTemplate" value="armorTier1"/>
 			<property name="HoldType" value="45"/>
@@ -11028,9 +12013,549 @@
 			</effect_group>
 		</item>-->
 
+		
+		<!-- candy progression (schematic) -->
+
+		<item name="foodCandyMinerBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyMinerBoostTM"/>
+			<property name="Unlocks" value="foodCandyMinerBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyMinerBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyDisassembleBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyDisassembleBoostTM"/>
+			<property name="Unlocks" value="foodCandyDisassembleBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyDisassembleBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyClubBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyClubBoostTM"/>
+			<property name="Unlocks" value="foodCandyClubBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyClubBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandySledgehammerBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandySledgehammerBoostTM"/>
+			<property name="Unlocks" value="foodCandySledgehammerBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandySledgehammerBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyKnifeBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyKnifeBoostTM"/>
+			<property name="Unlocks" value="foodCandyKnifeBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyKnifeBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandySpearBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandySpearBoostTM"/>
+			<property name="Unlocks" value="foodCandySpearBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandySpearBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyPunchBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyPunchBoostTM"/>
+			<property name="Unlocks" value="foodCandyPunchBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyPunchBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyStunBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyStunBoostTM"/>
+			<property name="Unlocks" value="foodCandyStunBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyStunBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyArcheryBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyArcheryBoostTM"/>
+			<property name="Unlocks" value="foodCandyArcheryBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyArcheryBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyPistolBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyPistolBoostTM"/>
+			<property name="Unlocks" value="foodCandyPistolBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyPistolBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyShotgunBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyShotgunBoostTM"/>
+			<property name="Unlocks" value="foodCandyShotgunBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyShotgunBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyGatlingBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyGatlingBoostTM"/>
+			<property name="Unlocks" value="foodCandyGatlingBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyGatlingBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyRifleBoostTMSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="foodCandyRifleBoostTM"/>
+			<property name="Unlocks" value="foodCandyRifleBoostTM"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading,Tongo"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCandyRifleBoostTM" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+
+
+		<!-- candy progression (item) -->
+
+		<item name="foodCandyMinerBoostTM">
+			<property name="UnlockedBy" value="foodCandyMinerBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffMinerBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyDisassembleBoostTM">
+			<property name="UnlockedBy" value="foodCandyDisassembleBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDisassembleBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyClubBoostTM">
+			<property name="UnlockedBy" value="foodCandyClubBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffClubBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandySledgehammerBoostTM">
+			<property name="UnlockedBy" value="foodCandySledgehammerBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSledgehammerBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyKnifeBoostTM">
+			<property name="UnlockedBy" value="foodCandyKnifeBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffKnifeBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandySpearBoostTM">
+			<property name="UnlockedBy" value="foodCandySpearBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSpearBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyPunchBoostTM">
+			<property name="UnlockedBy" value="foodCandyPunchBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPunchBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyStunBoostTM">
+			<property name="UnlockedBy" value="foodCandyStunBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffStunBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyArcheryBoostTM">
+			<property name="UnlockedBy" value="foodCandyArcheryBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffArcheryBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyPistolBoostTM">
+			<property name="UnlockedBy" value="foodCandyPistolBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPistolBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyShotgunBoostTM">
+			<property name="UnlockedBy" value="foodCandyShotgunBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffShotgunBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyGatlingBoostTM">
+			<property name="UnlockedBy" value="foodCandyGatlingBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffGatlingBoostTM"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCandyRifleBoostTM">
+			<property name="UnlockedBy" value="foodCandyRifleBoostTMSchematic"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffRifleBoostTM"/>
+			</effect_group>
+		</item>
+		
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+		<!-- item test to add skill point -->
+		<item name="iconSkillPointTM">
+			<property name="CustomIcon" value="iconSkillPointTM"/>
+			<property name="DescriptionKey" value="iconSkillPointTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="21"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<property name="Group" value="Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="skill_points_gain" />
+			</effect_group>
+		</item>
+
+
+		<!-- item test to clear weather -->
+		<!--<item name="iconTestTM">
+			<property name="CustomIcon" value="iconLost"/>
+			<property name="DescriptionKey" value="iconSkillPointTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="21"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<property name="Group" value="Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_dance_off" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_bucket_heads" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_tiny_zombies" />
+			</effect_group>
+		</item>-->
+
+		<item name="iconTestTMDance">
+			<property name="CustomIcon" value="iconLost"/>
+			<property name="DescriptionKey" value="iconSkillPointTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="21"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<property name="Group" value="Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_dance_off" />
+			</effect_group>
+		</item>
+
+		<item name="iconTestTMBucket">
+			<property name="CustomIcon" value="iconLost"/>
+			<property name="DescriptionKey" value="iconSkillPointTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="21"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<property name="Group" value="Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_bucket_heads" />
+			</effect_group>
+		</item>
+
+		<item name="iconTestTMTiny">
+			<property name="CustomIcon" value="iconLost"/>
+			<property name="DescriptionKey" value="iconSkillPointTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="21"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="read_skillbook"/>
+			</property>
+			<property name="Group" value="Science,Medical,Basics,Resources,CFChemicals,Science,Medical,OchemiSnack"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="action_tiny_zombies" />
+			</effect_group>
+		</item>
+		
 
 		
 
+		
+		
 		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 

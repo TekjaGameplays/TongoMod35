@@ -14,7 +14,12 @@
 <attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.14">
 
 	<!-- HAND TO HAND (MELEE + TOOLS) MANO A MANO -->
-	<attribute name="attMelee" name_key="attMeleeName" desc_key="attMeleeDesc" icon="ui_game_symbol_muscle"> 
+	<attribute name="attMelee" name_key="attMeleeName" desc_key="attMeleeDesc" icon="ui_game_symbol_muscle" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1">
+			<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+		</level_requirements>
+	</attribute>
+	<!--<attribute name="attMelee" name_key="attMeleeName" desc_key="attMeleeDesc" icon="ui_game_symbol_muscle"> 
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
@@ -43,10 +48,17 @@
 			<effect_description level="9"  desc_key="attMeleeRank09Desc" long_desc_key="attMeleeRank09LongDesc"/>
 			<effect_description level="10" desc_key="attMeleeRank10Desc" long_desc_key="attMeleeRank10LongDesc"/>
 		</effect_group>
-	</attribute>
+	</attribute>-->
+
+	
 			
 	<!-- BETTER DISTANCE (RANGED WEAPONS) MEJOR A DISTANCIA -->
-	<attribute name="attBetdist" name_key="attBetdistName" desc_key="attBetdistDesc" icon="ui_game_symbol_stealth">
+	<attribute name="attBetdist" name_key="attBetdistName" desc_key="attBetdistDesc" icon="ui_game_symbol_stealth" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1">
+			<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+		</level_requirements>
+	</attribute>
+	<!--<attribute name="attBetdist" name_key="attBetdistName" desc_key="attBetdistDesc" icon="ui_game_symbol_stealth">
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
@@ -75,10 +87,15 @@
 			<effect_description level="9" desc_key="attBetdistRank09Desc" long_desc_key="attBetdistRank09LongDesc"/>
 			<effect_description level="10" desc_key="attBetdistRank10Desc" long_desc_key="attBetdistRank10LongDesc"/>
 		</effect_group>
-	</attribute>
+	</attribute>-->
 			
 	<!-- INTELLIGENCE - INTELIGENCIA -->
-	<attribute name="attIntel" name_key="attIntelName" desc_key="attIntelDesc" icon="ui_game_symbol_intellect">
+	<attribute name="attIntel" name_key="attIntelName" desc_key="attIntelDesc" icon="ui_game_symbol_intellect" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1">
+			<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+		</level_requirements>
+	</attribute>
+	<!--<attribute name="attIntel" name_key="attIntelName" desc_key="attIntelDesc" icon="ui_game_symbol_intellect">
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
@@ -107,10 +124,15 @@
 			<effect_description level="9" desc_key="attIntelRank09Desc" long_desc_key="attIntelRank09LongDesc"/>
 			<effect_description level="10" desc_key="attIntelRank10Desc" long_desc_key="attIntelRank10LongDesc"/>
 		</effect_group>
-	</attribute>
+	</attribute>-->
 			
 	<!-- BUFFS - BUFOS -->
-	<attribute name="attBufos" name_key="attBufosName" desc_key="attBufosDesc" icon="ui_game_symbol_agility">
+	<attribute name="attBufos" name_key="attBufosName" desc_key="attBufosDesc" icon="ui_game_symbol_agility" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1">
+			<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+		</level_requirements>
+	</attribute>
+	<!--<attribute name="attBufos" name_key="attBufosName" desc_key="attBufosDesc" icon="ui_game_symbol_agility">
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
@@ -139,10 +161,15 @@
 			<effect_description level="9" desc_key="attBufosRank09Desc" long_desc_key="attBufosRank09LongDesc"/>
 			<effect_description level="10" desc_key="attBufosRank10Desc" long_desc_key="attBufosRank10LongDesc"/>
 		</effect_group>
-	</attribute>
+	</attribute>-->
 			
 	<!-- PARALLEL - PARALELO -->
-	<attribute name="attParalelos" name_key="attParalelosName" desc_key="attParalelosDesc" icon="ui_game_symbol_shopping_cart">
+	<attribute name="attParalelos" name_key="attParalelosName" desc_key="attParalelosDesc" icon="ui_game_symbol_shopping_cart" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1">
+			<requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/>
+		</level_requirements>
+	</attribute>
+	<!--<attribute name="attParalelos" name_key="attParalelosName" desc_key="attParalelosDesc" icon="ui_game_symbol_shopping_cart">
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
 		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
@@ -171,7 +198,7 @@
 			<effect_description level="9" desc_key="attParalelosRank09Desc" long_desc_key="attParalelosRank09LongDesc"/>
 			<effect_description level="10" desc_key="attParalelosRank10Desc" long_desc_key="attParalelosRank10LongDesc"/>
 		</effect_group>
-	</attribute>
+	</attribute>-->
 			
 	<!-- TONGO -->
 	<attribute name="attTongo"  name_key="attTongoName" desc_key="attTongoDesc" icon="ui_game_symbol_T">
@@ -205,10 +232,36 @@
 		</effect_group>
 	</attribute>
 
-			
+
+	
+
+
 	<attribute name="attBooks" name_key="attBooks" desc_key="attBooks" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0"/>
 
-	<attribute name="attCrafting" name_key="attCrafting" desc_key="attCrafting" icon="ui_game_symbol_hammer" min_level="0" max_level="0" base_skill_point_cost="0"/>
+	<attribute name="attProgressionSkills" name_key="attProgressionSkillsName" desc_key="attProgressionSkillsDesc" icon="ui_game_symbol_weapon_smithing"
+           min_level="0" max_level="0" base_skill_point_cost="0"
+		   display_type="Skill"/>
+
+	<attribute name="attCrafting" name_key="attCrafting" desc_key="attCrafting" icon="" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
+	<!-- XXXXXXXXXXX -->
+	<!-- que no explote !!! -->
+	<!--<attribute name="attProgressionSkills" name_key="attProgressionSkillsName" desc_key="attProgressionSkillsDesc" min_level="0" max_level="0" base_skill_point_cost="0" icon="ui_game_symbol_percent">
+		<effect_group name="PR Initialization">
+			<requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="Equals" value="0"/>
+
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_XP_Mult" operation="set" value="1.02"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_Lvl" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextAdd" operation="set" value="100"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="set" value="100"/>
+		</effect_group>
+	</attribute>-->
+
+	<!--<attribute name="attProgressionSkills" name_key="attProgressionSkillsName" desc_key="attProgressionSkillsDesc" icon="ui_game_symbol_percent" min_level="0" max_level="0" base_skill_point_cost="0"/>-->
+
+
+	
+	<!-- XXXXXXXXXXX -->
 
 		
     </attributes>
@@ -238,6 +291,11 @@
 
 	<!-- attTongo -->
 	<skill name="skillTongo" parent="attTongo" name_key="skillTongoPerksName" desc_key="skillTongoPerksDesc" icon="ui_game_symbol_T"><effect_group/></skill>
+		
+    <!-- attProgression -->
+	<!--<skill name="skillProgression" parent="attProgression" name_key="skillProgressionPerksName" desc_key="skillProgressionPerksDesc" icon="ui_game_symbol_T"><effect_group/></skill>-->
+		
+		
 
 		
 	<book_group name="skillArtOfMining" parent="attBooks" name_key="perkArtOfMining0Name" desc_key="perkArtOfMining0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_mining"><effect_group/></book_group>
@@ -281,13 +339,563 @@
 				<requirement name="HasBuff" buff="buffARIsHordeNight"/>
 				<passive_effect name="LootDropProb" operation="perc_set" level="1" value="0"/>
 			</effect_group>
-			<!-- XXXXXXXXXXXXXXXXXXXXX -->
-			
+
 		</crafting_skill>
+
 
 		
 		
+		
 	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- otra prueba extra -->
+
+		
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="Minería Básica"
+                desc_key="Tu destreza con herramientas de piedra mejora al usarlas."
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl">
+		</crafting_skill>-->
+
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="Minería Básica"
+                desc_key="Tu destreza con herramientas de piedra mejora al usarlas."
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl">
+
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRMinerToolsName"
+                desc_key="perkPRMinerToolsDesc"
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl">
+
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+				<unlock_entry item="resourceRockSmall" unlock_tier="25" />
+				<unlock_entry item="resourceIronFragment" unlock_tier="50" />
+				<unlock_entry item="resourceRawIron" unlock_tier="75" />
+				<unlock_entry item="resourceCoal" unlock_tier="100" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRMinerToolsName"
+                desc_key="perkPRMinerToolsDesc"
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl"
+                display_level_key="perkPRMinerToolsLvlKey">
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+				<unlock_entry item="resourceIronFragment" unlock_tier="50" />
+				<unlock_entry item="resourceCoal" unlock_tier="100" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRMinerToolsName"
+                desc_key="perkPRMinerToolsDesc"
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl"
+                display_level_key="perkPRMinerToolsLvlKey">
+
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+				<unlock_entry item="resourceScrapIron" unlock_tier="50" />
+				<unlock_entry item="resourceCoal" unlock_tier="100" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                display_level="@PR_StoneTools_Lvl"
+                progression_name="perkPRMinerTools">
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                display_level="@PR_StoneTools_Lvl">
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+
+		<!--<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRMinerToolsName"
+                desc_key="perkPRMinerToolsDesc"
+                icon="ui_game_symbol_pickaxe"
+                display_level="@PR_StoneTools_Lvl">
+
+			<display_entry icon="ui_game_symbol_mining" name_key="statBlockDamage" has_quality="false" unlock_level="1">
+				<unlock_entry item="resourceRockSmall" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0.005">
+					<requirement name="CVarCompare" cvar="PR_StoneTools_Lvl" operation="GTE" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>-->
+
+
+		<!-- perk MinerTools to restore legacy progression -->
+		<crafting_skill name="perkPRMinerTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRMinerToolsName"
+                desc_key="perkPRMinerToolsDesc"
+                icon="ui_game_symbol_mining">
+
+			<display_entry icon="itemIconMinerTM" name_key="perkPRMinerToolsKey" has_quality="false" unlock_level="1" >
+				<unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,meleeToolAxeT1IronFireaxe,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT2SteelAxe,meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolMegaBreakerTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR MinerTools Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_MinerTools_XP" operation="GTE" value="@PR_MinerTools_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="add" value="@PR_MinerTools_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="minerToolsTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_MinerTools_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_MinerTools_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingMinerTools" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk DisassembleTools to restore legacy progression -->
+		<crafting_skill name="perkPRDisassembleTools"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRDisassembleToolsName"
+                desc_key="perkPRDisassembleToolsDesc"
+                icon="ui_game_symbol_wrench">
+
+			<display_entry icon="itemIconDisassembleTM" name_key="perkPRDisassembleToolsKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeToolSalvageT1Wrench,meleeToolSalvageT2Ratchet,meleeToolSalvageT3ImpactDriver" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR DisassembleTools Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_DisassembleTools_XP" operation="GTE" value="@PR_DisassembleTools_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextTotal" operation="add" value="@PR_DisassembleTools_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="disassembleToolsTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_DisassembleTools_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_DisassembleTools_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingDisassembleTools" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk ClubMelee to restore legacy progression -->
+		<crafting_skill name="perkPRClubMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRClubMeleeName"
+                desc_key="perkPRClubMeleeDesc"
+                icon="ui_game_symbol_club">
+
+			<display_entry icon="itemIconClubTM" name_key="perkPRClubMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnClubT0WoodenClub,meleeWpnClubT1BaseballBat,meleeWpnClubT3SteelClub,meleeWpnSpikedClub" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR ClubMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_ClubMelee_XP" operation="GTE" value="@PR_ClubMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextTotal" operation="add" value="@PR_ClubMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="clubMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ClubMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_ClubMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingClubMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk SledgehammerMelee to restore legacy progression -->
+		<crafting_skill name="perkPRSledgehammerMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRSledgehammerMeleeName"
+                desc_key="perkPRSledgehammerMeleeDesc"
+                icon="ui_game_symbol_sledge">
+
+			<display_entry icon="itemIconSledgehammerTM" name_key="perkPRSledgehammerMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnSledgeT0StoneSledgehammer,meleeWpnSledgeT1IronSledgehammer,meleeWpnSledgeT3SteelSledgehammer,meleeWpnGrapheneSledgehammerTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR SledgehammerMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_SledgehammerMelee_XP" operation="GTE" value="@PR_SledgehammerMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_LvlNextTotal" operation="add" value="@PR_SledgehammerMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="sledgehammerMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SledgehammerMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_SledgehammerMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingSledgehammerMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk KnifeMelee to restore legacy progression -->
+		<crafting_skill name="perkPRKnifeMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRKnifeMeleeName"
+                desc_key="perkPRKnifeMeleeDesc"
+                icon="ui_game_symbol_knife">
+
+			<display_entry icon="itemIconKnifeTM" name_key="perkPRKnifeMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnBladeT0BoneKnife,meleeWpnBladeT1HuntingKnife,meleeWpnBladeT3Machete,meleeWpnMegaCutterTM,meleeWpnGrapheneMacheteTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR KnifeMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_KnifeMelee_XP" operation="GTE" value="@PR_KnifeMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextTotal" operation="add" value="@PR_KnifeMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="knifeMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_KnifeMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_KnifeMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingKnifeMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk SpearMelee to restore legacy progression -->
+		<crafting_skill name="perkPRSpearMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRSpearMeleeName"
+                desc_key="perkPRSpearMeleeDesc"
+                icon="ui_game_symbol_spear">
+
+			<display_entry icon="itemIconSpearTM" name_key="perkPRSpearMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnSpearT0StoneSpear,meleeWpnSpearT1IronSpear,meleeWpnSpearT3SteelSpear,meleeWpnGrapheneSpearTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR SpearMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_SpearMelee_XP" operation="GTE" value="@PR_SpearMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextTotal" operation="add" value="@PR_SpearMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="spearMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_SpearMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_SpearMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingSpearMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk PunchMelee to restore legacy progression -->
+		<crafting_skill name="perkPRPunchMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRPunchMeleeName"
+                desc_key="perkPRPunchMeleeDesc"
+                icon="ui_game_symbol_boxer">
+
+			<display_entry icon="itemIconPunchTM" name_key="perkPRPunchMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnKnucklesT0LeatherKnuckles,meleeWpnKnucklesT1IronKnuckles,meleeWpnKnucklesT3SteelKnuckles,meleeWpnGrapheneKnucklesTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR PunchMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_PunchMelee_XP" operation="GTE" value="@PR_PunchMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextTotal" operation="add" value="@PR_PunchMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="punchMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PunchMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_PunchMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingPunchMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk StunMelee to restore legacy progression -->
+		<crafting_skill name="perkPRStunMelee"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRStunMeleeName"
+                desc_key="perkPRStunMeleeDesc"
+                icon="ui_game_symbol_electric_power">
+
+			<display_entry icon="itemIconStunTM" name_key="perkPRStunMeleeKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="meleeWpnBatonT0PipeBaton,meleeWpnBatonT2StunBaton" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR StunMelee Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_StunMelee_XP" operation="GTE" value="@PR_StunMelee_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_LvlNextTotal" operation="add" value="@PR_StunMelee_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="stunMeleeTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_StunMelee_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_StunMelee_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingStunMelee" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk ArcheryRanged to restore legacy progression -->
+		<crafting_skill name="perkPRArcheryRanged"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRArcheryRangedName"
+                desc_key="perkPRArcheryRangedDesc"
+                icon="ui_game_symbol_archery">
+
+			<display_entry icon="itemIconArcheryTM" name_key="perkPRArcheryRangedKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="gunBowT0PrimitiveBow,gunBowT1WoodenBow,gunBowT1IronCrossbow,gunBowT3CompoundBow,gunBowT3CompoundCrossbow,gunBowRepeatCrossbowTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR ArcheryRanged Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_ArcheryRanged_XP" operation="GTE" value="@PR_ArcheryRanged_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextTotal" operation="add" value="@PR_ArcheryRanged_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="archeryRangedTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ArcheryRanged_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_ArcheryRanged_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingArcheryRanged" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk PistolRanged to restore legacy progression -->
+		<crafting_skill name="perkPRPistolRanged"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRPistolRangedName"
+                desc_key="perkPRPistolRangedDesc"
+                icon="ui_game_symbol_pistol">
+
+			<display_entry icon="itemIconPistolTM" name_key="perkPRPistolRangedKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="gunHandgunT0PipePistol,gunHandgunT1Pistol,gunHandgunT2Magnum44,gunHandgunT3DesertVulture,gunHandgunT3SMG5" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR PistolRanged Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_PistolRanged_XP" operation="GTE" value="@PR_PistolRanged_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextTotal" operation="add" value="@PR_PistolRanged_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="pistolRangedTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_PistolRanged_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_PistolRanged_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingPistolRanged" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk ShotgunRanged to restore legacy progression -->
+		<crafting_skill name="perkPRShotgunRanged"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRShotgunRangedName"
+                desc_key="perkPRShotgunRangedDesc"
+                icon="ui_game_symbol_shotgun">
+
+			<display_entry icon="itemIconShotgunTM" name_key="perkPRShotgunRangedKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="gunShotgunT0PipeShotgun,gunShotgunT1DoubleBarrel,gunShotgunT2PumpShotgun,gunShotgunT3AutoShotgun" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR ShotgunRanged Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_ShotgunRanged_XP" operation="GTE" value="@PR_ShotgunRanged_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextTotal" operation="add" value="@PR_ShotgunRanged_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="shotgunRangedTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_ShotgunRanged_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_ShotgunRanged_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingShotgunRanged" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk GatlingRanged to restore legacy progression -->
+		<crafting_skill name="perkPRGatlingRanged"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRGatlingRangedName"
+                desc_key="perkPRGatlingRangedDesc"
+                icon="ui_game_symbol_rifle">
+
+			<display_entry icon="itemIconGatlingTM" name_key="perkPRGatlingRangedKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="gunMGT0PipeMachineGun,gunMGT1AK47,gunMGT2TacticalAR,gunMGT3M60,gunHandgunMillionaireTM" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR GatlingRanged Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_GatlingRanged_XP" operation="GTE" value="@PR_GatlingRanged_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextTotal" operation="add" value="@PR_GatlingRanged_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="gatlingRangedTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_GatlingRanged_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_GatlingRanged_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingGatlingRanged" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+		<!-- perk RifleRanged to restore legacy progression -->
+		<crafting_skill name="perkPRRifleRanged"
+                max_level="100"
+                parent="attProgressionSkills"
+                name_key="perkPRRifleRangedName"
+                desc_key="perkPRRifleRangedDesc"
+                icon="ui_game_symbol_map_cursor">
+
+			<display_entry icon="itemIconRifleTM" name_key="perkPRRifleRangedKey" has_quality="false" unlock_level="1">
+				<unlock_entry item="gunRifleT0PipeRifle,gunRifleT1HuntingRifle,gunRifleT2LeverActionRifle,gunRifleT3SniperRifle" unlock_tier="1" />
+			</display_entry>
+
+			<effect_group name="PR RifleRanged Lvl Increase">
+				<requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="LT" value="100"/>
+				<requirement name="CVarCompare" cvar="PR_RifleRanged_XP" operation="GTE" value="@PR_RifleRanged_LvlNextTotal"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextAdd" operation="multiply" value="@PR_XP_Mult"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextTotal" operation="add" value="@PR_RifleRanged_LvlNextAdd"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_Lvl" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message="rifleRangedTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="levelup" play_in_head="true"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_XP" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PR_RifleRanged_UI_Fill" operation="set" value="0"/>
+
+				<passive_effect name="CraftingTier" operation="base_set" value="@PR_RifleRanged_Lvl">
+					<requirement name="ProgressionLevel" progression_name="craftingRifleRanged" operation="GTE" value="0"/>
+				</passive_effect>
+			</effect_group>
+		</crafting_skill>
+
+
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+		
+		
 	<!-- *** HARVESTING_TOOL_SKILLS -->
 
 		<!-- *** STONE_TOOLS -->
@@ -570,7 +1178,7 @@
 			</effect_group>
 		</crafting_skill>
 
-		
+
 		<!-- *** MELEE_WEAPONS_SKILLS -->
 
 		<!-- *** STONE_WOOD_MELEE -->
@@ -796,7 +1404,7 @@
 			</effect_group>
 		</crafting_skill>
 
-		
+
 		<!-- *** RANGED_WEAPONS_SKILLS -->
 
 		<!-- *** PIPE_T0_RANGED -->
@@ -1021,7 +1629,7 @@
 				<passive_effect name="CraftingTier" operation="base_add" level="2" value="1" tags="gunBowT3CompoundBow,gunBowT3CompoundCrossbow,gunHandgunT3SMG5,gunHandgunT3DesertVulture,gunShotgunT3AutoShotgun,gunRifleT3SniperRifle,gunMGT3M60,gunExplosivesT3RocketLauncher,gunBotT3JunkDrone"/>
 			</effect_group>
 		</crafting_skill>
-		
+
 
 		<!-- *** ARMOR_SKILLS -->
 
@@ -1193,7 +1801,7 @@
 		</crafting_skill>-->
 
 
-		 <!--*** ARMOR_T3--> 
+		<!--*** ARMOR_T3-->
 		<crafting_skill name="craftingArmorGrapheneT1TM" max_level="2" parent="attCrafting" name_key="craftingArmorGrapheneT1Name" desc_key="craftingArmorGrapheneT1Desc" long_desc_key="craftingArmorGrapheneT1LongDesc" icon="ui_game_symbol_armor_iron">
 			<display_entry icon="iconArmorGrapheneT1" name_key="armorGrapheneT1" has_quality="false" unlock_level="1" >
 				<unlock_entry item="armorGrapheneHelmetTM,armorGrapheneChestTM,armorGrapheneGlovesTM,armorGrapheneBootsTM,armorClothHatGrapheneTM,armorClothJacketGrapheneTM,armorClothGlovesGrapheneTM,armorClothBootsGrapheneTM" unlock_tier="1" />
@@ -1269,11 +1877,18 @@
 	
 	<!-- * JAVELIN_MASTER -->
 	<perk name="perkJavelinMaster" parent="skillMeleeHand" name_key="perkJavelinMasterName" desc_key="perkJavelinMasterDesc" icon="ui_game_symbol_spear">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="GTE" value="20" desc_key="reqSpearMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="GTE" value="40" desc_key="reqSpearMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="GTE" value="60" desc_key="reqSpearMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="GTE" value="80" desc_key="reqSpearMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="GTE" value="100" desc_key="reqSpearMelee100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkJavelinMaster"/>
@@ -1354,11 +1969,18 @@
 	
 	<!-- * SALVAGE_OPERATIONS -->
 	<perk name="perkSalvageOperations" parent="skillMeleeTool" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="GTE" value="20" desc_key="reqDisassembleTools20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="GTE" value="40" desc_key="reqDisassembleTools40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="GTE" value="60" desc_key="reqDisassembleTools60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="GTE" value="80" desc_key="reqDisassembleTools80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="GTE" value="100" desc_key="reqDisassembleTools100"/></level_requirements>
 
 		<effect_group>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.1,-.5" tags="salvageScrap"/><!-- does not work on scrapping -->
@@ -1414,11 +2036,18 @@
 	
 	<!-- * PUMMEL_PETE -->
 	<perk name="perkPummelPete" parent="skillMeleeHand" name_key="perkPummelPeteName" desc_key="perkPummelPeteDesc" icon="ui_game_symbol_stunned">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="GTE" value="20" desc_key="reqClubMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="GTE" value="40" desc_key="reqClubMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="GTE" value="60" desc_key="reqClubMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="GTE" value="80" desc_key="reqClubMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="GTE" value="100" desc_key="reqClubMelee100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkPummelPete"/>
@@ -1520,11 +2149,19 @@
 	
 	<!-- * SKULL_CRUSHER -->
 	<perk name="perkSkullCrusher" parent="skillMeleeHand" name_key="perkSkullCrusherName" desc_key="perkSkullCrusherDesc" icon="ui_game_symbol_sledge">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="GTE" value="20" desc_key="reqSledgehammerMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="GTE" value="40" desc_key="reqSledgehammerMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="GTE" value="60" desc_key="reqSledgehammerMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="GTE" value="80" desc_key="reqSledgehammerMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_SledgehammerMelee_Lvl" operation="GTE" value="100" desc_key="reqSledgehammerMelee100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkSkullCrusher"/>
@@ -1608,11 +2245,19 @@
 	
 	<!-- * MINER69R -->
 	<perk name="perkMiner69r" parent="skillMeleeTool" name_key="perkMiner69rName" desc_key="perkMiner69rDesc" icon="ui_game_symbol_mining">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="4" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="GTE" value="20" desc_key="reqMinerTools20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="GTE" value="40" desc_key="reqMinerTools40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="GTE" value="60" desc_key="reqMinerTools60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="GTE" value="80" desc_key="reqMinerToolsl80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="GTE" value="100" desc_key="reqMinerToolsl100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".3,1.5" tags="perkMiner69r"/>
@@ -1664,12 +2309,19 @@
 	</perk>
 	
 	<!-- * MOTHER_LODE -->
-	<perk name="perkMotherLode" parent="skillMeleeTool" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+	<perk name="perkMotherLode" parent="skillMeleeTool" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load" override_cost="2,4,6,8,10">
+	<!--<perk name="perkMotherLode" parent="skillMeleeTool" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">-->
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+
+		
+
+
+		
+
 
 		<effect_group>
 			<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="oreWoodHarvest"/>
@@ -1687,11 +2339,20 @@
 	
 	<!-- * BRAWLER -->
 	<perk name="perkBrawler" parent="skillMeleeHand" name_key="perkBrawlerName" desc_key="perkBrawlerDesc" icon="ui_game_symbol_boxer">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="GTE" value="20" desc_key="reqPunchMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="GTE" value="40" desc_key="reqPunchMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="GTE" value="60" desc_key="reqPunchMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="GTE" value="80" desc_key="reqPunchMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="GTE" value="100" desc_key="reqPunchMelee100"/></level_requirements>
+
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkBrawler"/>
@@ -1776,11 +2437,20 @@
 	
 	<!-- * DEEP_CUTS -->
 	<perk name="perkDeepCuts" parent="skillMeleeHand" name_key="perkDeepCutsName" desc_key="perkDeepCutsDesc" icon="ui_game_symbol_deep_cuts">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="GTE" value="20" desc_key="reqKnifeMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="GTE" value="40" desc_key="reqKnifeMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="GTE" value="60" desc_key="reqKnifeMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="GTE" value="80" desc_key="reqKnifeMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="GTE" value="100" desc_key="reqKnifeMelee100"/></level_requirements>
+		
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkDeepCuts"/>
@@ -1961,11 +2631,20 @@
 	
 	<!-- * ELECTROCUTIONER -->
 	<perk name="perkElectrocutioner" parent="skillMeleeHand" name_key="perkElectrocutionerName" desc_key="perkElectrocutionerDesc" icon="ui_game_symbol_electric_power">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="1" desc_key="reqMeleeLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="3" desc_key="reqMeleeLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="5" desc_key="reqMeleeLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="7" desc_key="reqMeleeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="GTE" value="20" desc_key="reqStunMelee20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="GTE" value="40" desc_key="reqStunMelee40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="GTE" value="60" desc_key="reqStunMelee60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="GTE" value="80" desc_key="reqStunMelee80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="GTE" value="100" desc_key="reqStunMelee100"/></level_requirements>
+		
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkElectrocutioner"/>
@@ -2020,7 +2699,8 @@
 	</perk>
 
 	<!-- * FLURRY GLOBAL  -->
-	<perk name="perkFlurryGlobal" max_level="3" parent="skillMeleeSpeed" name_key="perkFlurryGlobalName" desc_key="perkFlurryGlobalDesc" icon="ui_game_symbol_knunchuck">
+	<perk name="perkFlurryGlobal" parent="skillMeleeSpeed" name_key="perkFlurryGlobalName" desc_key="perkFlurryGlobalDesc" icon="ui_game_symbol_knunchuck" override_cost="1,3,6">
+	<!--<perk name="perkFlurryGlobal" max_level="3" parent="skillMeleeSpeed" name_key="perkFlurryGlobalName" desc_key="perkFlurryGlobalDesc" icon="ui_game_symbol_knunchuck">
 		<level_requirements level="1">
 			<requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="4" desc_key="reqMeleeLevel04"/>
 		</level_requirements>
@@ -2029,7 +2709,7 @@
 		</level_requirements>
 		<level_requirements level="3">
 			<requirement name="ProgressionLevel" progression_name="attMelee" operation="GTE" value="10" desc_key="reqMeleeLevel10"/>
-		</level_requirements>
+		</level_requirements>-->
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="tool,melee"/>
@@ -2051,11 +2731,18 @@
 	
 	<!-- * DEAD_EYE -->
 	<perk name="perkDeadEye" parent="skillBetdistFired" name_key="perkDeadEyeName" desc_key="perkDeadEyeDesc" icon="ui_game_symbol_map_cursor">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="GTE" value="20" desc_key="reqRifleRanged20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="GTE" value="40" desc_key="reqRifleRanged40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="GTE" value="60" desc_key="reqRifleRanged60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="GTE" value="80" desc_key="reqRifleRanged80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="GTE" value="100" desc_key="reqRifleRanged100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkDeadEye"/>
@@ -2110,7 +2797,9 @@
 	</perk>
 	
 	<!-- * DEMOLITIONS_EXPERT -->
-	<perk name="perkDemolitionsExpert" parent="skillBetdistSuply" name_key="perkDemolitionsExpertName" desc_key="perkDemolitionsExpertDesc" icon="ui_game_symbol_explosion">
+	<perk name="perkDemolitionsExpert" parent="skillBetdistSuply" name_key="perkDemolitionsExpertName" desc_key="perkDemolitionsExpertDesc" icon="ui_game_symbol_explosion" override_cost="2,4,6,8,10">
+
+		<!--<perk name="perkDemolitionsExpert" parent="skillBetdistSuply" name_key="perkDemolitionsExpertName" desc_key="perkDemolitionsExpertDesc" icon="ui_game_symbol_explosion">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
@@ -2118,19 +2807,19 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
 
 		<effect_group>
-			<!-- Increase the chance to find explosives with each perk rank -->
+			--><!-- Increase the chance to find explosives with each perk rank --><!--
 			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="explosivesSkill"/>
 
-			<!-- Increase the chance to find explosive crafting skill magazines with each perk rank up to crafting skill 100 -->
+			--><!-- Increase the chance to find explosive crafting skill magazines with each perk rank up to crafting skill 100 --><!--
 			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="explosivesCSM">
 				<requirement name="ProgressionLevel" progression_name="craftingExplosives" operation="LT" value="100"/>
 			</passive_effect>
 
-			<!-- Once explosive crafting skill reaches 100, set the probability bonus of finding explosive crafting skill magazines to 0 -->
+			--><!-- Once explosive crafting skill reaches 100, set the probability bonus of finding explosive crafting skill magazines to 0 --><!--
 			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="explosivesCSM">
 				<requirement name="ProgressionLevel" progression_name="craftingExplosives" operation="Equals" value="100"/>
 			</passive_effect>
-		</effect_group>
+		</effect_group>-->
 
 		<effect_group>
 			<passive_effect name="DismemberChance" operation="base_add" level="1,2,3,4,5" value=".05,.1,.2,.3,.45" tags="perkDemolitionsExpert"/>
@@ -2148,11 +2837,12 @@
 	</perk>
 	
 	<!-- * PENETRATOR -->
-	<perk name="perkPenetrator" max_level="4" parent="skillBetdistSuply" name_key="perkPenetratorName" desc_key="perkPenetratorDesc" icon="ui_game_symbol_paint_copy_block">
+	<perk name="perkPenetrator" parent="skillBetdistSuply" name_key="perkPenetratorName" desc_key="perkPenetratorDesc" icon="ui_game_symbol_paint_copy_block" override_cost="2,4,6,8">
+	<!--<perk name="perkPenetrator" max_level="4" parent="skillBetdistSuply" name_key="perkPenetratorName" desc_key="perkPenetratorDesc" icon="ui_game_symbol_paint_copy_block">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="4" desc_key="reqBetdistLevel04"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="6" desc_key="reqBetdistLevel06"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="8" desc_key="reqBetdistLevel08"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="8" desc_key="reqBetdistLevel08"/></level_requirements>-->
 		
         <effect_group>
 			<passive_effect name="TargetArmor" operation="perc_add" level="1,2,3,4" value="-.10,-.15,-.2,-.3" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,turretRanged,perkPenetrator,perkArchery,perkRangedWeapons"/>
@@ -2171,11 +2861,19 @@
 	
 	<!-- * BOOMSTICK -->
 	<perk name="perkBoomstick" parent="skillBetdistFired" name_key="perkBoomstickName" desc_key="perkBoomstickDesc" icon="ui_game_symbol_shotgun">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="GTE" value="20" desc_key="reqShotgunRanged20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="GTE" value="40" desc_key="reqShotgunRanged40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="GTE" value="60" desc_key="reqShotgunRanged60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="GTE" value="80" desc_key="reqShotgunRanged80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="GTE" value="100" desc_key="reqShotgunRanged100"/></level_requirements>
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkBoomstick"/>
@@ -2238,11 +2936,20 @@
 
 	<!-- * MACHINE_GUNNER -->
 	<perk name="perkMachineGunner" parent="skillBetdistFired" name_key="perkMachineGunnerName" desc_key="perkMachineGunnerDesc" icon="ui_game_symbol_rifle">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="GTE" value="20" desc_key="reqGatlingRanged20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="GTE" value="40" desc_key="reqGatlingRanged40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="GTE" value="60" desc_key="reqGatlingRanged60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="GTE" value="80" desc_key="reqGatlingRanged80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="GTE" value="100" desc_key="reqGatlingRanged100"/></level_requirements>
+		
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkMachineGunner"/>
@@ -2309,11 +3016,20 @@
 	
 	<!-- * ARCHERY -->
 	<perk name="perkArchery" parent="skillBetdistFired" name_key="perkArcheryName" desc_key="perkArcheryDesc" icon="ui_game_symbol_archery">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>-->
+		
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="GTE" value="20" desc_key="reqArcheryRanged20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="GTE" value="40" desc_key="reqArcheryRanged40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="GTE" value="60" desc_key="reqArcheryRanged60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="GTE" value="80" desc_key="reqArcheryRanged80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="GTE" value="100" desc_key="reqArcheryRanged100"/></level_requirements>
+		
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkArchery"/>
@@ -2357,11 +3073,18 @@
 
 	<!-- * GUNSLINGER -->
 	<perk name="perkGunslinger" parent="skillBetdistFired" max_level="5" name_key="perkGunslingerName" desc_key="perkGunslingerDesc" icon="ui_game_symbol_gunslinger">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
+		<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="3" desc_key="reqBetdistLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="5" desc_key="reqBetdistLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="10" desc_key="reqBetdistLevel10"/></level_requirements>-->
+		
+		<level_requirements level="1"><requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="GTE" value="20" desc_key="reqPistolRanged20"/></level_requirements>
+		<level_requirements level="2"><requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="GTE" value="40" desc_key="reqPistolRanged40"/></level_requirements>
+		<level_requirements level="3"><requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="GTE" value="60" desc_key="reqPistolRanged60"/></level_requirements>
+		<level_requirements level="4"><requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="GTE" value="80" desc_key="reqPistolRanged80"/></level_requirements>
+		<level_requirements level="5"><requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="GTE" value="100" desc_key="reqPistolRanged100"/></level_requirements>
+		
 
 		<effect_group>
 			<passive_effect name="BlockDamage" operation="perc_add" level="0,5" value="0,1" tags="perkGunslinger"/>
@@ -2430,10 +3153,11 @@
 	</perk>
 	
 	<!-- * RUN_AND_GUN -->
-	<perk name="perkRunAndGun" max_level="3" parent="skillBetdistSuply" name_key="perkRunAndGunName" desc_key="perkRunandGunDesc" icon="ui_game_symbol_run_and_gun">
+	<perk name="perkRunAndGun" parent="skillBetdistSuply" name_key="perkRunAndGunName" desc_key="perkRunandGunDesc" icon="ui_game_symbol_run_and_gun" override_cost="1,3,6">
+	<!--<perk name="perkRunAndGun" max_level="3" parent="skillBetdistSuply" name_key="perkRunAndGunName" desc_key="perkRunandGunDesc" icon="ui_game_symbol_run_and_gun">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="1" desc_key="reqBetdistLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="4" desc_key="reqBetdistLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBetdist" operation="GTE" value="7" desc_key="reqBetdistLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" level="1,2,3" value="-.1,-.17,-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -2458,12 +3182,13 @@
 	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
 	
 	<!-- * LUCKY_LOOTER -->
-	<perk name="perkLuckyLooter" parent="skillIntelLoot" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
+	<perk name="perkLuckyLooter" parent="skillIntelLoot" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart" override_cost="2,4,6,8,10">
+	<!--<perk name="perkLuckyLooter" parent="skillIntelLoot" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="2" desc_key="reqIntelLevel02"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="4" desc_key="reqIntelLevel05"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".05,.25"/>
@@ -2491,10 +3216,11 @@
 	</perk>
 	
 	<!-- * TREASURE_HUNTER -->
-	<perk name="perkTreasureHunter" max_level="3" parent="skillIntelLoot" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
+	<perk name="perkTreasureHunter" parent="skillIntelLoot" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure" override_cost="1,3,6">
+	<!--<perk name="perkTreasureHunter" max_level="3" parent="skillIntelLoot" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="4" desc_key="reqIntelLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" level="0,1,2,3" value="0,-3,-5,-7"/><!-- base value in quests is 10 -->
@@ -2509,12 +3235,13 @@
 		</effect_group>
 	</perk>
 	
-	 <!--* VANILLA_ARMOR--> 
-	<perk name="perkVanillaArmor" max_level="4" parent="skillIntelBody" name_key="perkVanillaArmorName" desc_key="perkVanillaArmorDesc" icon="ui_game_symbol_armor_iron">
+	 <!--* VANILLA_ARMOR-->
+	<perk name="perkVanillaArmor" parent="skillIntelLoot" name_key="perkVanillaArmorName" desc_key="perkVanillaArmorDesc" icon="ui_game_symbol_armor_iron" override_cost="2,4,6,8">
+	<!--<perk name="perkVanillaArmor" max_level="4" parent="skillIntelBody" name_key="perkVanillaArmorName" desc_key="perkVanillaArmorDesc" icon="ui_game_symbol_armor_iron">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="5" desc_key="reqIntelLevel05"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>-->
 		
 		<effect_group>
 
@@ -2533,12 +3260,13 @@
 	</perk>
 	
 	<!-- * TURRETS -->
-	<perk name="perkTurrets" parent="skillIntelBrain" name_key="perkTurretsName" desc_key="perkTurretsDesc" icon="ui_game_symbol_electric_turret">
+	<perk name="perkTurrets" parent="skillIntelBrain" name_key="perkTurretsName" desc_key="perkTurretsDesc" icon="ui_game_symbol_electric_turret" override_cost="2,4,6,8,10">
+	<!--<perk name="perkTurrets" parent="skillIntelBrain" name_key="perkTurretsName" desc_key="perkTurretsDesc" icon="ui_game_symbol_electric_turret">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="5" desc_key="reqIntelLevel05"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="6" desc_key="reqIntelLevel06"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="8" desc_key="reqIntelLevel08"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,2,3,4,5" value=".125,.25,.375,.5,.5" tags="turretMelee"/>
@@ -2594,12 +3322,13 @@
 	</perk>
 	
 	<!-- * BETTER_BARTER -->
-	<perk name="perkBetterBarter" parent="skillIntelLoot" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
+	<perk name="perkBetterBarter" parent="skillIntelLoot" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter" override_cost="2,4,6,8,10">
+	<!--<perk name="perkBetterBarter" parent="skillIntelLoot" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="5" desc_key="reqIntelLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="BarteringBuying" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
@@ -2614,12 +3343,13 @@
 	</perk>
 	
 	<!-- * DARING_ADVENTURER -->
-	<perk name="perkDaringAdventurer" parent="skillIntelLoot" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
+	<perk name="perkDaringAdventurer" parent="skillIntelLoot" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure" override_cost="2,4,6,8,10">
+	<!--<perk name="perkDaringAdventurer" parent="skillIntelLoot" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="5" desc_key="reqIntelLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="7" desc_key="reqIntelLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="TraderStage" operation="base_add" level="1,5" value="10,50"/>
@@ -2635,12 +3365,13 @@
 	</perk>
 	
 	<!-- * PHYSICIAN -->
-	<perk name="perkPhysician" max_level="5" parent="skillIntelBrain" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical">
+	<perk name="perkPhysician" parent="skillIntelBrain" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical" override_cost="2,4,6,8,10">
+	<!--<perk name="perkPhysician" max_level="5" parent="skillIntelBrain" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="3" desc_key="reqIntelLevel03"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="6" desc_key="reqIntelLevel06"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="8" desc_key="reqIntelLevel08"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="9" desc_key="reqIntelLevel09"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<!-- Craft items in the chemical station faster -->
@@ -2691,12 +3422,13 @@
 	</perk>
 
 	<!-- * ADVANCED_ENGINEERING -->
-	<perk name="perkAdvancedEngineering" parent="skillIntelBrain" name_key="perkAdvancedEngineeringName" desc_key="perkAdvancedEngineeringDesc" icon="ui_game_symbol_workbench">
+	<perk name="perkAdvancedEngineering" parent="skillIntelBrain" name_key="perkAdvancedEngineeringName" desc_key="perkAdvancedEngineeringDesc" icon="ui_game_symbol_workbench" override_cost="2,4,6,8,10">
+	<!--<perk name="perkAdvancedEngineering" parent="skillIntelBrain" name_key="perkAdvancedEngineeringName" desc_key="perkAdvancedEngineeringDesc" icon="ui_game_symbol_workbench">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="1" desc_key="reqIntelLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="4" desc_key="reqIntelLevel04"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="6" desc_key="reqIntelLevel06"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="8" desc_key="reqIntelLevel08"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntel" operation="GTE" value="10" desc_key="reqIntelLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<!-- fake crafting perk that is used to scale resources -->
@@ -2767,12 +3499,13 @@
 	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
 
 	<!-- * PAIN_TOLERANCE -->
-	<perk name="perkPainTolerance" parent="skillBufosAlt" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character">
+	<perk name="perkPainTolerance" parent="skillBufosAlt" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character" override_cost="2,4,6,8,10">
+	<!--<perk name="perkPainTolerance" parent="skillBufosAlt" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="GeneralDamageResist" operation="base_add" level="1,5" value=".05,.25"/>
@@ -2787,12 +3520,13 @@
 	</perk>
 	
 	<!-- * HEALING_FACTOR -->
-	<perk name="perkHealingFactor" parent="skillBufosAlt" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" icon="ui_game_symbol_healing_factor">
+	<perk name="perkHealingFactor" parent="skillBufosAlt" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" icon="ui_game_symbol_healing_factor" override_cost="2,4,6,8,10">
+	<!--<perk name="perkHealingFactor" parent="skillBufosAlt" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" icon="ui_game_symbol_healing_factor">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<!-- crit hit effects heal rate is assigned in  buffStatusCheck02 -->
@@ -2812,10 +3546,11 @@
 	</perk>
 	
 	<!-- * RULE_ONE_CARDIO -->
-	<perk name="perkRuleOneCardio" max_level="3" parent="skillBufosAlt" name_key="perkRuleOneCardioName" desc_key="perkRuleOneCardioDesc" icon="ui_game_symbol_cardio">
+	<perk name="perkRuleOneCardio" parent="skillBufosAlt" name_key="perkRuleOneCardioName" desc_key="perkRuleOneCardioDesc" icon="ui_game_symbol_cardio" override_cost="1,3,6">
+	<!--<perk name="perkRuleOneCardio" max_level="3" parent="skillBufosAlt" name_key="perkRuleOneCardioName" desc_key="perkRuleOneCardioDesc" icon="ui_game_symbol_cardio">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="4" desc_key="reqBufosLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" level="1,3" value="0.1,0.3" tags="running,swimmingRun"/> <!-- perkRuleOneCardio -->
@@ -2828,12 +3563,13 @@
 	</perk>
 	
 	<!-- * PARKOUR -->
-	<perk name="perkParkour" parent="skillBufosAlt" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
+	<perk name="perkParkour" parent="skillBufosAlt" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour" override_cost="2,4,6,8,10">
+	<!--<perk name="perkParkour" parent="skillBufosAlt" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="4" desc_key="reqBufosLevel04"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="6" desc_key="reqBufosLevel06"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="8" desc_key="reqBufosLevel08"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 		
 
 		<effect_group>
@@ -2854,12 +3590,13 @@
 	</perk>
 	
 	<!-- * HIDDEN_STRIKE -->
-	<perk name="perkHiddenStrike" parent="skillBufosAlt" name_key="perkHiddenStrikeName" desc_key="perkHiddenStrikeDesc" icon="ui_game_symbol_sneak_attack">
+	<perk name="perkHiddenStrike" parent="skillBufosAlt" name_key="perkHiddenStrikeName" desc_key="perkHiddenStrikeDesc" icon="ui_game_symbol_sneak_attack" override_cost="2,4,6,8,10">
+	<!--<perk name="perkHiddenStrike" parent="skillBufosAlt" name_key="perkHiddenStrikeName" desc_key="perkHiddenStrikeDesc" icon="ui_game_symbol_sneak_attack">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group name="regular weapons, sledgehammer"> <!-- blades, bows have item bonuses -->
 			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -2889,12 +3626,13 @@
 	</perk>
 
 	<!-- * FROM_THE_SHADOWS -->
-	<perk name="perkFromTheShadows" parent="skillBufosAlt" name_key="perkFromTheShadowsName" desc_key="perkFromTheShadowsDesc" icon="ui_game_symbol_bat">
+	<perk name="perkFromTheShadows" parent="skillBufosAlt" name_key="perkFromTheShadowsName" desc_key="perkFromTheShadowsDesc" icon="ui_game_symbol_bat" override_cost="2,4,6,8,10">
+	<!--<perk name="perkFromTheShadows" parent="skillBufosAlt" name_key="perkFromTheShadowsName" desc_key="perkFromTheShadowsDesc" icon="ui_game_symbol_bat">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -2926,12 +3664,13 @@
 	</perk>
 	
 	<!-- * LIVING_OFF_THE_LAND -->
-	<perk name="perkLivingOffTheLand" max_level="3" parent="skillBufosAlt" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
+	<perk name="perkLivingOffTheLand" parent="skillBufosAlt" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree" override_cost="2,4,6,8,10">
+	<!--<perk name="perkLivingOffTheLand" max_level="3" parent="skillBufosAlt" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="CraftingTier" operation="base_set" level="0,3" value="0,3" tags="perkLivingOffTheLandCrafting"/><!-- fake crafting perk that is used to scale resources -->
@@ -2961,12 +3700,13 @@
 	</perk>
 	
 	<!-- *** GRAND_SLAM -->
-	<perk name="perkGrandSlam" parent="skillBufosAlt" name_key="perkGrandSlamName" desc_key="perkGrandSlamDesc" icon="ui_game_symbol_grand_slam">
+	<perk name="perkGrandSlam" parent="skillBufosAlt" name_key="perkGrandSlamName" desc_key="perkGrandSlamDesc" icon="ui_game_symbol_grand_slam" override_cost="2,4,6,8,10">
+	<!--<perk name="perkGrandSlam" parent="skillBufosAlt" name_key="perkGrandSlamName" desc_key="perkGrandSlamDesc" icon="ui_game_symbol_grand_slam">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<requirement name="ItemHasTags" tags="perkPummelPete,perkSkullCrusher"/>
@@ -3033,12 +3773,13 @@
 	</perk>
 	
 	<!-- *** SIPHONING_STRIKES -->
-	<perk name="perkSiphoningStrikes" parent="skillBufosAlt" name_key="perkSiphoningStrikesName" desc_key="perkSiphoningStrikesDesc" icon="ui_game_symbol_siphoning_strikes">
+	<perk name="perkSiphoningStrikes" parent="skillBufosAlt" name_key="perkSiphoningStrikesName" desc_key="perkSiphoningStrikesDesc" icon="ui_game_symbol_siphoning_strikes" override_cost="2,4,6,8,10">
+	<!--<perk name="perkSiphoningStrikes" parent="skillBufosAlt" name_key="perkSiphoningStrikesName" desc_key="perkSiphoningStrikesDesc" icon="ui_game_symbol_siphoning_strikes">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 		<requirement name="ItemHasTags" tags="melee"/>
@@ -3067,12 +3808,13 @@
 	</perk>
 	
 	<!-- *** HARD_TARGET -->
-	<perk name="perkHardTarget" parent="skillBufosAlt" name_key="perkHardTargetName" desc_key="perkHardTargetDesc" icon="ui_game_symbol_hard_target">
+	<perk name="perkHardTarget" parent="skillBufosAlt" name_key="perkHardTargetName" desc_key="perkHardTargetDesc" icon="ui_game_symbol_hard_target" override_cost="2,4,6,8,10">
+	<!--<perk name="perkHardTarget" parent="skillBufosAlt" name_key="perkHardTargetName" desc_key="perkHardTargetDesc" icon="ui_game_symbol_hard_target">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<requirement name="EntityHasMovementTag" tags="walking,running"/>
@@ -3089,12 +3831,13 @@
 	</perk>
 	
 	<!-- *** JUNK_MINER -->
-	<perk name="perkJunkMiner" parent="skillBufosAlt" name_key="perkJunkMinerName" desc_key="perkJunkMinerDesc" icon="ui_game_symbol_junk_miner">
+	<perk name="perkJunkMiner" parent="skillBufosAlt" name_key="perkJunkMinerName" desc_key="perkJunkMinerDesc" icon="ui_game_symbol_junk_miner" override_cost="2,4,6,8,10">
+	<!--<perk name="perkJunkMiner" parent="skillBufosAlt" name_key="perkJunkMinerName" desc_key="perkJunkMinerDesc" icon="ui_game_symbol_junk_miner">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="1" desc_key="reqBufosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="3" desc_key="reqBufosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="5" desc_key="reqBufosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="7" desc_key="reqBufosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attBufos" operation="GTE" value="10" desc_key="reqBufosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkMiner69r"/>
@@ -3119,10 +3862,11 @@
 	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
 
 	<!-- *** INFILTRATOR -->
-	<perk name="perkInfiltrator" max_level="3" parent="skillParalelosTon" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
+	<perk name="perkInfiltrator" parent="skillParalelosTon" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth" override_cost="1,3,6">
+	<!--<perk name="perkInfiltrator" max_level="3" parent="skillParalelosTon" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="TrapDoorTriggerDelay" operation="base_add" level="1,2,3" value="1,3,5"/>
@@ -3139,10 +3883,11 @@
 	</perk>
 
 	<!-- * ANIMAL_TRACKER -->
-	<perk name="perkAnimalTracker" max_level="3" parent="skillParalelosTon" name_key="perkAnimalTrackerName" desc_key="perkAnimalTrackerDesc" icon="ui_game_symbol_animal_tracker">
+	<perk name="perkAnimalTracker" parent="skillParalelosTon" name_key="perkAnimalTrackerName" desc_key="perkAnimalTrackerDesc" icon="ui_game_symbol_animal_tracker" override_cost="1,3,6">
+	<!--<perk name="perkAnimalTracker" max_level="3" parent="skillParalelosTon" name_key="perkAnimalTrackerName" desc_key="perkAnimalTrackerDesc" icon="ui_game_symbol_animal_tracker">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="TrackDistance" operation="base_set" level="0,1,2,3" value="0,100,100,100"/>
@@ -3183,12 +3928,13 @@
 	</perk>
 	
 	<!-- * THE_HUNTSMAN -->
-	<perk name="perkTheHuntsman" parent="skillParalelosTon" name_key="perkTheHuntsmanName" desc_key="perkTheHuntsmanDesc" icon="ui_game_symbol_archery">
+	<perk name="perkTheHuntsman" parent="skillParalelosTon" name_key="perkTheHuntsmanName" desc_key="perkTheHuntsmanDesc" icon="ui_game_symbol_archery" override_cost="2,4,6,8,10">
+	<!--<perk name="perkTheHuntsman" parent="skillParalelosTon" name_key="perkTheHuntsmanName" desc_key="perkTheHuntsmanDesc" icon="ui_game_symbol_archery">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="3" desc_key="reqParalelosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="5" desc_key="reqParalelosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<!-- stone axe, knives, etc do the base_set 1 -->
@@ -3232,12 +3978,13 @@
 	</perk>-->
 	
 	<!-- * SLOW_METABOLISM -->
-	<perk name="perkSlowMetabolism" parent="skillParalelosTon" name_key="perkSlowMetabolismName" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
+	<perk name="perkSlowMetabolism" parent="skillParalelosTon" name_key="perkSlowMetabolismName" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach" override_cost="2,4,6,8,10">
+	<!--<perk name="perkSlowMetabolism" parent="skillParalelosTon" name_key="perkSlowMetabolismName" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="3" desc_key="reqParalelosLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="5" desc_key="reqParalelosLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
@@ -3259,12 +4006,13 @@
 	</perk>
 	
 	<!-- * CHARISMATIC_NATURE -->
-	<perk name="perkCharismaticNature" max_level="5" parent="skillParalelosTon" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
+	<perk name="perkCharismaticNature" parent="skillParalelosTon" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk" override_cost="2,4,6,8,10">
+	<!--<perk name="perkCharismaticNature" max_level="5" parent="skillParalelosTon" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="5" desc_key="reqParalelosLevel05"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="8" desc_key="reqParalelosLevel08"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="9" desc_key="reqParalelosLevel09"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="1" target="selfOtherPlayers" target_tags="ally,party">
@@ -3305,12 +4053,13 @@
 	</perk>
 	
 	<!-- * GREASE_MONKEY -->
-	<perk name="perkGreaseMonkey" parent="skillParalelosTon" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
+	<perk name="perkGreaseMonkey" parent="skillParalelosTon" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service" override_cost="2,4,6,8,10">
+	<!--<perk name="perkGreaseMonkey" parent="skillParalelosTon" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="2" desc_key="reqParalelosLevel02"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="6" desc_key="reqParalelosLevel06"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="8" desc_key="reqParalelosLevel08"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="10" desc_key="reqParalelosLevel10"/></level_requirements>-->
 
 		<effect_group>
 			<!-- fake crafting perk that is used to scale resources or quality like on carBattery -->
@@ -3338,10 +4087,11 @@
 	</perk>
 
 	<!-- * LOCK_PICKING -->
-	<perk name="perkLockPicking" max_level="3" parent="skillParalelosTon" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
+	<perk name="perkLockPicking" parent="skillParalelosTon" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock" override_cost="2,4,6,8,10">
+	<!--<perk name="perkLockPicking" max_level="3" parent="skillParalelosTon" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>-->
 		
 		<effect_group>
 			<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".17,.375"/>
@@ -3378,12 +4128,13 @@
 	</perk>
 	
 	<!-- *** PACK_MULE -->
-	<perk name="perkPackMule" parent="skillParalelosTon" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
+	<perk name="perkPackMule" parent="skillParalelosTon" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule" override_cost="2,4,6,8,10">
+	<!--<perk name="perkPackMule" parent="skillParalelosTon" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="2" desc_key="reqParalelosLevel02"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="3" desc_key="reqParalelosLevel03"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="5" desc_key="reqParalelosLevel01"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="5" desc_key="reqParalelosLevel01"/></level_requirements>-->
 
 		<effect_group>
 			<!-- Increase the backpack slots available before incumbrance starts -->
@@ -3493,10 +4244,11 @@
 	</perk>
 
 	<!-- *** MASTER_CHEF -->
-	<perk name="perkMasterChef" max_level="3" parent="skillParalelosTon" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula" override_cost="1,2,3">
+	<perk name="perkMasterChef" parent="skillParalelosTon" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula" override_cost="1,3,6">
+	<!--<perk name="perkMasterChef" max_level="3" parent="skillParalelosTon" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula" override_cost="1,2,3">
 		 <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="1" desc_key="reqParalelosLevel01"/></level_requirements> 
 		 <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="4" desc_key="reqParalelosLevel04"/></level_requirements> 
-		 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements> 
+		 <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attParalelos" operation="GTE" value="7" desc_key="reqParalelosLevel07"/></level_requirements>--> 
 
 		<effect_group>
 			<!-- fake crafting perk that is used to scale resources -->
@@ -3551,7 +4303,7 @@
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="3" desc_key="reqTongoLevel03"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="5" desc_key="reqTongoLevel05"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="7" desc_key="reqTongoLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="9" desc_key="reqTongoLevel9"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attTongo" operation="GTE" value="9" desc_key="reqTongoLevel09"/></level_requirements>
 
 		 <!-- level 1 (walk of the walkers "walk 50% more speed") --> 
 		<effect_group>
@@ -3967,6 +4719,21 @@
 		</effect_group>
 	</perk>
 
+	
+					<!-- *** -->
+
+	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+
+	<!-- *** PERKS PROGRESSION (TONGO) -->
+	
+	<!-- * SQUIRE (ESCUDERO) -->
+	<!--<perk name="perkStoneTools" parent="skillProgression" max_level="5" name_key="perkStoneToolsName" desc_key="perkStoneToolsDesc" icon="ui_game_symbol_T_tools">
+		
+	</perk>-->
+
+	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+	<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
 	
 					<!-- *** -->
 	

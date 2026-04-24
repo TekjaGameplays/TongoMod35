@@ -2935,7 +2935,7 @@
 			<property name="shareable" value="false"/>
 
 			<objective type="Craft" id="armorPrimitiveHelmet" value="1"/>
-			<objective type="Craft" id="armorPrimitiveOutfit" value="1"/>
+			<!--<objective type="Craft" id="armorPrimitiveOutfit" value="1"/>-->
 			<objective type="Craft" id="armorPrimitiveGloves" value="1"/>
 			<objective type="Craft" id="armorPrimitiveBoots" value="1"/>
 
@@ -2957,7 +2957,7 @@
 			<property name="shareable" value="false"/>
 
 			<objective type="Wear" id="armorPrimitiveHelmet"/>
-			<objective type="Wear" id="armorPrimitiveOutfit"/>
+			<!--<objective type="Wear" id="armorPrimitiveOutfit"/>-->
 			<objective type="Wear" id="armorPrimitiveGloves"/>
 			<objective type="Wear" id="armorPrimitiveBoots"/>
 
@@ -5949,6 +5949,7 @@
 
 			<objective type="EntityKill" id="zombieUtilityWorker,zombieUtilityWorkerFeral,zombieUtilityWorkerRadiated" value="5"/>
 
+			<reward type="Item" id="modGunGrapheneMagazineExtenderTMSchematic" value="1"/>
 			<reward type="Item" id="questRewardSoldierMagazineBundle" value="1"/>
 			<reward type="Item" id="casinoCoin" value="1000"/>
 			<reward type="Exp" value="2000"/>
@@ -6743,6 +6744,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<!-- QUEST 2,3,4,5,6 ROMEVED TEMPORALY -->
@@ -6784,6 +6786,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial8">
@@ -6823,6 +6826,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial9">
@@ -6862,6 +6866,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial10">
@@ -6901,6 +6906,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial11">
@@ -6940,6 +6946,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial12">
@@ -6979,6 +6986,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial13">
@@ -7018,6 +7026,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial14">
@@ -7057,6 +7066,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<!-- QUEST 15,16,17 ROMEVED TEMPORALY -->
@@ -7114,6 +7124,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial19">
@@ -7169,6 +7180,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial20">
@@ -7224,6 +7236,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial21">
@@ -7279,6 +7292,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial22">
@@ -7334,6 +7348,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial23">
@@ -7389,6 +7404,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial24">
@@ -7446,6 +7462,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial25">
@@ -7503,6 +7520,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial26">
@@ -7560,6 +7578,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial27">
@@ -7615,6 +7634,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<!-- QUEST 28 ROMEVED TEMPORALY -->
@@ -7656,6 +7676,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial30">
@@ -7695,6 +7716,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 
 		<quest id="questRadial31">
@@ -7738,6 +7760,7 @@
 			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
 			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResourcesT1,groupQuestT1SkillMagazineBundle" ischosen="true" value="3"/>
+			<reward type="Item" id="iconSkillPointTM" ischosen="true" value="1"/>
 		</quest>
 		
 		
@@ -7749,6 +7772,145 @@
 
 	<append xpath="/quests">
 
+		<quest id="questRadial32">
+			<property name="name_key" value="quest_radial31_name"/>
+			<property name="subtitle_key" value="quest_radial31_subtitle"/>
+			<property name="description_key" value="quest_radial31_desc"/>
+			<property name="offer_key" value="quest_radial31_offer"/>
+			<property name="icon" value="ui_game_symbol_letter"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="3"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<!--<objective type="FetchKeep" id="modArmorPerception" value="1"/>-->
+			<!--<objective type="FetchKeep" id="modArmorStrength" value="1"/>-->
+			<!--<objective type="FetchKeep" id="modArmorFortitude" value="1"/>-->
+			<!--<objective type="FetchKeep" id="modArmorAgility" value="1"/>-->
+			<objective type="FetchKeep" id="meleeToolSalvageMegaImpactDriverTM" value="1" phase="1"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<action type="SetCVar">
+				<property name="cvar" value="VarRemoveTest"/>
+				<property name="value" value="1"/>
+				<property name="on_complete" value="true"/>
+			</action>
+
+			<action type="GameEvent" >
+				<property name="event" value="RemoveTest"/>
+				<property name="phase" value="3"/>
+				<requirement class="CVar">
+					<property name="cvar" value="VarRemoveTest"/>
+					<property name="operation" value="GT" />
+					<property name="value" value="0" />
+				</requirement>
+			</action>
+
+			<!--<action type="GameEvent" event="spawn_chicken" delay="3" phase="2">
+			</action>-->
+
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResourcesT1,groupQuestT1SkillMagazineBundle" ischosen="true" value="3"/>
+		</quest>
+
+
+
+		<quest id="tier2_supplyrun1">
+			<property name="name_key" value="quest_tier2_supplyrun"/>
+			<property name="subtitle_key" value="quest_supplyrun_subtitle"/>
+			<property name="description_key" value="quest_supplyrun_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="2"/>
+			<property name="offer_key" value="quest_supplyrun_offerT2_1"/>
+			<property name="statement_key" value="quest_supplyrun_statement"/>
+			<property name="response_key" value="quest_supplyrun_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5" />
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_supplyrun_completion"/>
+
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
+				<property name="biome_filter" value="" param1="biome_filter"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerFetch"/>
+			</objective>
+
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<action type="GameEvent" >
+				<property name="event" value="RemoveTest"/>
+				<property name="phase" value="4"/>
+			</action>
+
+			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="casinoCoin" value="100"/>
+
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
 
 
 	</append>

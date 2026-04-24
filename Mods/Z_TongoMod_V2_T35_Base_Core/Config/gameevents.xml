@@ -60,8 +60,41 @@
 			</action>
 		</action_sequence>
 
+
+		<!-- reward gain skill point-->
+		<action_sequence name="skill_points_gain">
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="1" />
+			</action>
+		</action_sequence>
+
+
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+		<action_sequence name="RemoveTest">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="perkMasterTool" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+
+			<!--<requirement class="CVar">
+				<property name="cvar" value="VarRemoveTest"/>
+				<property name="operation" value="GT" />
+				<property name="value" value="0" />
+			</requirement>-->
+			
+		</action_sequence>
+		
+		
+		
+
 	</append>
 
+	
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 		
 

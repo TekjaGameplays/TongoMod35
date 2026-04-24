@@ -224,6 +224,11 @@
 			<ingredient name="drinkJarEmpty" count="1"/>
 		</recipe>
 
+		<recipe name="drinkJarIceCoffeTM" count="1" craft_time="5"  tags="perkMasterChef">
+			<ingredient name="drinkJarCoffee" count="1"/>
+			<ingredient name="resourceSnowBall" count="10"/>
+		</recipe>
+
 		<recipe name="resourceBowlTM" count="1" craft_time="10">
 			<ingredient name="resourceWood" count="5"/>
 		</recipe>
@@ -1028,12 +1033,14 @@
 		<recipe name="resourceScrapPolymers" count="100" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
 			<ingredient name="resourceGraphite" count="100"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceBeeswax" count="1"/>
 		</recipe>
 
-		<recipe name="resourceScrapPolymers" count="100" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
+		<!--<recipe name="resourceScrapPolymers" count="100" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
 			<ingredient name="resourceTallowTM" count="1"/>
-			<ingredient name="foodCornMeal" count="10"/>
-		</recipe>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceBeeswax" count="1"/>
+		</recipe>-->
 
 		<!--<recipe name="resourceAcid" count="5" craft_time="60" craft_area="MKDysmantle" tags="learnable,workingDysmantle">
 			<ingredient name="resourceBioFuelTM" count="1"/>
@@ -2510,7 +2517,7 @@
 			<ingredient name="resourceOilShale" count="35"/>
 		</recipe>
 
-		<recipe name="ammoGasCan" count="1000" craft_time="300" craft_area="MKOchemi" tags="perkPhysician" craft_tool="toolBeaker">
+		<recipe name="ammoGasCan" count="10000" craft_time="300" craft_area="MKOchemi" tags="perkPhysician" craft_tool="toolBeaker">
 			<ingredient name="resourceBioFuelTM" count="1"/>
 		</recipe>
 
@@ -4389,7 +4396,173 @@
 			<ingredient name="resourceBluePaper" count="10000"/>
 		</recipe>
 
+
+		<!-- * candy progression (schematic) -->
+
+		<recipe name="foodCandyMinerBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyDisassembleBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyClubBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandySledgehammerBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyKnifeBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandySpearBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyPunchBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyStunBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyArcheryBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyPistolBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyShotgunBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyGatlingBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="foodCandyRifleBoostTMSchematic" count="1" craft_time="50" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
 		
+
+
+		<!-- * candy progression (item) -->
+
+		<recipe name="foodCandyMinerBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyDisassembleBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyClubBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandySledgehammerBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyKnifeBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandySpearBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyPunchBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyStunBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyArcheryBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyPistolBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyShotgunBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyGatlingBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+
+		<recipe name="foodCandyRifleBoostTM" count="1" craft_time="180" craft_area="MKOchemi" tags="learnable,perkPhysician" craft_tool="toolBeaker">
+			<ingredient name="resourceGrapheneTM" count="10"/>
+			<ingredient name="resourceBioFuelTM" count="1"/>
+			<ingredient name="foodSugarTM" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceTallowTM" count="2"/>
+		</recipe>
+		
+		
+		
+
+
 	</append>
 	
 </raiz>

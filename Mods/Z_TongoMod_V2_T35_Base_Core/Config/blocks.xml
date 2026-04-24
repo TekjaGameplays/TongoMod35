@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raiz>
-	
-	
 
-	<!-- * change office chair stack -->
+
+	<!-- * ADD BEESWAX TO ANY TREE -->
+	<append xpath="/blocks/block[starts-with(@name,'tree')]">
+		<drop event="Destroy" name="resourceBeeswax" count="1" prob=".05"/>
+	</append>
+	
+	
+	<!-- * CHANGE OFFICE CHAIR STACK -->
 	<set xpath="/blocks/block[starts-with(@name,'office')]/property[@name='Stacknumber']/@value">100</set>
 	
 	
@@ -1809,17 +1814,133 @@
 		</block>
 
 		
+	</append>
 
 
+	<!-- new looteable blocks -->
+	<append xpath="/blocks/block[@name='palletTarpBaseWhite']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletTarpBaseWhite'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletBagCowFeedBaseFull']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagCowFeedBaseFull'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletBricksBase']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBricksBase'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletCans']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletCans'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletEmpty']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletEmpty'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletEmptyStack']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletEmptyStack'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='OSBWoodStack']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='OSBWoodStack'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='metalPipeStack']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='metalPipeStack'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='bricksStack']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBricksBase'/>
+	</append>
 
+	<append xpath="/blocks/block[@name='palletBagFlourBaseFull']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFlourBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagSandBaseFull']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagSandBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagConcreteBaseFull']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagConcreteBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagFertilizerBaseFull']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullWhite']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullBrown']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullRed']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullOrange']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullYellow']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullGreen']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullBlue']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullPurple']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullGrey']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullBlack']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullPink']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
+	</append>
+
+	<append xpath="/blocks/block[@name='palletBagBlankBaseFullArmyGreen']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='palletBagFertilizerBaseFull'/>
 	</append>
 
 

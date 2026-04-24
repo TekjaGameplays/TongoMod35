@@ -194,7 +194,9 @@ zombieScreamerFire,,,,,"Screamer [FF0000]Fire","Gritona [FF0000]Fuego",,
 zombieTomClar6kIrradiation,,,,,"Tom Clark 6k [8FCE00]Irradiation","Tom Clark 6k [8FCE00]Irradiada",,
 zombieTomClar6kElectric,,,,,"Tom Clark 6k [16537E]Electric","Tom Clark 6k [16537E]Electrica",,
 zombieTomClar6kFire,,,,,"Tom Clark 6k [FF0000]Fire","Tom Clark 6k [FF0000]Fuego",,
-
+zombieSpiderInfernalIrradiation,,,,,"Mini Spider Infernal [8FCE00]Irradiation","Mini Spider Infernal [8FCE00]Irradiation",,
+zombieSpiderInfernalElectric,,,,,"Mini Spider Infernal [16537E]Electric","Mini Spider Infernal [16537E]Electric",,
+zombieSpiderInfernalFire,,,,,"Mini Spider Infernal [FF0000]Fire","Mini Spider Infernal [FF0000]Fire",,
 perkTurretsRank5LongDesc,,,,,"You are now a top expert in robotics. Reload robotic weapons 20% faster and reload an extra 50 rounds. Robot active range is 18 meters.\nTree deployed robots can be active at once.","Ahora eres especialista en robótica. Recarga las armas robóticas un 20 % más rápido y recarga 50 balas adicionales. El alcance activo de los robots es de 18 metros.\nTres robots desplegados pueden estar activos al mismo tiempo.",,
 AreaName,,,,,"\nCrafted in","\nSe fabrica en",,
 RepairWithName,,,,,"\nRepair with","\nSe repara con",,
@@ -231,28 +233,30 @@ TwitchAction_SpawnTmFrost,,,,,TM Chuck,TM Chuck,,
 TwitchAction_SpawnTmFrostCommand,,,,,#spawn_tm_chuck,#aparición_tm_chuck,,
 TwitchAction_SpawnTmFrostDesc,,,,,Spawns a single Chuck zombie.,Aparece una zombi Chuck.,,
 
+EntityLootContainerTongo,,,,,Dropped Loot,Botín abandonado,,
+
 quest_suicide,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_desc,,,,,"A letter with a special request \n\nOpen the letter to get a challenge proposed by a survivor, a special request.","Una carta con una petición especial. \n\nAbre la carta para obtener un reto propuesto por algún superviviente, una petición especial.",,
 
 questsuicidearlene,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_arlene,,,,,"Suicidal requests","Peticiones suicidas",,
-quest_suicide_arlene_desc,,,,,"Kill 5 Arlenes Comand with a Bone Knife and collect rewards.","Mata a 5 arlenes comando con un cuchillo de huesos y llévate recompensas.",,
+quest_suicide_arlene_desc,,,,,"Kill 5 Arlenes Comand with a bone knife and collect rewards.","Mata a 5 arlenes comando con un cuchillo de huesos y llévate recompensas.",,
 
 questsuicideburntelite,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_burnt_elite,,,,,"Suicidal requests","Peticiones suicidas",,
-quest_suicide_burnt_elite_desc,,,,,"Kill 5 Elite Burnt [FF0000]with a Steel Spear [-]and collect rewards. [FF0000]In the burnt forest biome","Mata a 5 Elite quemados [FF0000]con una Lanza de acero [-]y llévate recompensas. [FF0000]En el Bioma bosque quemado",,
+quest_suicide_burnt_elite_desc,,,,,"Kill 5 Elite Burnt [FF0000]with a steel spear [-]and collect rewards. [FF0000]In the burnt forest biome","Mata a 5 Elite quemados [FF0000]con una lanza de acero [-]y llévate recompensas. [FF0000]En el Bioma bosque quemado",,
 
 questsuiciderancherelite,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_rancher_elite,,,,,"Suicidal requests","Peticiones suicidas",,
-quest_suicide_rancher_elite_desc,,,,,"Kill 5 Elite Rancher [FF0000]with a Machete [-]and collect rewards. [FF0000]In the desert biome","Mata a 5 Elite rancher [FF0000]con un Machete [-]y llévate recompensas. [FF0000]En el Bioma del desierto",,
+quest_suicide_rancher_elite_desc,,,,,"Kill 5 Elite Rancher [FF0000]with a steel spear [-]and collect rewards. [FF0000]In the desert biome","Mata a 5 Elite rancher [FF0000]con una lanza de acero [-]y llévate recompensas. [FF0000]En el Bioma del desierto",,
 
 questsuicidechuckelite,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_chuck_elite,,,,,"Suicidal requests","Peticiones suicidas",,
-quest_suicide_chuck_elite_desc,,,,,"Kill 5 Elite chuck [FF0000]with a Stun Baton [-]and collect rewards. [FF0000]In the snow biome","Mata a 5 Elite chuck [FF0000]con una Porra de aturdimiento [-]y llévate recompensas. [FF0000]En el Bioma de la nieve",,
+quest_suicide_chuck_elite_desc,,,,,"Kill 5 Elite chuck [FF0000]with a steel spear [-]and collect rewards. [FF0000]In the snow biome","Mata a 5 Elite chuck [FF0000]con una lanza de acero [-]y llévate recompensas. [FF0000]En el Bioma de la nieve",,
 
 questsuicidesuperbiker,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_super_biker,,,,,"Suicidal requests","Peticiones suicidas",,
-quest_suicide_super_biker_desc,,,,,"Kill 5 Super Biker [FF0000]with a Steel Sledgehammer [-]and collect rewards. [FF0000]In the wasteland biome","Mata a 5 Super Motociclista [FF0000]con un Mazo de acero [-]y llévate recompensas. [FF0000]En el Bioma de la Wasteland",,
+quest_suicide_super_biker_desc,,,,,"Kill 5 Super Biker [FF0000]with a steel spear [-]and collect rewards. [FF0000]In the wasteland biome","Mata a 5 Super Motociclista [FF0000]con una lanza de acero [-]y llévate recompensas. [FF0000]En el Bioma de la Wasteland",,
 
 questsuicidesupercop,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_super_cop,,,,,"Suicidal requests","Peticiones suicidas",,
@@ -261,3 +265,7 @@ quest_suicide_super_cop_desc,,,,,"Kill 5 Super Cop [FF0000]with a Steel Club [-]
 questsuicidetom6k,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_tom_6k,,,,,"Suicidal requests","Peticiones suicidas",,
 quest_suicide_tom_6k_desc,,,,,"Kill 5 Tom 6k [FF0000]with a Steel Knuckles [-]and collect rewards. [FF0000]In the burnt forest biome","Mata a 5 Tom 6k [FF0000]con Nudillos de acero [-]y llévate recompensas. [FF0000]En el Bioma bosque quemado",,
+
+questsuicidegeneral,,,,,"Suicidal requests","Peticiones suicidas",,
+quest_suicide_general,,,,,"Suicidal requests","Peticiones suicidas",,
+quest_suicide_general_desc,,,,,"Kill 5 Demolition General [FF0000]with a Rocket Launcher [-]and collect rewards. [FF0000]In the wasteland biome","Mata a 5 Demoledores Generales [FF0000]con un lanzacohetes [-]y llévate recompensas. [FF0000]En el Bioma de la Wasteland",,
